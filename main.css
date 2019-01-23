@@ -1,0 +1,67 @@
+* {
+	text-align: center;
+}
+
+#header {
+	background-color: lightgray;
+}
+
+#github {
+	width: 100%;
+	padding: 5px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: darkblue;
+}
+
+#github h4 {
+	margin: 0px;
+}
+
+#github > a {
+	color: white;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+	margin: 0% 10%;
+}
+
+td,
+th {
+	border: 1px solid lightslategray;
+	text-align: left;
+	padding: 3px;
+}
+
+th {
+	padding: 10px;
+	font-size: 20px;
+}
+
+#main-header th {
+	border: 1px solid darkslateblue;
+	background-color: darkslateblue;
+	color: white;
+	text-align: center;
+}
+
+#main-header h3 {
+	margin: 0;
+}
+
+tr:nth-child(even) {
+	background-color: lightgray;
+}
+
+.github-logo {
+	text-align: center;
+}
+
+.github-logo img {
+	height: 2em;
+	width: auto;
+}
