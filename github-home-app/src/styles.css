@@ -1,0 +1,7 @@
+body {
+	background-image: url("https://picsum.photos/1920/1080");
+	background-color: whitesmoke;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+}

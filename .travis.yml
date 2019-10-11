@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "12"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - ng-app
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - cd github-home-app
+  - ng lint
+  - ng build --prod --base-href /caiocampos.github.io/
+  - cd ..
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: github-home-app/dist/github-home-app
+  on:
+    branch: master
