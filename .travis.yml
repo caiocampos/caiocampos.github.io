@@ -9,7 +9,9 @@ branches:
   - ng-app
 
 before_script:
+  - cd github-home-app
   - npm install -g @angular/cli
+  - cd ..
 
 script:
   - cd github-home-app
