@@ -20,5 +20,6 @@ deploy:
   skip_cleanup: true
   github-token: $GITHUB_TOKEN
   local_dir: dist/github-home-app
+  target-branch: master
   on:
-    branch: master
+    branch: ng-app
