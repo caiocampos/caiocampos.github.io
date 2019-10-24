@@ -58,15 +58,14 @@
         <ng-container *ngIf="getLanguage(repo.language) | async as lang; else languageName">
           <td class="language-extra">
             <a href="{{lang.link}}">
-              <div>{{lang.name}}</div>
               <div>
-                <img src="{{lang.image}}" alt="{{lang.name}}" />
+                <img src="{{lang.image}}" alt="{{lang.name}}" title="{{lang.name}}" />
               </div>
             </a>
           </td>
         </ng-container>
         <ng-template #languageName>
-          <td><a href="{{repo.homepage}}">{{repo.language}}</a></td>
+          <td>{{repo.language}}</td>
         </ng-template>
         <td class="github-logo">
           <a href="{{repo.html_url}}">
