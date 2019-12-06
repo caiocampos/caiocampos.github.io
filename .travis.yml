@@ -4,6 +4,9 @@ node_js:
 dist: trusty
 sudo: required
 
+addons:
+  chrome: stable
+
 branches:
   only:
   - ng-app
