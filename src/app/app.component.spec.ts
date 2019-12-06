@@ -1,12 +1,17 @@
 import { TestBed, async } from '@angular/core/testing';
+
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
+import { Config } from './model/config';
+import { Language } from './model/language';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
+      imports: [HttpClientTestingModule, FormsModule]
     }).compileComponents();
   }));
 
@@ -16,16 +21,24 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'github-home-app'`, () => {
+  it('should init', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('github-home-app');
-  });
+    app.ngOnInit();
+    app.getLanguage('C');
+    app.updateRepositories();
+    app.clearFilters();
+    expect(app).toBeTruthy();
+  }));
 
-  it('should render title', () => {
+  it('should configurate', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('github-home-app app is running!');
-  });
+    const app = fixture.debugElement.componentInstance;
+    const config = new Config();
+    const language = new Language();
+    language.name = 'C';
+    config.languages = [language];
+    app.configurate(config);
+    expect(app).toBeTruthy();
+  }));
 });

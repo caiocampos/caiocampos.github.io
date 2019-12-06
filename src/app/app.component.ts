@@ -10,6 +10,7 @@ import { GithubService } from './service/github.service';
 import { Repository } from './model/repository';
 import { Project } from './model/project';
 import { Language } from './model/language';
+import { Config } from './model/config';
 import { RepositoryFilter } from './model/repository-filter';
 
 @Component({
@@ -18,7 +19,6 @@ import { RepositoryFilter } from './model/repository-filter';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-
   repositories$: Observable<Array<Repository>>;
   projects: Array<Project>;
   languages = {};
@@ -26,23 +26,30 @@ export class AppComponent implements OnInit {
   link = '';
   filter = new RepositoryFilter();
 
-  constructor(private configService: ConfigService, private githubService: GithubService, private titleService: Title) { }
+  constructor(
+    private configService: ConfigService,
+    private githubService: GithubService,
+    private titleService: Title
+  ) {}
 
   ngOnInit(): void {
-    this.configService.config.toPromise().then((data) => {
-      if (data) {
-        this.titleService.setTitle(data.title);
-        this.link = `https://github.com/${data.user_login}`;
-        this.projects = data.projects || [];
-        for (const language of data.languages) {
-          if (language.name) {
-            this.languages[language.name] = language;
-            this.langNames.push(language.name);
-          }
+    const configurate = this.configurate.bind(this);
+    this.configService.config.toPromise().then(configurate);
+    this.repositories$ = this.githubService.getRepositories();
+  }
+
+  configurate(config: Config) {
+    if (config) {
+      this.titleService.setTitle(config.title);
+      this.link = `https://github.com/${config.user_login}`;
+      this.projects = config.projects || [];
+      for (const language of config.languages) {
+        if (language.name) {
+          this.languages[language.name] = language;
+          this.langNames.push(language.name);
         }
       }
-    });
-    this.repositories$ = this.githubService.getRepositories();
+    }
   }
 
   getLanguage(name: string): Observable<Language> {
@@ -55,8 +62,13 @@ export class AppComponent implements OnInit {
   updateRepositories(): void {
     const filter = this.filter;
     const projects = this.projects;
-    this.repositories$ = this.githubService.getRepositories().pipe(
-      map((data) => data.filter((repo) => filter.match(repo, projects)))
-    );
+    this.repositories$ = this.githubService
+      .getRepositories()
+      .pipe(map(data => data.filter(repo => filter.match(repo, projects))));
+  }
+
+  clearFilters(): void {
+    this.filter = new RepositoryFilter();
+    this.updateRepositories();
   }
 }

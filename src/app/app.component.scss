@@ -1,193 +1,206 @@
-$sz-30: 300px;
+$sz-35: 350px;
 $sz-50: 500px;
 $sz-55: 550px;
 $sz-65: 650px;
+$sz-70: 700px;
 $sz-80: 800px;
 
 %btn {
-	cursor: pointer;
-	border: none;
+  cursor: pointer;
+  border: none;
 }
 
 %btn-white-text {
-	@extend %btn;
-	color: white;
+  @extend %btn;
+  color: white;
 }
 
 %btn-black-text {
-	@extend %btn;
-	color: black;
+  @extend %btn;
+  color: black;
 }
 
 %ok-btn {
-	@extend %btn-white-text;
-	background-color: #4caf50;
+  @extend %btn-white-text;
+  background-color: #4caf50;
+}
+
+%nok-btn {
+  @extend %btn-white-text;
+  background-color: red;
 }
 
 * {
-	text-align: center;
+  text-align: center;
 }
 
 #header {
-	background-color: rgba(120, 150, 180, 0.4);
-	box-shadow: 0 4px 8px 0 rgba(120, 150, 180, 0.2),
-		0 4px 20px 0 rgba(120, 150, 180, 0.2);
+  background-color: rgba(120, 150, 180, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(120, 150, 180, 0.2),
+    0 4px 20px 0 rgba(120, 150, 180, 0.2);
 
-	.site {
-		img {
-			height: 60px;
-			filter: drop-shadow(0px 0px 8px black);
-		}
-	}
+  .site {
+    img {
+      height: 60px;
+      filter: drop-shadow(0px 0px 8px black);
+    }
+  }
 }
 
 #body {
-	@media (min-width: $sz-65) {
-		width: 80vw;
-		margin-left: 10vw;
-		margin-right: 10vw;
-	}
+  width: 98%;
+  max-width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
 
-	.filter {
-		background-color: rgba(255, 255, 255, 0.6);
-		box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
-			0 4px 20px 0 rgba(255, 255, 255, 0.2);
-		margin-bottom: 10px;
-		padding: 5px;
-		text-align: Left;
+  @media (min-width: $sz-65) {
+    width: 80%;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
-		* {
-			text-align: Left;
-			margin: 2px;
-		}
+  .filter {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+      0 4px 20px 0 rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: Left;
 
-		.ok-btn {
-			@extend %ok-btn;
-			padding: 4px 26px;
-		}
+    * {
+      text-align: Left;
+      margin: 2px;
+    }
 
-		.container {
-			width: inherit;
-			display: flex;
-			flex-wrap: wrap;
-			align-content: space-between;
+    .ok-btn {
+      @extend %ok-btn;
+      padding: 4px 26px;
+    }
 
-			@media (max-width: $sz-80) {
-				flex-direction: column;
-				align-content: stretch;
-			}
+    .clear-btn {
+      @extend %nok-btn;
+      padding: 4px 26px;
+    }
 
-			& > div {
-				width: inherit;
-				margin: auto;
-			}
-		}
-	}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
 
-	table {
-		width: inherit;
-		font-family: arial, sans-serif;
-		border-collapse: collapse;
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
-			0 4px 20px 0 rgba(0, 0, 0, 0.3);
-		margin-top: 0px;
-		margin-bottom: 100px;
-		max-width: 100%;
+      @media (max-width: $sz-80) {
+        flex-direction: column;
+        align-content: stretch;
+      }
 
-		@media (max-height: $sz-50) {
-			margin-bottom: 0px !important;
-		}
+      & > div {
+        width: inherit;
+        margin: auto;
+      }
+    }
+  }
 
-		%table-line {
-			border: 1px solid lightslategray;
-			text-align: left;
-			padding: 3px;
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 0px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
 
-			@media (max-width: $sz-30) {
-				font-size: 10px !important;
-			}
+    @media (max-height: $sz-50) {
+      margin-bottom: 0px;
+    }
 
-			@media (min-width: $sz-30) and (max-width: $sz-55) {
-				font-size: 3vw !important;
-			}
-		}
+    %table-line {
+      border: 1px solid lightslategray;
+      text-align: left;
+      padding: 3px;
+      width: auto;
+      word-wrap: break-word;
 
-		td {
-			@extend %table-line;
-		}
+      @media (max-width: $sz-35) {
+        font-size: 10px !important;
+      }
 
-		th {
-			@extend %table-line;
-			padding: 10px;
-			font-size: 20px;
-		}
+      @media (min-width: $sz-35) and (max-width: $sz-55) {
+        font-size: 3vw !important;
+      }
+    }
 
-		tr {
-			&:nth-child(even) {
-				background-color: rgba(230, 240, 240, 0.9);
-			}
+    td {
+      @extend %table-line;
+    }
 
-			&:nth-child(odd) {
-				background-color: rgba(240, 240, 230, 0.9);
-			}
-		}
+    th {
+      @extend %table-line;
+      padding: 10px;
+      font-size: 20px;
+    }
 
-		.main-header {
-			th {
-				border: 1px solid darkslateblue;
-				background-color: rgba(0, 0, 90, 0.7);
-				color: white;
-				text-align: center;
-			}
+    tr {
+      &:nth-child(even) {
+        background-color: rgba(230, 240, 240, 0.9);
+      }
 
-			h3 {
-				margin: 0px;
-			}
-		}
+      &:nth-child(odd) {
+        background-color: rgba(240, 240, 230, 0.9);
+      }
+    }
 
-		.github-logo {
-			text-align: center;
+    .main-header {
+      th {
+        border: 1px solid darkslateblue;
+        background-color: rgba(0, 0, 90, 0.7);
+        color: white;
+        text-align: center;
+      }
 
-			img {
-				width: 15vw;
-				max-width: 80px;
-				min-width: 35px;
-				height: auto;
-			}
-		}
+      h3 {
+        margin: 0px;
+      }
+    }
 
-		.language-extra {
-			a {
-				color: black;
-			}
+    img {
+      width: 10vw;
+      max-width: 80px;
+      min-width: 35px;
+      height: auto;
+      max-height: 25px;
+      max-height: 40px;
+    }
 
-			img {
-				width: 15vw;
-				max-width: 80px;
-				min-width: 35px;
-				max-height: 40px;
-			}
-		}
-	}
+    .github-logo {
+      text-align: center;
+    }
+
+    .language-extra {
+      a {
+        color: black;
+      }
+    }
+  }
 }
 
 #footer {
-	width: 100%;
-	padding: 5px;
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	background-color: rgba(0, 0, 30, 0.9);
+  width: 100%;
+  padding: 5px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 30, 0.9);
 
-	@media (max-height: $sz-50) {
-		visibility: hidden;
-	}
+  @media (max-height: $sz-50) {
+    visibility: hidden;
+  }
 
-	h4 {
-		margin: 0px;
-	}
+  h4 {
+    margin: 0px;
+  }
 
-	& > a {
-		color: white;
-	}
+  & > a {
+    color: white;
+  }
 }
