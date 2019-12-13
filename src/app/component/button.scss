@@ -1,0 +1,24 @@
+%btn {
+  cursor: pointer;
+  border: none;
+}
+
+%btn-white-text {
+  @extend %btn;
+  color: white;
+}
+
+%btn-black-text {
+  @extend %btn;
+  color: black;
+}
+
+%ok-btn {
+  @extend %btn-white-text;
+  background-color: #4caf50;
+}
+
+%nok-btn {
+  @extend %btn-white-text;
+  background-color: red;
+}

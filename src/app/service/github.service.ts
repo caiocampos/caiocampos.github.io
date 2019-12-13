@@ -6,20 +6,25 @@ import { switchMap } from 'rxjs/operators';
 
 import { Repository } from '../model/repository';
 import { ConfigService } from './config.service';
+import { Config } from '../model/config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GithubService {
+  constructor(private http: HttpClient, private configService: ConfigService) {}
 
-  constructor(private http: HttpClient, private configService: ConfigService) { }
-
-  public getRepositories(sort = 'updated'): Observable<Array<Repository>> {
+  getRepositories(sort = 'updated'): Observable<Array<Repository>> {
     return this.configService.config.pipe(
-      switchMap((config) => {
-        const link = `https://api.github.com/users/${config.user_login}/repos?sort=${sort}`;
-        return this.http.get<Array<Repository>>(link);
-      })
+      switchMap(config => this.getConfigRepositories(config, sort))
     );
+  }
+
+  getConfigRepositories(
+    config: Config,
+    sort = 'updated'
+  ): Observable<Array<Repository>> {
+    const link = `https://api.github.com/users/${config.user_login}/repos?sort=${sort}`;
+    return this.http.get<Array<Repository>>(link);
   }
 }

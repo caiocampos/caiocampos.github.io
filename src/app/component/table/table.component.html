@@ -1,22 +1,14 @@
-<div id="header">
-  <h1 class="site">
-    <a href="{{ link }}">
-      <div>
-        <img
-          src="assets/img/github/GitHub_Logo_White.png"
-          title="Acesse a página no GitHub"
-          height="60px"
-        />
-      </div>
-    </a>
-  </h1>
-</div>
-<div id="body">
+<div>
   <div class="filter">
-    <h4>
-      Filtros:
-    </h4>
-    <div class="container">
+    <div class="header">
+      <span class="title">
+        Filtros:
+      </span>
+      <span class="show-control" (click)="showFilters = !showFilters">
+        {{ showFilters ? '&#10094;' : '&#10095;' }}
+      </span>
+    </div>
+    <div class="container" *ngIf="showFilters">
       <div>
         <label for="name-filter">Nome</label>
         <input id="name-filter" [(ngModel)]="filter.name" />
@@ -29,18 +21,18 @@
         <label for="lang-filter">Linguagem</label>
         <select id="lang-filter" [(ngModel)]="filter.lang">
           <option value="">Sem filtro</option>
-          <option *ngFor="let language of langNames" [value]="language">{{
-            language
-          }}</option>
+          <option *ngFor="let language of langNames" [value]="language">
+            {{ language }}
+          </option>
         </select>
       </div>
       <div>
         <label for="project-filter">Projeto</label>
         <select id="project-filter" [(ngModel)]="filter.project">
           <option value="">Sem filtro</option>
-          <option *ngFor="let project of projects" [value]="project.id">{{
-            project.name
-          }}</option>
+          <option *ngFor="let project of projects" [value]="project.id">
+            {{ project.name }}
+          </option>
         </select>
       </div>
       <div>
@@ -72,17 +64,15 @@
       </tr>
       <tr *ngFor="let repo of repositories$ | async">
         <td>
-          <div>
-            <h3>
-              <ng-container *ngIf="!repo.homepage; else link">
-                {{ repo.name }}
-              </ng-container>
-              <ng-template #link>
-                <a href="{{ repo.homepage }}">{{ repo.name }}</a>
-              </ng-template>
-            </h3>
+          <div class="name">
+            <ng-container *ngIf="!repo.homepage; else link">
+              {{ repo.name }}
+            </ng-container>
+            <ng-template #link>
+              <a href="{{ repo.homepage }}">{{ repo.name }}</a>
+            </ng-template>
           </div>
-          <div class="github-logo">
+          <div>
             <a href="{{ repo.html_url }}">
               <img
                 src="assets/img/github/GitHub_Logo.png"
@@ -91,12 +81,15 @@
               />
             </a>
           </div>
-          <div class="language-extra">
+        </td>
+        <td colspan="2">
+          <div
+            [innerHTML]="getRepoDescription(repo) | async"
+            class="description"
+          ></div>
+          <div>
             <ng-container
-              *ngIf="
-                getLanguage(repo.language) | async as lang;
-                else languageName
-              "
+              *ngIf="getRepoLanguage(repo) | async as lang; else languageName"
             >
               <a href="{{ lang.link }}">
                 <img
@@ -111,19 +104,7 @@
             </ng-template>
           </div>
         </td>
-        <td colspan="2">{{ repo.description }}</td>
       </tr>
     </tbody>
   </table>
-</div>
-<div id="footer">
-  <a href="{{ link }}">
-    <div>
-      <img
-        src="assets/img/github/mark/GitHub-Mark-Light-32px.png"
-        title="Acesse a página no GitHub"
-      />
-      <h4>GitHub</h4>
-    </div>
-  </a>
 </div>

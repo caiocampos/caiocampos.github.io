@@ -1,6 +1,6 @@
-import { RepositoryFilter } from './repository-filter';
-import { Repository } from './repository';
-import { Project } from './project';
+import { RepositoryFilter } from '../repository-filter';
+import { Repository } from '../repository';
+import { Project } from '../project';
 
 describe('RepositoryFilter', () => {
   it('should create an instance', () => {

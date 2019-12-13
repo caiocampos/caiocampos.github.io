@@ -1,4 +1,4 @@
-import { Config } from './config';
+import { Config } from '../config';
 
 describe('Config', () => {
   it('should create an instance', () => {
