@@ -18,7 +18,7 @@ before_script:
 script:
   - ng lint
   - ng build --prod --base-href /
-  - xvfb-run npm run coverage
+  - xvfb-run -a npm run coverage
   - codecov
 
 deploy:
