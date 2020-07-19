@@ -12,14 +12,13 @@ branches:
   - ng-app
 
 before_script:
-  - xvfb-run make test
   - npm install -g @angular/cli@10
   - npm install -g codecov
 
 script:
   - ng lint
   - ng build --prod --base-href /
-  - npm run coverage
+  - xvfb-run npm run coverage
   - codecov
 
 deploy:
