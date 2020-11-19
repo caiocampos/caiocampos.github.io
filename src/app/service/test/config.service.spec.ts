@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
@@ -17,13 +17,13 @@ describe('ConfigService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should get the configuration', async(done => {
+  it('should get the configuration', waitForAsync(done => {
     const service: ConfigService = TestBed.get(ConfigService);
     service.config.toPromise().finally(done);
     expect(service).toBeTruthy();
   }));
 
-  it('should overwrite the configuration', async(done => {
+  it('should overwrite the configuration', waitForAsync(done => {
     const service: ConfigService = TestBed.get(ConfigService);
     service.overwrite(new Config());
     service.config.toPromise().finally(done);

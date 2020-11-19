@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
@@ -17,7 +17,7 @@ describe('GithubService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should get the repositories', async(done => {
+  it('should get the repositories', waitForAsync(done => {
     const service: GithubService = TestBed.get(GithubService);
     service
       .getRepositories()
@@ -26,7 +26,7 @@ describe('GithubService', () => {
     expect(service).toBeTruthy();
   }));
 
-  it('should get the repositories by config', async(done => {
+  it('should get the repositories by config', waitForAsync(done => {
     const service: GithubService = TestBed.get(GithubService);
     service
       .getConfigRepositories(getConfig())

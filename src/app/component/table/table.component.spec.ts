@@ -1,4 +1,4 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FormsModule } from '@angular/forms';
@@ -9,7 +9,7 @@ import { Language } from '../../model/language';
 import { Repository } from '../../model/repository';
 
 describe('TableComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [TableComponent],
       imports: [HttpClientTestingModule, FormsModule]
@@ -32,7 +32,7 @@ describe('TableComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should get Repository language', async(done => {
+  it('should get Repository language', waitForAsync(done => {
     const fixture = TestBed.createComponent(TableComponent);
     const app: TableComponent = fixture.debugElement.componentInstance;
     app.config = getConfig();
@@ -43,7 +43,7 @@ describe('TableComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should get Repository language (null)', async(done => {
+  it('should get Repository language (null)', waitForAsync(done => {
     const fixture = TestBed.createComponent(TableComponent);
     const app: TableComponent = fixture.debugElement.componentInstance;
     app.config = getConfig();
@@ -54,7 +54,7 @@ describe('TableComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should get Repository description', async(done => {
+  it('should get Repository description', waitForAsync(done => {
     const fixture = TestBed.createComponent(TableComponent);
     const app: TableComponent = fixture.debugElement.componentInstance;
     app.config = getConfig();
@@ -65,7 +65,7 @@ describe('TableComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it('should get Repository description', async(done => {
+  it('should get Repository description', waitForAsync(done => {
     const fixture = TestBed.createComponent(TableComponent);
     const app: TableComponent = fixture.debugElement.componentInstance;
     app.config = getConfig();
