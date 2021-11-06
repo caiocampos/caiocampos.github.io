@@ -14,7 +14,7 @@ import { RepositoryFilter } from '../../model/repository-filter';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss']
+  styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit {
   repositories$: Observable<Array<Repository>>;
@@ -35,7 +35,7 @@ export class TableComponent implements OnInit {
     this.configurate(config);
   }
 
-  configurate(config: Config): void {
+  configurate = (config: Config): void => {
     if (config) {
       this.projects = config.projects || [];
       for (const language of config.languages) {
@@ -45,41 +45,39 @@ export class TableComponent implements OnInit {
         }
       }
     }
-  }
+  };
 
-  getRepoLanguage(repo: Repository): Observable<Language> {
+  getRepoLanguage = (repo: Repository): Observable<Language> => {
     if (repo && repo.language && this.languages[repo.language]) {
       return of(this.languages[repo.language]);
     }
     return of(...[]);
-  }
+  };
 
-  getRepoDescription(repo: Repository): Observable<string> {
+  getRepoDescription = (repo: Repository): Observable<string> => {
     if (repo && repo.description) {
       let description = repo.description;
       description = description.replace(/([.:])\s+/g, '$1<br>');
       description = description.replace(
-        /(http[s]?:\/\/[.a-z@/-]+)/ig,
+        /(http[s]?:\/\/[.a-z@/-]+)/gi,
         '<a href="$1">$1</a>'
       );
       return of(description);
     }
     return of(...[]);
-  }
+  };
 
-  updateRepositories(): void {
-    const filterRepositories = this.filterRepositories.bind(this);
+  updateRepositories = (): void => {
     this.repositories$ = this.githubService
       .getRepositories()
-      .pipe(map(filterRepositories));
-  }
+      .pipe(map(this.filterRepositories));
+  };
 
-  filterRepositories(repositories: Array<Repository>): Array<Repository> {
-    return repositories.filter(repo => this.filter.match(repo, this.projects));
-  }
+  filterRepositories = (repositories: Array<Repository>): Array<Repository> =>
+    repositories.filter((repo) => this.filter.match(repo, this.projects));
 
-  clearFilters(): void {
+  clearFilters = (): void => {
     this.filter = new RepositoryFilter();
     this.updateRepositories();
-  }
+  };
 }

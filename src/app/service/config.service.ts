@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 import { Config } from '../model/config';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ConfigService {
   private static configuration: Config = null;
@@ -16,14 +16,15 @@ export class ConfigService {
 
   get config(): Observable<Config> {
     if (!ConfigService.configuration) {
-      const overwrite = this.overwrite.bind(this);
-      return this.http.get<Config>('/assets/config.json').pipe(map(overwrite));
+      return this.http
+        .get<Config>('/assets/config.json')
+        .pipe(map(this.overwrite));
     }
     return of(ConfigService.configuration);
   }
 
-  overwrite(config: Config): Config {
+  overwrite = (config: Config): Config => {
     ConfigService.configuration = config;
     return config;
-  }
+  };
 }

@@ -14,7 +14,7 @@ export class RepositoryFilter {
     this.project = project;
   }
 
-  match(repo: Repository, projects: Array<Project> = []): boolean {
+  match = (repo: Repository, projects: Array<Project> = []): boolean => {
     const { name, lang, desc, project } = this;
     if (name && !includes(repo.name, name)) {
       return false;
@@ -33,9 +33,13 @@ export class RepositoryFilter {
       }
     }
     return true;
-  }
+  };
 }
 
-function includes(str: string, searchString: string): boolean {
-  return str.toLocaleLowerCase().includes(searchString.toLocaleLowerCase());
-}
+const includes = (str: string, searchString: string): boolean => {
+  return (
+    !searchString ||
+    (!!str &&
+      str.toLocaleLowerCase().includes(searchString.toLocaleLowerCase()))
+  );
+};
