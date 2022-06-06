@@ -111,7 +111,6 @@
       }
     }
   },
-  "defaultProject": "github-home-app",
   "cli": {
     "analytics": "ed321a9e-e123-465b-9bd8-c2e2ae0d1346"
   }
