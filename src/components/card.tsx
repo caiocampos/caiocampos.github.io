@@ -54,8 +54,8 @@ export const Card = ({
   fork,
 }: RepositoryDataBase): JSX.Element => {
   return (
-    <div className="2xl:w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full flex-auto border border-2 border-slate-400 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-600 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-700 bg-slate-100/[.9] dark:bg-slate-900/[.9]">
-      <div className="relative w-full h-0 text-gray-900 dark:text-gray-100 text-right right-2 top-2">
+    <div className="relative 2xl:w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full flex-auto border border-2 border-slate-400 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-600 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-700 bg-slate-100/[.9] dark:bg-slate-900/[.9] backdrop-blur-sm">
+      <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 top-2">
         {homepage ? (
           <a href={homepage} className="mr-2">
             <LinkExternalIcon size="medium" />
