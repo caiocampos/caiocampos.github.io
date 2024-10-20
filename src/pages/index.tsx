@@ -9,6 +9,7 @@ import { GithubServices } from "@/services/github/github-services";
 import {
   createRepositoryWordDictionary,
   parseRepositoryData,
+  repositoryComparison,
   RepositoryWordDictionary,
 } from "@/utils/repository-utils";
 import { Search } from "@/components/search";
@@ -22,8 +23,9 @@ interface RepositoriesGetStaticProps {
 
 export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
   (async () => {
-    const repositoriesBruteData: MinimalRepository[] =
-      await GithubServices.getAllUserRepos(configguration.user_login);
+    const repositoriesBruteData: MinimalRepository[] = (
+      await GithubServices.getAllUserRepos(configguration.user_login)
+    ).sort(repositoryComparison);
     const repositories: RepositoryData[] =
       repositoriesBruteData.map(parseRepositoryData);
     const wordDictionary = createRepositoryWordDictionary(

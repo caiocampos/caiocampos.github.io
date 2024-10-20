@@ -14,6 +14,8 @@ export const parseRepositoryData = (
     homepage,
     archived,
     fork,
+    forks_count,
+    stargazers_count,
   } = bruteData;
   return {
     id,
@@ -24,6 +26,8 @@ export const parseRepositoryData = (
     homepage: homepage ?? null,
     archived: archived ?? false,
     fork,
+    forks_count: forks_count ?? 0,
+    stargazers_count: stargazers_count ?? 0,
   };
 };
 
@@ -73,4 +77,23 @@ const updateSet = (
   }
   wordSet.add(value);
   return wordSet;
+};
+
+export const repositoryComparison = (
+  a: MinimalRepository,
+  b: MinimalRepository
+): number => {
+  const stargazersComparison =
+    (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0);
+  if (stargazersComparison !== 0) {
+    return stargazersComparison;
+  }
+  const forksComparison = (b.forks_count ?? 0) - (a.forks_count ?? 0);
+  if (forksComparison !== 0) {
+    return forksComparison;
+  }
+  return (
+    new Date(b.updated_at ?? 0).getTime() -
+    new Date(a.updated_at ?? 0).getTime()
+  );
 };

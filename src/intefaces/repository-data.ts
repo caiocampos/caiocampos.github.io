@@ -10,4 +10,6 @@ export interface RepositoryDataBase {
   homepage: string | null;
   archived: boolean;
   fork: boolean;
+  forks_count: number;
+  stargazers_count: number;
 }

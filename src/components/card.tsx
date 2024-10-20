@@ -2,7 +2,12 @@ import { Fragment } from "react";
 import { RepositoryDataBase } from "@/intefaces/repository-data";
 import { LanguageBadge } from "./language-badge";
 import { languageDictionary } from "@/global";
-import { FeedForkedIcon, LinkExternalIcon } from "@primer/octicons-react";
+import {
+  FeedForkedIcon,
+  LinkExternalIcon,
+  RepoForkedIcon,
+  StarIcon,
+} from "@primer/octicons-react";
 
 const getDescription = (description: string | null): JSX.Element => {
   if (description === null) {
@@ -52,6 +57,8 @@ export const Card = ({
   homepage,
   archived,
   fork,
+  stargazers_count,
+  forks_count,
 }: RepositoryDataBase): JSX.Element => {
   return (
     <div className="relative 2xl:w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full flex-auto border border-2 border-slate-400 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-600 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-700 bg-slate-100/[.9] dark:bg-slate-900/[.9] backdrop-blur-sm">
@@ -85,6 +92,16 @@ export const Card = ({
               )
             ) : null}
           </p>
+          <div>
+            <div className="m-2 inline-flex">
+              <StarIcon className="p-1" size={26} />
+              <span>{stargazers_count}</span>
+            </div>
+            <div className="m-2 inline-flex">
+              <RepoForkedIcon className="p-1" size={26} />
+              <span>{forks_count}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
