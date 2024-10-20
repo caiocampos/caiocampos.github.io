@@ -5,7 +5,7 @@ import { Card } from "@/components/card";
 import { RepositoryData } from "@/intefaces/repository-data";
 import { configguration } from "@/global";
 import { Footer } from "@/components/footer";
-import { GithubServices } from "@/services/github-services";
+import { GithubServices } from "@/services/github/github-services";
 import {
   createRepositoryWordDictionary,
   parseRepositoryData,
@@ -13,6 +13,7 @@ import {
 } from "@/utils/repository-utils";
 import { Search } from "@/components/search";
 import { filterResult } from "@/utils/search-utils";
+import { MinimalRepository } from "@/services/github/github-dtos";
 
 interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];
@@ -21,8 +22,8 @@ interface RepositoriesGetStaticProps {
 
 export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
   (async () => {
-    const repositoriesBruteData: RepositoryData[] =
-      await GithubServices.getUserRepos(configguration.user_login);
+    const repositoriesBruteData: MinimalRepository[] =
+      await GithubServices.getAllUserRepos(configguration.user_login);
     const repositories: RepositoryData[] =
       repositoriesBruteData.map(parseRepositoryData);
     const wordDictionary = createRepositoryWordDictionary(

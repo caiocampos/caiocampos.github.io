@@ -1,8 +1,9 @@
 import { RepositoryData } from "@/intefaces/repository-data";
+import { MinimalRepository } from "@/services/github/github-dtos";
 import { splitString } from "./string-utils";
 
-export const parseRepositoryData = <T extends RepositoryData>(
-  bruteData: T
+export const parseRepositoryData = (
+  bruteData: MinimalRepository
 ): RepositoryData => {
   const {
     id,
@@ -19,9 +20,9 @@ export const parseRepositoryData = <T extends RepositoryData>(
     name,
     html_url,
     description,
-    language,
-    homepage,
-    archived,
+    language: language ?? null,
+    homepage: homepage ?? null,
+    archived: archived ?? false,
     fork,
   };
 };
@@ -33,8 +34,8 @@ export interface RepositoryWordDictionaryItem {
   values: number[];
 }
 
-export const createRepositoryWordDictionary = <T extends RepositoryData>(
-  bruteData: T[]
+export const createRepositoryWordDictionary = (
+  bruteData: MinimalRepository[]
 ): RepositoryWordDictionary => {
   const dictionary: Record<string, Set<number>> = {};
   bruteData.forEach(({ id, name, description, language, archived, fork }) => {
@@ -44,7 +45,7 @@ export const createRepositoryWordDictionary = <T extends RepositoryData>(
     if (archived) {
       dictionary["arquivado"] = updateSet(dictionary["arquivado"], id);
     }
-    if (language !== null) {
+    if (language !== null && language !== undefined) {
       const word = language.toLowerCase();
       dictionary[word] = updateSet(dictionary[word], id);
     }
