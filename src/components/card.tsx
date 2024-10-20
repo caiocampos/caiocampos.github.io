@@ -62,13 +62,13 @@ export const Card = ({
 }: RepositoryDataBase): JSX.Element => {
   return (
     <div className="relative 2xl:w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full flex-auto border border-2 border-slate-400 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-600 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-700 bg-slate-100/[.9] dark:bg-slate-900/[.9] backdrop-blur-sm">
-      <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 top-2">
+      <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
         {homepage ? (
-          <a href={homepage} className="mr-2">
+          <a href={homepage} className="mr-2" title="Página do projeto">
             <LinkExternalIcon size="medium" />
           </a>
         ) : null}
-        <a href={html_url}>
+        <a href={html_url} title="Código fonte">
           <FeedForkedIcon size="medium" />
         </a>
       </div>
@@ -82,8 +82,8 @@ export const Card = ({
             {getDescription(description)}
           </p>
         </div>
-        <div className="w-full text-center text-gray-900 dark:text-gray-100">
-          <p className="flex justify-center mb-2">
+        <div className="w-full text-gray-900 dark:text-gray-100">
+          <div className="flex justify-center">
             {language !== null ? (
               languageDictionary[language] !== undefined ? (
                 <LanguageBadge {...languageDictionary[language]} />
@@ -91,8 +91,8 @@ export const Card = ({
                 language
               )
             ) : null}
-          </p>
-          <div>
+          </div>
+          <div className="flex justify-center">
             <div className="m-2 inline-flex">
               <StarIcon className="p-1" size={26} />
               <span>{stargazers_count}</span>
