@@ -20,6 +20,16 @@
             "link": "https://dotnet.microsoft.com/languages/csharp"
         },
         {
+            "name": "CSS",
+            "image": "https://img.shields.io/badge/CSS3-1572B6.svg?&style=for-the-badge&logo=css3&logoColor=white",
+            "link": "https://w3.org/TR/CSS/#css"
+        },
+        {
+            "name": "Dart",
+            "image": "https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white",
+            "link": "https://dart.dev/"
+        },
+        {
             "name": "Go",
             "image": "https://img.shields.io/badge/GOLANG-007D9C.svg?&style=for-the-badge&logo=go&logoColor=white",
             "link": "https://golang.org/"
