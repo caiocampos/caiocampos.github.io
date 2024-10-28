@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "libretranslate": "docker-compose --file libretranslate-docker-compose.yml up -d --build",
-    "libretranslate-stop": "docker-compose --file libretranslate-docker-compose.yml stop"
+    "libretranslate-stop": "docker-compose --file libretranslate-docker-compose.yml down"
   },
   "dependencies": {
     "@primer/octicons-react": "^19.12.0",
