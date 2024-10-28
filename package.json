@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "libretranslate": "docker compose --file libretranslate-docker-compose.yml up -d --build",
+    "libretranslate": "docker compose --file libretranslate-docker-compose.yml up -d --build --wait",
     "libretranslate-stop": "docker compose --file libretranslate-docker-compose.yml down"
   },
   "dependencies": {
