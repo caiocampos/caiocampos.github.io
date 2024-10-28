@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ nx-app, nx-app-i18n ]
+    branches: [ nx-app ]
   schedule:
     - cron: "0 8-22/2 * * *"
   workflow_dispatch:
