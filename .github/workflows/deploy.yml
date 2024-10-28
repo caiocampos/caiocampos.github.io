@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ nx-app ]
+    branches: [ nx-app, nx-app-i18n ]
   schedule:
     - cron: "0 8-22/2 * * *"
   workflow_dispatch:
@@ -28,8 +28,12 @@ jobs:
         cache: 'npm'
     - name: Install
       run: npm install
+    - name: Run translate service
+      run: npm run libretranslate
     - name: Build
       run: npm run build
+    - name: Stop translate service
+      run: npm run libretranslate-stop
     - name: Adjustment
       run: |
            cp .nojekyll ./out/.nojekyll
