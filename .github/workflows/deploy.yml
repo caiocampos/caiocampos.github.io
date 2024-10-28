@@ -29,7 +29,9 @@ jobs:
     - name: Install
       run: npm install
     - name: Run translate service
-      run: npm run libretranslate
+      run: |
+           npm run libretranslate
+           docker ps
     - name: Build
       run: |
            export SERVER_URL=127.0.0.1
