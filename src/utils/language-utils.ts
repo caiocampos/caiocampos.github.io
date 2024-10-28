@@ -2,10 +2,22 @@ import { termTranslationPT } from "@/global";
 import { TermTranslation } from "@/intefaces/translation";
 import { MinimalRepository } from "@/services/github/github-dtos";
 import { LibretranslateServices } from "@/services/libretranslate/libretranslate-services";
+import { regexLink } from "./string-utils";
 
 export type Language = "pt" | "en" | "es" | "it" | "fr" | "de";
 
 export const languages: Language[] = ["pt", "en", "es", "it", "fr", "de"];
+
+export enum LanguageEnum {
+  Portuguese = "pt",
+  English = "en",
+  Spanish = "es",
+  Italian = "it",
+  French = "fr",
+  German = "de",
+}
+
+const PT = LanguageEnum.Portuguese;
 
 export const locales = {
   pt: "pt-BR",
@@ -34,11 +46,13 @@ export const languageName = {
   de: "Deutsch",
 };
 
+export const isLanguagePT = (language: Language) => language === PT;
+
 export const getLanguageDisclaimer = (
   language: Language,
   termTranslation: TermTranslation
 ) => {
-  if (language === "pt") {
+  if (isLanguagePT(language)) {
     return languageName.pt;
   }
   return `${languageName[language]} - ${termTranslation.autotranslated}`;
@@ -60,32 +74,32 @@ export const generateParams = (): PageParams[] =>
 export const getTermTranslation = async (
   language: Language
 ): Promise<TermTranslation> => {
-  if (language === "pt") {
+  if (isLanguagePT(language)) {
     return termTranslationPT;
   }
   const archivedPromise = LibretranslateServices.translate(
     termTranslationPT.archived,
-    "pt",
+    PT,
     language
   );
   const pagePromise = LibretranslateServices.translate(
     termTranslationPT.page,
-    "pt",
+    PT,
     language
   );
   const searchPromise = LibretranslateServices.translate(
     termTranslationPT.search,
-    "pt",
+    PT,
     language
   );
   const sourcePromise = LibretranslateServices.translate(
     termTranslationPT.source,
-    "pt",
+    PT,
     language
   );
   const autotranslatedPromise = LibretranslateServices.translate(
     termTranslationPT.autotranslated,
-    "pt",
+    PT,
     language
   );
 
@@ -103,29 +117,32 @@ export const getRepositoryTranslation = async (
   repository: MinimalRepository,
   language: Language
 ): Promise<MinimalRepository> => {
-  if (language === "pt" || repository.description === null) {
-    return repository;
+  const base = { ...repository };
+  if (isLanguagePT(language) || base.description === null) {
+    return base;
   }
+  const [originalDescription, ...linkParts] = base.description.split(regexLink);
   const description = await LibretranslateServices.translate(
-    repository.description,
-    "pt",
+    originalDescription,
+    PT,
     language
   );
-  repository.description = description;
-  return repository;
+  base.description = [description, " ", ...linkParts].join("");
+  return base;
 };
 
 export const getRepositoriesTranslation = async (
   repositories: MinimalRepository[],
   language: Language,
-  pageSize = 5
+  pageSize = 3
 ): Promise<MinimalRepository[]> => {
-  if (language === "pt") {
-    return repositories;
+  const base = [...repositories];
+  if (isLanguagePT(language)) {
+    return base;
   }
   const out: MinimalRepository[] = [];
-  while (repositories.length > 0) {
-    const page = repositories.splice(0, pageSize);
+  while (base.length > 0) {
+    const page = base.splice(0, pageSize);
     const translatedPage = await Promise.all(
       page.map((repository) => getRepositoryTranslation(repository, language))
     );

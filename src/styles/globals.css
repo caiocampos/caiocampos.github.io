@@ -29,3 +29,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.flag {
+  background-size: cover!important;
+  font-size: 1.5rem;
+}

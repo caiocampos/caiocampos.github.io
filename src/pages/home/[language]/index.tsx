@@ -20,7 +20,9 @@ import {
   getLanguageDisclaimer,
   getRepositoriesTranslation,
   getTermTranslation,
+  isLanguagePT,
   Language,
+  LanguageEnum,
   languages,
   locales,
   PageParams,
@@ -51,12 +53,12 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
     let language = context.params?.language as Language;
     const hasLanguage = languages.includes(language);
     if (!hasLanguage) {
-      language = "pt";
+      language = LanguageEnum.Portuguese;
     }
     const termTranslation: TermTranslation = await getTermTranslation(language);
     const repositoriesBruteData: MinimalRepository[] = (
       await getRepositoriesTranslation(
-        await GithubServices.getAllUserRepos(configguration.user_login),
+        await GithubServices.getCachedAllUserRepos(configguration.user_login),
         language
       )
     ).sort(repositoryComparison);
@@ -89,21 +91,21 @@ export default function HomePage({
       </Head>
       <div className="relative w-full p-4">
         <div
-          className="absolute left-2 top-2"
+          className="absolute left-3 top-4 mx-1"
           title={getLanguageDisclaimer(language, termTranslation)}
         >
           <Flag language={language} />
         </div>
-        <div className="mt-6 lg:mt-0">
+        <div className="mt-10 lg:mt-0">
           <Search onSearch={onSearch} termTranslation={termTranslation} />
         </div>
-        <div className="absolute right-2 top-2">
+        <div className="absolute right-3 top-4">
           {languages
             .filter((l) => l !== language)
             .map((l) => (
               <Link
                 key={l}
-                className="mx-2"
+                className="mx-1"
                 href={`/home/${l}`}
                 title={getLanguageDisclaimer(l, termTranslation)}
               >
@@ -123,7 +125,11 @@ export default function HomePage({
             />
           ))}
       </div>
-      <Footer />
+      <Footer
+        disclaimer={
+          isLanguagePT(language) ? null : termTranslation.autotranslated
+        }
+      />
     </div>
   );
 }

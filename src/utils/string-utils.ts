@@ -1,6 +1,9 @@
+export const regexDot = /([.:])\s+/g;
+export const regexLink = /(http[s]?:\/\/[.a-z0-9@/-]+)/gi;
+export const regexSpecial = /([\-;,.:\(\)\/\\@\'\"]|\s)+/g;
+export const regexSpaces = /\s/g;
+
 export const splitString = (text: string): string[] => {
-  const regexSpecial = /([\-;,.:\(\)\/\\@\'\"]|\s)+/g;
-  const regexSpaces = /\s/g;
   return text
     .toLowerCase()
     .replace(regexSpecial, " ")

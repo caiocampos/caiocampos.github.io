@@ -3,20 +3,19 @@ import { RepositoryDataBase } from "@/intefaces/repository-data";
 import { LanguageBadge } from "./language-badge";
 import { languageDictionary } from "@/global";
 import {
-  FeedForkedIcon,
+  CodeSquareIcon,
   LinkExternalIcon,
   RepoForkedIcon,
   StarIcon,
 } from "@primer/octicons-react";
 import { TermTranslationAdapter } from "@/intefaces/translation";
+import { regexDot, regexLink } from "@/utils/string-utils";
 
 const getDescription = (description: string | null): JSX.Element => {
   if (description === null) {
     return <></>;
   }
   const notEmpty = (p: string) => p !== "";
-  const regexDot = /([.:])\s+/g;
-  const regexLink = /(http[s]?:\/\/[.a-z@/-]+)/gi;
   const elementList = description
     .split(regexDot)
     .filter(notEmpty)
@@ -34,7 +33,7 @@ const getDescription = (description: string | null): JSX.Element => {
       if (linkParts.length > 1) {
         const linkParsed = linkParts.filter(notEmpty).map((linkPart, j) => {
           const subKey = `${key}-${j}`;
-          if (regexLink.test(linkPart)) {
+          if (new RegExp(regexLink).test(linkPart)) {
             return (
               <a key={subKey} href={linkPart}>
                 {linkPart}
@@ -73,7 +72,7 @@ export const Card = ({
           </a>
         ) : null}
         <a href={html_url} title={termTranslation.source}>
-          <FeedForkedIcon size="medium" />
+          <CodeSquareIcon size="medium" />
         </a>
       </div>
       <div className="p-4 flex flex-col justify-between leading-normal h-full">

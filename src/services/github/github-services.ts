@@ -5,6 +5,8 @@ type RepoSortDirection = "asc" | "desc";
 type RepoType = "all" | "owner" | "member";
 
 export class GithubServices {
+  private static userRepos: Promise<MinimalRepository[]> | null = null;
+
   public static async getUser(userLogin: string): Promise<PublicUser> {
     const url = `https://api.github.com/users/${userLogin}`;
     const res: Response = await fetch(url);
@@ -59,5 +61,22 @@ export class GithubServices {
       )
     );
     return (await Promise.all(promises)).flatMap((result) => result);
+  }
+
+  public static async getCachedAllUserRepos(
+    userLogin: string,
+    sort: RepoSort = "updated",
+    direction?: RepoSortDirection,
+    type?: RepoType
+  ): Promise<MinimalRepository[]> {
+    if (GithubServices.userRepos === null) {
+      GithubServices.userRepos = GithubServices.getAllUserRepos(
+        userLogin,
+        sort,
+        direction,
+        type
+      );
+    }
+    return GithubServices.userRepos;
   }
 }
