@@ -3,7 +3,7 @@ import {
   LibretranslateResponse,
 } from "./libretranslate-dtos";
 
-const serverUrl = "http://localhost:5000";
+const serverUrl = `http://${process.env.ENV_VARIABLE ?? "localhost"}:5000`;
 
 export class LibretranslateServices {
   public static async translate(
