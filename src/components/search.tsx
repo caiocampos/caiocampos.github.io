@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { SearchIcon, XIcon } from "@primer/octicons-react";
+import { TermTranslationAdapter } from "@/intefaces/translation";
 
-interface SearchProps {
+interface SearchProps extends TermTranslationAdapter {
   onSearch(text: string): void;
 }
 
-export const Search = ({ onSearch }: SearchProps): JSX.Element => {
+export const Search = ({
+  onSearch,
+  termTranslation,
+}: SearchProps): JSX.Element => {
   const [text, setText] = useState("");
   return (
     <form
@@ -20,7 +24,7 @@ export const Search = ({ onSearch }: SearchProps): JSX.Element => {
           <input
             type="search"
             className="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 bg-slate-100/[.9] dark:bg-slate-900/[.9] dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-100 dark:focus:border-blue-500"
-            placeholder="Buscar por termo"
+            placeholder={termTranslation.search}
             onChange={(event) => setText(event.target.value)}
             value={text}
           />
@@ -40,7 +44,6 @@ export const Search = ({ onSearch }: SearchProps): JSX.Element => {
             onClick={() => onSearch(text)}
           >
             <SearchIcon size="small" />
-            <span className="sr-only">Search</span>
           </button>
         </div>
       </div>

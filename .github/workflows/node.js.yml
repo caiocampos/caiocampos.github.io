@@ -8,6 +8,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     strategy:
       matrix:
@@ -21,5 +22,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build --if-present
+    - name: Run translate service
+      run: |
+           npm run libretranslate
+           docker ps
+    - name: Build
+      run: |
+           export SERVER_URL=127.0.0.1
+           npm run build
+    - name: Stop translate service
+      run: npm run libretranslate-stop
     

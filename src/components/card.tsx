@@ -8,6 +8,7 @@ import {
   RepoForkedIcon,
   StarIcon,
 } from "@primer/octicons-react";
+import { TermTranslationAdapter } from "@/intefaces/translation";
 
 const getDescription = (description: string | null): JSX.Element => {
   if (description === null) {
@@ -49,6 +50,8 @@ const getDescription = (description: string | null): JSX.Element => {
   return <>{elementList}</>;
 };
 
+interface CardProps extends RepositoryDataBase, TermTranslationAdapter {}
+
 export const Card = ({
   name,
   html_url,
@@ -59,16 +62,17 @@ export const Card = ({
   fork,
   stargazers_count,
   forks_count,
-}: RepositoryDataBase): JSX.Element => {
+  termTranslation,
+}: CardProps): JSX.Element => {
   return (
     <div className="relative 2xl:w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full flex-auto border border-2 border-slate-400 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-600 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-700 bg-slate-100/[.9] dark:bg-slate-900/[.9] backdrop-blur-sm">
       <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
         {homepage ? (
-          <a href={homepage} className="mr-2" title="Página do projeto">
+          <a href={homepage} className="mr-2" title={termTranslation.page}>
             <LinkExternalIcon size="medium" />
           </a>
         ) : null}
-        <a href={html_url} title="Código fonte">
+        <a href={html_url} title={termTranslation.source}>
           <FeedForkedIcon size="medium" />
         </a>
       </div>
@@ -76,7 +80,11 @@ export const Card = ({
         <div className="mb-6">
           <div className="text-gray-900 dark:text-gray-100 font-bold text-xl mb-4 text-center">
             {name}
-            {archived ? " (arquivado)" : fork ? " (fork)" : null}
+            {archived
+              ? ` (${termTranslation.archived})`
+              : fork
+              ? " (fork)"
+              : null}
           </div>
           <p className="text-gray-700 dark:text-gray-300 text-base whitespace-pre-line">
             {getDescription(description)}
