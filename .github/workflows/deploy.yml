@@ -32,7 +32,7 @@ jobs:
       run: npm run libretranslate
     - name: Build
       run: |
-           export SERVER_URL=127.0.0.1
+           export SERVER_URL=libretranslate
            npm run build
     - name: Stop translate service
       run: npm run libretranslate-stop
