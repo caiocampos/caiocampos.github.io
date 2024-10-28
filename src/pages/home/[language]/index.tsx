@@ -21,7 +21,6 @@ import {
   getRepositoriesTranslation,
   getTermTranslation,
   Language,
-  languageName,
   languages,
   locales,
   PageParams,
@@ -29,7 +28,6 @@ import {
 import { TermTranslation } from "@/intefaces/translation";
 import { Flag } from "@/components/flag";
 import Link from "next/link";
-import { title } from "process";
 
 interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];
