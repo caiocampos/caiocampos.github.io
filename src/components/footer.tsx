@@ -8,7 +8,7 @@ interface FooterProps {
 export const Footer = ({ disclaimer }: FooterProps): JSX.Element => {
   return (
     <a href={`https://github.com/${configguration.user_login}`}>
-      <div className="sticy left-0 bottom-0 text-white bg-slate-900/[.9] w-full p-4 text-center border-t border-slate-600 backdrop-blur-sm">
+      <div className="fixed left-0 -bottom-2 p-4 pb-6 text-white bg-slate-900/[.9] w-full text-center border-t border-slate-600 backdrop-blur-sm">
         <div>
           <MarkGithubIcon size="medium" />
         </div>
