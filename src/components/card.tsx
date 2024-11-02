@@ -9,7 +9,7 @@ import {
   StarIcon,
 } from "@primer/octicons-react";
 import { TermTranslationAdapter } from "@/intefaces/translation";
-import { regexDot, regexLink } from "@/utils/string-utils";
+import { dots, regexDot, regexLink } from "@/utils/string-utils";
 
 const getDescription = (description: string | null): JSX.Element => {
   if (description === null) {
@@ -21,7 +21,7 @@ const getDescription = (description: string | null): JSX.Element => {
     .filter(notEmpty)
     .map((part, i) => {
       const key = `desc-part-${i}`;
-      if (part === "." || part === ":") {
+      if (dots.includes(part)) {
         return (
           <Fragment key={key}>
             {part}
