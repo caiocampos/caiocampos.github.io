@@ -1,4 +1,4 @@
-export const regexDot = /([.:])\s+/g;
+export const regexDot = /([.:;])\s+/g;
 export const regexLink = /(http[s]?:\/\/[.a-z0-9@/-]+)/gi;
 export const regexSpecial = /([\-;,.:\(\)\/\\@\'\"]|\s)+/g;
 export const regexSpaces = /\s/g;
