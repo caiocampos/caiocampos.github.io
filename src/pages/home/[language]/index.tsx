@@ -3,7 +3,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
 import { Card } from "@/components/card";
 import { RepositoryData } from "@/intefaces/repository-data";
-import { configguration } from "@/global";
+import { configuration } from "@/global";
 import { Footer } from "@/components/footer";
 import { GithubServices } from "@/services/github/github-services";
 import {
@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
     const termTranslation: TermTranslation = await getTermTranslation(language);
     const repositoriesBruteData: MinimalRepository[] = (
       await getRepositoriesTranslation(
-        await GithubServices.getCachedAllUserRepos(configguration.user_login),
+        await GithubServices.getCachedAllUserRepos(configuration.user_login),
         language
       )
     ).sort(repositoryComparison);
@@ -87,7 +87,7 @@ export default function HomePage({
     <div className="w-screen">
       <Head>
         <html lang={locales[language]} />
-        <title>{configguration.title}</title>
+        <title>{configuration.title}</title>
       </Head>
       <div className="relative w-full p-4">
         <div

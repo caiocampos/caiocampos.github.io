@@ -1,10 +1,18 @@
-import { ConfigurationData, LanguageData } from "./intefaces/config";
+import {
+  Configuration,
+  ConfigurationData,
+  LanguageData,
+} from "./intefaces/config";
 import Config from "./config.json";
 import { TermTranslation } from "./intefaces/translation";
 
-export const configguration: ConfigurationData = Config;
+const configurationData: ConfigurationData = Config;
 
-export const languageDictionary = configguration.languages.reduce(
+const { languages, ...rest } = configurationData;
+
+export const configuration: Configuration = rest;
+
+export const languageDictionary = languages.reduce(
   (accumulator, currentValue) => {
     accumulator[currentValue.name] = currentValue;
     return accumulator;
