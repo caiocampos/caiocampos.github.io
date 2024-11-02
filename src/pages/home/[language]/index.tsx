@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
     const termTranslation: TermTranslation = await getTermTranslation(language);
     const repositoriesBruteData: MinimalRepository[] = (
       await getRepositoriesTranslation(
-        await GithubServices.getCachedAllUserRepos(configuration.user_login),
+        await GithubServices.getCachedAllUserRepos(configuration.user_login, configuration.orgs_login),
         language
       )
     ).sort(repositoryComparison);
