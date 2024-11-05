@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { RepositoryDataBase } from "@/intefaces/repository-data";
 import { LanguageBadge } from "./language-badge";
-import { languageDictionary } from "@/global";
+import { configuration, languageDictionary } from "@/global";
 import {
   CodeSquareIcon,
   LinkExternalIcon,
@@ -51,6 +51,29 @@ const getDescription = (description: string | null): JSX.Element => {
 
 interface CardProps extends RepositoryDataBase, TermTranslationAdapter {}
 
+const cardClassNames = [
+  "relative",
+  "2xl:w-1/5",
+  "xl:w-1/4",
+  "lg:w-1/3",
+  "md:w-1/2",
+  "sm:w-full",
+  "flex-auto",
+  "border",
+  "border-2",
+  `border-${configuration.main_color}-400`,
+  `dark:border-${configuration.main_color}-800`,
+  `hover:border-${configuration.main_color}-200`,
+  `dark:hover:border-${configuration.main_color}-600`,
+  "rounded-lg",
+  "shadow-sm",
+  `shadow-${configuration.main_color}-400`,
+  `dark:shadow-${configuration.main_color}-700`,
+  `bg-${configuration.main_color}-100/[.9]`,
+  `dark:bg-${configuration.main_color}-900/[.9]`,
+  "backdrop-blur-sm",
+].join(" ");
+
 export const Card = ({
   name,
   html_url,
@@ -64,7 +87,7 @@ export const Card = ({
   termTranslation,
 }: CardProps): JSX.Element => {
   return (
-    <div className="relative 2xl:w-1/5 xl:w-1/4 lg:w-1/3 md:w-1/2 sm:w-full flex-auto border border-2 border-slate-400 dark:border-slate-800 hover:border-slate-200 dark:hover:border-slate-600 rounded-lg shadow-sm shadow-slate-400 dark:shadow-slate-700 bg-slate-100/[.9] dark:bg-slate-900/[.9] backdrop-blur-sm">
+    <div className={cardClassNames}>
       <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
         {homepage ? (
           <a href={homepage} className="mr-2" title={termTranslation.page}>
