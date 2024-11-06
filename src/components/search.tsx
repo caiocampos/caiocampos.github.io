@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import { SearchIcon, XIcon } from "@primer/octicons-react";
 import { TermTranslationAdapter } from "@/intefaces/translation";
 import { configuration } from "@/global";
@@ -59,17 +60,32 @@ const searchButtonClassNames = [
   `dark:active:bg-${configuration.search_color}-800`,
 ].join(" ");
 
+const searchKey = "s";
+
 export const Search = ({
   onSearch,
   termTranslation,
 }: SearchProps): JSX.Element => {
   const [text, setText] = useState("");
+  const router = useRouter();
+  useEffect(() => {
+    const query = router.query;
+    const searchValue =
+      typeof query[searchKey] === "string" ? query[searchKey] : "";
+    setText(searchValue);
+    onSearch(searchValue);
+  }, [router.query]);
+  const updateQuery = (value: string) => {
+    router.query[searchKey] = value;
+    router.push(router);
+  };
   return (
     <form
       className="max-w-md mx-auto"
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(text);
+        updateQuery(text);
       }}
     >
       <div className="flex">
@@ -87,6 +103,7 @@ export const Search = ({
             onClick={() => {
               setText("");
               onSearch("");
+              updateQuery("");
             }}
           >
             <XIcon size="small" />
@@ -94,7 +111,10 @@ export const Search = ({
           <button
             type="button"
             className={searchButtonClassNames}
-            onClick={() => onSearch(text)}
+            onClick={() => {
+              onSearch(text);
+              updateQuery(text);
+            }}
           >
             <SearchIcon size="small" />
           </button>
