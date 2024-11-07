@@ -21,4 +21,15 @@ export const termTranslationPT: TermTranslation = {
   search: "Buscar por termo",
   source: "Código fonte",
   autotranslated: "Traduzido automaticamente por inteligência artificial",
+  other: "Outras",
+  toggleTheme: "Mudar o tema",
+  light: "Claro",
+  dark: "Escuro",
+  system: "Tema do sistema",
+};
+
+export const termTranslationPTForTranslation: TermTranslation = {
+  ...termTranslationPT,
+  light: "Brilhante",
+  system: "Automático"
 };

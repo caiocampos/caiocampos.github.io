@@ -1,7 +1,8 @@
 import Head from "next/head";
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "next-themes";
 import "@/styles/globals.css";
 import "flag-icons/css/flag-icons.css";
-import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +13,14 @@ export default function App({ Component, pageProps }: AppProps) {
           content="width=device-width, initial-scale=1, minimum-scale=1"
         />
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        disableTransitionOnChange
+      >
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

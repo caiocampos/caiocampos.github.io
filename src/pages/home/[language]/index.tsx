@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
-import { Card } from "@/components/card";
+import { Card, RepositoryCard } from "@/components/card";
 import { RepositoryData } from "@/intefaces/repository-data";
 import { configuration } from "@/global";
 import { Footer } from "@/components/footer";
@@ -30,6 +30,8 @@ import {
 import { TermTranslation } from "@/intefaces/translation";
 import { Flag } from "@/components/flag";
 import Link from "next/link";
+import { LanguageChart } from "@/components/language-chart";
+import { ThemeSelector } from "@/components/theme-selector";
 
 interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];
@@ -83,9 +85,12 @@ export default function HomePage({
   termTranslation,
 }: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element {
   const [filter, setFilter] = useState<number[] | undefined>(undefined);
-  const onSearch = (text: string): void => {
-    setFilter(filterResult(text, wordDictionary));
-  };
+  const onSearch = useCallback(
+    (text: string): void => {
+      setFilter(filterResult(text, wordDictionary));
+    },
+    [wordDictionary]
+  );
   return (
     <div className="w-screen">
       <Head>
@@ -93,11 +98,11 @@ export default function HomePage({
         <title>{configuration.title}</title>
       </Head>
       <div className="relative w-full p-4">
-        <div
-          className="absolute left-3 top-4 mx-1"
-          title={getLanguageDisclaimer(language, termTranslation)}
-        >
-          <Flag language={language} />
+        <div className="absolute left-3 top-4 mx-1">
+        <ThemeSelector termTranslation={termTranslation} />
+          <span className="ml-2" title={getLanguageDisclaimer(language, termTranslation)}>
+            <Flag language={language} />
+          </span>
         </div>
         <div className="mt-10 lg:mt-0">
           <Search onSearch={onSearch} termTranslation={termTranslation} />
@@ -117,11 +122,19 @@ export default function HomePage({
             ))}
         </div>
       </div>
+      <div className="w-full flex justify-center p-4">
+        <Card className="flex-none">
+          <LanguageChart
+            repositories={repositories}
+            termTranslation={termTranslation}
+          />
+        </Card>
+      </div>
       <div className="w-full flex flex-wrap gap-4 items-stretch p-4 pb-24">
         {repositories
           .filter(({ id }) => filter === undefined || filter.includes(id))
           .map((repository) => (
-            <Card
+            <RepositoryCard
               key={`repo-card-${repository.id}`}
               {...repository}
               termTranslation={termTranslation}

@@ -1,4 +1,4 @@
-import { termTranslationPT } from "@/global";
+import { termTranslationPT, termTranslationPTForTranslation } from "@/global";
 import { TermTranslation } from "@/intefaces/translation";
 import { MinimalRepository } from "@/services/github/github-dtos";
 import { LibretranslateServices } from "@/services/libretranslate/libretranslate-services";
@@ -77,40 +77,50 @@ export const getTermTranslation = async (
   if (isLanguagePT(language)) {
     return termTranslationPT;
   }
-  const archivedPromise = LibretranslateServices.translate(
-    termTranslationPT.archived,
-    PT,
-    language
-  );
-  const pagePromise = LibretranslateServices.translate(
-    termTranslationPT.page,
-    PT,
-    language
-  );
-  const searchPromise = LibretranslateServices.translate(
-    termTranslationPT.search,
-    PT,
-    language
-  );
-  const sourcePromise = LibretranslateServices.translate(
-    termTranslationPT.source,
-    PT,
-    language
-  );
-  const autotranslatedPromise = LibretranslateServices.translate(
-    termTranslationPT.autotranslated,
-    PT,
-    language
+  const keys: (keyof TermTranslation)[] = [
+    "archived",
+    "page",
+    "search",
+    "source",
+    "autotranslated",
+    "other",
+    "toggleTheme",
+    "light",
+    "dark",
+    "system",
+  ];
+  const promises = keys.map((key) =>
+    LibretranslateServices.translate(
+      termTranslationPTForTranslation[key],
+      PT,
+      language
+    )
   );
 
-  const [archived, page, search, source, autotranslated] = await Promise.all([
-    archivedPromise,
-    pagePromise,
-    searchPromise,
-    sourcePromise,
-    autotranslatedPromise,
-  ]);
-  return { archived, page, search, source, autotranslated };
+  const [
+    archived,
+    page,
+    search,
+    source,
+    autotranslated,
+    other,
+    toggleTheme,
+    light,
+    dark,
+    system,
+  ] = await Promise.all(promises);
+  return {
+    archived,
+    page,
+    search,
+    source,
+    autotranslated,
+    other,
+    toggleTheme,
+    light,
+    dark,
+    system,
+  };
 };
 
 export const getRepositoryTranslation = async (

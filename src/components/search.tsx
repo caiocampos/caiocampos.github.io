@@ -68,24 +68,24 @@ export const Search = ({
 }: SearchProps): JSX.Element => {
   const [text, setText] = useState("");
   const router = useRouter();
+  const search = (value: string): void => {
+    onSearch(value);
+    router.query[searchKey] = value;
+    router.push(router);
+  };
   useEffect(() => {
     const query = router.query;
     const searchValue =
       typeof query[searchKey] === "string" ? query[searchKey] : "";
     setText(searchValue);
     onSearch(searchValue);
-  }, [router.query]);
-  const updateQuery = (value: string) => {
-    router.query[searchKey] = value;
-    router.push(router);
-  };
+  }, [router.query, onSearch]);
   return (
     <form
       className="max-w-md mx-auto"
       onSubmit={(e) => {
         e.preventDefault();
-        onSearch(text);
-        updateQuery(text);
+        search(text);
       }}
     >
       <div className="flex">
@@ -102,8 +102,7 @@ export const Search = ({
             className={searchClearButtonClassNames}
             onClick={() => {
               setText("");
-              onSearch("");
-              updateQuery("");
+              search("");
             }}
           >
             <XIcon size="small" />
@@ -112,8 +111,7 @@ export const Search = ({
             type="button"
             className={searchButtonClassNames}
             onClick={() => {
-              onSearch(text);
-              updateQuery(text);
+              search(text);
             }}
           >
             <SearchIcon size="small" />

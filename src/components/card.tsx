@@ -75,6 +75,18 @@ const cardClassNames = [
 ].join(" ");
 
 export const Card = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <div className={`${className ? className + " " : ""}${cardClassNames}`}>
+    {children}
+  </div>
+);
+
+export const RepositoryCard = ({
   name,
   html_url,
   description,
@@ -87,7 +99,7 @@ export const Card = ({
   termTranslation,
 }: CardProps): JSX.Element => {
   return (
-    <div className={cardClassNames}>
+    <Card>
       <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
         {homepage ? (
           <a href={homepage} className="mr-2" title={termTranslation.page}>
@@ -134,6 +146,6 @@ export const Card = ({
           </div>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };

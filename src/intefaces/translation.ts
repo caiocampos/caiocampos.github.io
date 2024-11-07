@@ -3,7 +3,12 @@ export interface TermTranslation {
   page: string;
   search: string;
   source: string;
-  autotranslated: string
+  autotranslated: string;
+  other: string;
+  toggleTheme: string;
+  light: string;
+  dark: string;
+  system: string;
 }
 
 export interface TermTranslationAdapter {
