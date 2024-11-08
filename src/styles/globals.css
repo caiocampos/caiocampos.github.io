@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --background: #64748b;
-  --foreground: #171717;
+  --tw-background: #64748b;
+  --tw-foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #64748b;
-    --foreground: #ededed;
+    --tw-background: #64748b;
+    --tw-foreground: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--tw-foreground);
+  background: var(--tw-background);
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(https://picsum.photos/1280/720.webp?grayscale&blur=3);
   background-size: cover;
@@ -31,7 +31,7 @@ body {
 }
 
 .flag {
-  background-size: cover!important;
+  background-size: cover !important;
   font-size: 1.5rem;
 }
 
