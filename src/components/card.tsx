@@ -2,14 +2,10 @@ import { Fragment } from "react";
 import { RepositoryDataBase } from "@/intefaces/repository-data";
 import { LanguageBadge } from "./language-badge";
 import { configuration, languageDictionary } from "@/global";
-import {
-  CodeSquareIcon,
-  LinkExternalIcon,
-  RepoForkedIcon,
-  StarIcon,
-} from "@primer/octicons-react";
+import { ExternalLink, GitFork, SquareCode, Star } from "lucide-react";
 import { TermTranslationAdapter } from "@/intefaces/translation";
 import { dots, regexDot, regexLink } from "@/utils/string-utils";
+import { cn } from "@/lib/utils";
 
 const getDescription = (description: string | null): JSX.Element => {
   if (description === null) {
@@ -72,7 +68,7 @@ const cardClassNames = [
   `bg-${configuration.main_color}-100/[.9]`,
   `dark:bg-${configuration.main_color}-900/[.9]`,
   "backdrop-blur-sm",
-].join(" ");
+];
 
 export const Card = ({
   children,
@@ -80,11 +76,7 @@ export const Card = ({
 }: {
   children: React.ReactNode;
   className?: string;
-}) => (
-  <div className={`${className ? className + " " : ""}${cardClassNames}`}>
-    {children}
-  </div>
-);
+}) => <div className={cn([...cardClassNames, className])}>{children}</div>;
 
 export const RepositoryCard = ({
   name,
@@ -100,14 +92,14 @@ export const RepositoryCard = ({
 }: CardProps): JSX.Element => {
   return (
     <Card>
-      <div className="absolute text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
+      <div className="absolute inline-flex text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
         {homepage ? (
           <a href={homepage} className="mr-2" title={termTranslation.page}>
-            <LinkExternalIcon size="medium" />
+            <ExternalLink size={32} strokeWidth={1} />
           </a>
         ) : null}
         <a href={html_url} title={termTranslation.source}>
-          <CodeSquareIcon size="medium" />
+          <SquareCode size={32} strokeWidth={1} />
         </a>
       </div>
       <div className="p-4 flex flex-col justify-between leading-normal h-full">
@@ -136,11 +128,11 @@ export const RepositoryCard = ({
           </div>
           <div className="flex justify-center">
             <div className="m-2 inline-flex">
-              <StarIcon className="p-1" size={26} />
+              <Star className="p-1" size={26} />
               <span>{stargazers_count}</span>
             </div>
             <div className="m-2 inline-flex">
-              <RepoForkedIcon className="p-1" size={26} />
+              <GitFork className="p-1" size={26} />
               <span>{forks_count}</span>
             </div>
           </div>

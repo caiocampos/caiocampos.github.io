@@ -1,5 +1,6 @@
 import { configuration } from "@/global";
-import { LogoGithubIcon, MarkGithubIcon } from "@primer/octicons-react";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface FooterProps {
   disclaimer: string | null;
@@ -18,16 +19,26 @@ const footerClassNames = [
   "border-t",
   `border-${configuration.main_color}-600`,
   "backdrop-blur-sm",
-].join(" ");
+];
 
 export const Footer = ({ disclaimer }: FooterProps): JSX.Element => (
   <a href={`https://github.com/${configuration.user_login}`}>
-    <div className={footerClassNames}>
-      <div>
-        <MarkGithubIcon size="medium" />
+    <div className={cn(footerClassNames)}>
+      <div className="flex justify-center text-white">
+        <Image
+          src="/assets/octicons/mark-github.svg"
+          width={48}
+          height={48}
+          alt="GitHub Mark"
+        />
       </div>
-      <div>
-        <LogoGithubIcon size="small" />
+      <div className="flex justify-center text-white">
+        <Image
+          width={68}
+          height={24}
+          src="/assets/octicons/logo-github.svg"
+          alt="GitHub Logo"
+        />
       </div>
       <div className="absolute flex items-center h-full align-middle right-0 top-0">
         <div className="max-w-32 p-2 sm:max-w-52 text-white text-sm sm:text-base">

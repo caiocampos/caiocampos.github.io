@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { SearchIcon, XIcon } from "@primer/octicons-react";
 import { TermTranslationAdapter } from "@/intefaces/translation";
 import { configuration } from "@/global";
+import { cn } from "@/lib/utils";
+import { X, Search } from "lucide-react";
 
 interface SearchProps extends TermTranslationAdapter {
   onSearch(text: string): void;
@@ -25,7 +26,7 @@ const searchInputClassNames = [
   "dark:placeholder-gray-400",
   "dark:text-gray-100",
   "dark:focus:border-blue-500",
-].join(" ");
+];
 
 const searchClearButtonClassNames = [
   "absolute",
@@ -38,7 +39,7 @@ const searchClearButtonClassNames = [
   "pe-3",
   "text-gray-400",
   "dark:text-gray-400",
-].join(" ");
+];
 
 const searchButtonClassNames = [
   "absolute",
@@ -58,11 +59,11 @@ const searchButtonClassNames = [
   `dark:hover:bg-${configuration.search_color}-700`,
   `active:bg-${configuration.search_color}-900`,
   `dark:active:bg-${configuration.search_color}-800`,
-].join(" ");
+];
 
 const searchKey = "s";
 
-export const Search = ({
+export const SearchInput = ({
   onSearch,
   termTranslation,
 }: SearchProps): JSX.Element => {
@@ -92,29 +93,29 @@ export const Search = ({
         <div className="relative w-full">
           <input
             type="search"
-            className={searchInputClassNames}
+            className={cn(searchInputClassNames)}
             placeholder={termTranslation.search}
             onChange={(event) => setText(event.target.value)}
             value={text}
           />
           <button
             type="button"
-            className={searchClearButtonClassNames}
+            className={cn(searchClearButtonClassNames)}
             onClick={() => {
               setText("");
               search("");
             }}
           >
-            <XIcon size="small" />
+            <X size={16} />
           </button>
           <button
             type="button"
-            className={searchButtonClassNames}
+            className={cn(searchButtonClassNames)}
             onClick={() => {
               search(text);
             }}
           >
-            <SearchIcon size="small" />
+            <Search size={16} />
           </button>
         </div>
       </div>

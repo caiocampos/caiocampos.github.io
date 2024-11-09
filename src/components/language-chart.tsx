@@ -135,7 +135,7 @@ export const LanguageChart = ({
       <PieChart>
         <ChartTooltip
           cursor={false}
-          content={<ChartTooltipContent hideLabel className="fill-gray-100" />}
+          content={<ChartTooltipContent hideLabel />}
         />
         <Pie
           data={chartData}

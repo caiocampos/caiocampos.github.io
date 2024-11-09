@@ -12,7 +12,7 @@ import {
   repositoryComparison,
   RepositoryWordDictionary,
 } from "@/utils/repository-utils";
-import { Search } from "@/components/search";
+import { SearchInput } from "@/components/search";
 import { filterResult } from "@/utils/search-utils";
 import { MinimalRepository } from "@/services/github/github-dtos";
 import {
@@ -99,13 +99,16 @@ export default function HomePage({
       </Head>
       <div className="relative w-full p-4">
         <div className="absolute left-3 top-4 mx-1">
-        <ThemeSelector termTranslation={termTranslation} />
-          <span className="ml-2" title={getLanguageDisclaimer(language, termTranslation)}>
+          <ThemeSelector termTranslation={termTranslation} />
+          <span
+            className="ml-2"
+            title={getLanguageDisclaimer(language, termTranslation)}
+          >
             <Flag language={language} />
           </span>
         </div>
         <div className="mt-10 lg:mt-0">
-          <Search onSearch={onSearch} termTranslation={termTranslation} />
+          <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
         </div>
         <div className="absolute right-3 top-4">
           {languages
@@ -122,14 +125,16 @@ export default function HomePage({
             ))}
         </div>
       </div>
-      <div className="w-full flex justify-center p-4">
-        <Card className="flex-none">
-          <LanguageChart
-            repositories={repositories}
-            termTranslation={termTranslation}
-          />
-        </Card>
-      </div>
+      {filter === undefined ? (
+        <div className="w-full flex justify-center p-4">
+          <Card className="flex-none">
+            <LanguageChart
+              repositories={repositories}
+              termTranslation={termTranslation}
+            />
+          </Card>
+        </div>
+      ) : null}
       <div className="w-full flex flex-wrap gap-4 items-stretch p-4 pb-24">
         {repositories
           .filter(({ id }) => filter === undefined || filter.includes(id))

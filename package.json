@@ -11,20 +11,19 @@
     "libretranslate-stop": "docker compose --file libretranslate-docker-compose.yml down"
   },
   "dependencies": {
-    "@primer/octicons-react": "^19.12.0",
-    "@radix-ui/react-dropdown-menu": "^2.1.2",
-    "@radix-ui/react-slot": "^1.1.0",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
+    "@radix-ui/react-dropdown-menu": "^2.1",
+    "@radix-ui/react-slot": "^1.1",
+    "class-variance-authority": "^0.7",
+    "clsx": "^2.1",
     "flag-icons": "^7.2.3",
-    "lucide-react": "^0.454.0",
-    "next": "15.0.2",
-    "next-themes": "0.4.3",
+    "lucide-react": "^0.456",
+    "next": "15.0",
+    "next-themes": "0.4",
     "react": "^18.3",
     "react-dom": "^18.3",
     "recharts": "^2.13.3",
-    "tailwind-merge": "^2.5.4",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwind-merge": "^2.5",
+    "tailwindcss-animate": "^1.0"
   },
   "devDependencies": {
     "@types/node": "^22.9",
