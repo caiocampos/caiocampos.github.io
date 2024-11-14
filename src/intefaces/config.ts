@@ -6,6 +6,7 @@ export interface Configuration {
   orgs_login?: string[] | null;
   main_color: string;
   search_color: string;
+  min_language_count?: number;
 }
 
 export interface LanguageData {

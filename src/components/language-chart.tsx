@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { LabelList, Pie, PieChart } from "recharts";
 import {
   ChartConfig,
@@ -13,7 +14,8 @@ import {
   TermTranslation,
   TermTranslationAdapter,
 } from "@/intefaces/translation";
-import { useMemo } from "react";
+import { cn } from "@/lib/utils";
+import { configuration } from "@/global";
 
 interface LanguageChartProps extends TermTranslationAdapter {
   repositories: RepositoryData[];
@@ -50,6 +52,16 @@ const getChartData = (
     countData[key] = countValue;
   });
   const languageData = Object.entries(countData)
+    .filter(([key, value]) => {
+      const min = configuration.min_language_count ?? 1;
+      if (min > 1 && value < min && key !== NL) {
+        const countValue =
+          countData[NL] !== undefined ? countData[NL] + value : value;
+        countData[NL] = countValue;
+        return false;
+      }
+      return true;
+    })
     .map(([key, value]): ChartData => {
       const languageKey = key.replace(regexSpecial, "-").toLowerCase();
       return {
@@ -70,11 +82,11 @@ const getChartData = (
     });
   let begin: ChartData[] = [];
   let rest: ChartData[] = [];
-  if (languageData.length >= 5) {
-    if (languageData.length === 5 && countData[NL] === undefined) {
+  if (languageData.length >= 9) {
+    if (languageData.length === 9 && countData[NL] === undefined) {
       begin = languageData;
     } else {
-      begin = languageData.splice(0, 4);
+      begin = languageData.splice(0, 8);
       rest = languageData;
     }
   } else if (languageData.length <= 1) {
@@ -115,6 +127,27 @@ const getChartConfig = (chartData: ChartData[]) => {
   return config;
 };
 
+const languageChartClassNames = [
+  "mx-auto",
+  "aspect-square",
+  "max-h-[300]",
+  "min-w-80",
+];
+
+const languageChartLegendClassNames = [
+  "-translate-y-2",
+  "flex-wrap",
+  "gap-2",
+  "text-gray-900",
+  "dark:text-gray-100",
+  "[&>*]:basis-1/4",
+  "[&>*]:justify-center",
+  "[&>div>*]:rounded",
+  "[&>div>*]:border",
+  "[&>div>*]:border-gray-900/[.5]",
+  "[&>div>*]:dark:border-gray-100/[.5]",
+];
+
 export const LanguageChart = ({
   repositories,
   termTranslation,
@@ -130,7 +163,7 @@ export const LanguageChart = ({
   return (
     <ChartContainer
       config={chartConfig}
-      className="mx-auto aspect-square max-h-[250px] min-w-80"
+      className={cn(languageChartClassNames)}
     >
       <PieChart>
         <ChartTooltip
@@ -141,18 +174,20 @@ export const LanguageChart = ({
           data={chartData}
           dataKey="count"
           nameKey="languageKey"
-          innerRadius={30}
+          innerRadius={32}
+          outerRadius={96}
+          stroke="rgba(255,255,255,0.5)"
         >
           <LabelList
             dataKey="count"
             className="fill-gray-100 font-bold"
             stroke="1"
-            fontSize={12}
+            fontSize={14}
           />
         </Pie>
         <ChartLegend
           content={<ChartLegendContent nameKey="languageKey" />}
-          className="-translate-y-2 flex-wrap gap-2 [&>*]:basis-1/4 [&>*]:justify-center text-gray-900 dark:text-gray-100"
+          className={cn(languageChartLegendClassNames)}
         />
       </PieChart>
     </ChartContainer>
