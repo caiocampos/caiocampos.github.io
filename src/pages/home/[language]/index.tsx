@@ -135,7 +135,7 @@ export default function HomePage({
           </Card>
         </div>
       ) : null}
-      <div className="w-full flex flex-wrap gap-4 items-stretch p-4 pb-24">
+      <div className="w-full flex flex-wrap gap-4 items-stretch p-4 pb-32">
         {repositories
           .filter(({ id }) => filter === undefined || filter.includes(id))
           .map((repository) => (
