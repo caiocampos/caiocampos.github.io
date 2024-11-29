@@ -51,13 +51,12 @@ const getChartData = (
     const countValue = countData[key] !== undefined ? countData[key] + 1 : 1;
     countData[key] = countValue;
   });
+  let nlCount = countData[NL] ?? 0;
   const languageData = Object.entries(countData)
     .filter(([key, value]) => {
       const min = configuration.min_language_count ?? 1;
       if (min > 1 && value < min && key !== NL) {
-        const countValue =
-          countData[NL] !== undefined ? countData[NL] + value : value;
-        countData[NL] = countValue;
+        nlCount = nlCount + value;
         return false;
       }
       return true;
@@ -83,20 +82,20 @@ const getChartData = (
   let begin: ChartData[] = [];
   let rest: ChartData[] = [];
   if (languageData.length >= 9) {
-    if (languageData.length === 9 && countData[NL] === undefined) {
+    if (languageData.length === 9 && nlCount === 0) {
       begin = languageData;
     } else {
       begin = languageData.splice(0, 8);
       rest = languageData;
     }
   } else if (languageData.length <= 1) {
-    if (countData[NL] === undefined) {
+    if (nlCount === 0) {
       begin = languageData;
     } else {
       rest = languageData;
     }
   } else {
-    if (countData[NL] === undefined) {
+    if (nlCount === 0) {
       begin = languageData;
     } else {
       begin = languageData.splice(0, languageData.length - 1);
@@ -112,7 +111,10 @@ const getChartData = (
     count: 0,
     fill: "var(--color-other)",
   };
-  rest.forEach(({ count }) => (others.count += count));
+  rest.forEach(
+    ({ languageKey, count }) =>
+      (others.count += languageKey === NL ? nlCount : count)
+  );
   return [...begin, others];
 };
 
