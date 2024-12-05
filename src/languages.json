@@ -16,7 +16,7 @@
   },
   {
     "name": "CSS",
-    "image": "https://img.shields.io/badge/CSS3-1572B6?&style=for-the-badge&logo=css3&logoColor=white",
+    "image": "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
     "link": "https://w3.org/TR/CSS/#css"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "name": "Go",
-    "image": "https://img.shields.io/badge/GOLANG-007D9C?&style=for-the-badge&logo=go&logoColor=white",
+    "image": "https://img.shields.io/badge/GOLANG-007D9C?style=for-the-badge&logo=go&logoColor=white",
     "link": "https://golang.org/"
   },
   {
@@ -36,12 +36,12 @@
   },
   {
     "name": "HTML",
-    "image": "https://img.shields.io/badge/HTML5-E34F26?&style=for-the-badge&logo=html5&logoColor=white",
+    "image": "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
     "link": "https://whatwg.org/"
   },
   {
     "name": "Java",
-    "image": "https://img.shields.io/badge/JAVA-007396?&style=for-the-badge&logo=openjdk&logoColor=white",
+    "image": "https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=openjdk&logoColor=white",
     "link": "https://www.oracle.com/java/"
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "name": "Python",
-    "image": "https://img.shields.io/badge/PYTHON-1E415E?&style=for-the-badge&logo=python&logoColor=FFE56B",
+    "image": "https://img.shields.io/badge/PYTHON-1E415E?style=for-the-badge&logo=python&logoColor=FFE56B",
     "link": "https://www.python.org/"
   },
   {
