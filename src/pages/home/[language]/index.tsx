@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { JSX, useCallback, useState } from "react";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import Head from "next/head";
 import { Card, RepositoryCard } from "@/components/card";

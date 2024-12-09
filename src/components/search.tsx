@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, JSX } from "react";
 import { useRouter } from "next/router";
 import { TermTranslationAdapter } from "@/intefaces/translation";
 import { configuration } from "@/global";

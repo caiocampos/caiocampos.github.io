@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import { LanguageData } from "@/intefaces/config";
 
 export const LanguageBadge = (language: LanguageData): JSX.Element => {

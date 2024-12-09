@@ -1,3 +1,4 @@
+import { JSX } from "react";
 import { configuration } from "@/global";
 import { cn } from "@/lib/utils";
 import Image from "next/image";

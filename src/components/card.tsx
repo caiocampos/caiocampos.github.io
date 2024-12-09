@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, JSX } from "react";
 import { RepositoryDataBase } from "@/intefaces/repository-data";
 import { LanguageBadge } from "./language-badge";
 import { configuration, languageDictionary } from "@/global";
