@@ -32,7 +32,7 @@
     "eslint": "^9.18",
     "eslint-config-next": "^15.1",
     "mini-css-extract-plugin": "^2.9",
-    "postcss": "^8.4",
+    "postcss": "^8.5",
     "tailwindcss": "^3.4",
     "typescript": "^5.7"
   }
