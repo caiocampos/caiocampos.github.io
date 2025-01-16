@@ -1781,10 +1781,10 @@ find-up@^5.0.0:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
 
-flag-icons@^7.2.3:
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-7.2.3.tgz#b67f379fa0ef28c4e605319a78035131bdd8ced7"
-  integrity sha512-X2gUdteNuqdNqob2KKTJTS+ZCvyWeLCtDz9Ty8uJP17Y4o82Y+U/Vd4JNrdwTAjagYsRznOn9DZ+E/Q52qbmqg==
+flag-icons@^7.2.4:
+  version "7.2.4"
+  resolved "https://registry.yarnpkg.com/flag-icons/-/flag-icons-7.2.4.tgz#3f119da9cb073d99a06a8868b93ddbcf5bf569c9"
+  integrity sha512-3EAM4nLzKf0R3qsCDV0K2tvN8UQDz5235V/JETeP6qZ7482CQXI1YcDHMhUVrhw3M7gzki8kLNiUldeEXUlI2g==
 
 flat-cache@^4.0.0:
   version "4.0.1"
