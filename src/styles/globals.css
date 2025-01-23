@@ -1,38 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-:root {
-  --tw-background: #64748b;
-  --tw-foreground: #171717;
-}
+@source "./classes.txt";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --tw-background: #64748b;
-    --tw-foreground: #ededed;
+@config '../../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
   }
 }
 
-body {
-  color: var(--tw-foreground);
-  background: var(--tw-background);
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url(https://picsum.photos/1280/720.webp?grayscale&blur=3);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+@utility text-balance {
+  text-wrap: balance;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  :root {
+    --tw-background: #64748b;
+    --tw-foreground: #171717;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tw-background: #64748b;
+      --tw-foreground: #ededed;
+    }
+  }
+
+  body {
+    color: var(--tw-foreground);
+    background: var(--tw-background);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://picsum.photos/1280/720.webp?grayscale&blur=3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
-.flag {
-  background-size: cover !important;
-  font-size: 1.5rem;
+@layer utilities {
+  .flag {
+    background-size: cover !important;
+    font-size: 1.5rem;
+  }
 }
 
 @layer base {

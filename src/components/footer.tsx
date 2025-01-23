@@ -19,7 +19,7 @@ const footerClassNames = [
   "text-center",
   "border-t",
   `border-${configuration.main_color}-600`,
-  "backdrop-blur-sm",
+  "backdrop-blur-xs",
 ];
 
 export const Footer = ({ disclaimer }: FooterProps): JSX.Element => (

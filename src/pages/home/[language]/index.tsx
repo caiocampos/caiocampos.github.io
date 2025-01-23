@@ -37,13 +37,16 @@ interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];
   wordDictionary: RepositoryWordDictionary;
   language: Language;
+  languageList: Language[];
   termTranslation: TermTranslation;
 }
 
 export const getStaticPaths = (() => {
-  const pathsWithParams = generateParams().map(({ language }: PageParams) => ({
-    params: { language },
-  }));
+  const pathsWithParams = generateParams(languages).map(
+    ({ language }: PageParams) => ({
+      params: { language },
+    })
+  );
   return {
     paths: pathsWithParams,
     fallback: false,
@@ -74,7 +77,13 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
       termTranslation
     );
     return {
-      props: { repositories, wordDictionary, language, termTranslation },
+      props: {
+        repositories,
+        wordDictionary,
+        language,
+        termTranslation,
+        languageList: languages,
+      },
     };
   }) satisfies GetStaticProps<RepositoriesGetStaticProps>;
 
@@ -82,6 +91,7 @@ export default function HomePage({
   repositories,
   wordDictionary,
   language,
+  languageList,
   termTranslation,
 }: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element {
   const [filter, setFilter] = useState<number[] | undefined>(undefined);
@@ -111,7 +121,7 @@ export default function HomePage({
           <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
         </div>
         <div className="absolute right-3 top-4">
-          {languages
+          {languageList
             .filter((l) => l !== language)
             .map((l) => (
               <Link

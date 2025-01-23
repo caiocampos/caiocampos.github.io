@@ -6,7 +6,10 @@ import { regexLink } from "./string-utils";
 
 export type Language = "pt" | "en" | "es" | "it" | "fr" | "de";
 
-export const languages: Language[] = ["pt", "en", "es", "it", "fr", "de"];
+export const languages: Language[] =
+  process.env.FULL_BUILD === "true"
+    ? ["pt", "en", "es", "it", "fr", "de"]
+    : ["pt"];
 
 export enum LanguageEnum {
   Portuguese = "pt",
@@ -66,8 +69,8 @@ export interface PageProps {
   params: PageParams;
 }
 
-export const generateParams = (): PageParams[] =>
-  languages.map((language) => ({
+export const generateParams = (langs: Language[]): PageParams[] =>
+  langs.map((language) => ({
     language,
   }));
 

@@ -1,0 +1,17 @@
+border-slate-400
+dark:border-slate-800
+hover:border-slate-200
+dark:hover:border-slate-600
+shadow-slate-400
+dark:shadow-slate-700
+bg-slate-100/[.9]
+dark:bg-slate-900/[.9]
+bg-slate-900/[.9]
+border-slate-600
+border-sky-700
+bg-sky-700
+hover:bg-sky-800
+dark:bg-sky-600
+dark:hover:bg-sky-700
+active:bg-sky-900
+dark:active:bg-sky-800

@@ -132,7 +132,7 @@ const getChartConfig = (chartData: ChartData[]) => {
 const languageChartClassNames = [
   "mx-auto",
   "aspect-square",
-  "max-h-[300]",
+  "max-h-300",
   "min-w-80",
 ];
 
@@ -142,12 +142,12 @@ const languageChartLegendClassNames = [
   "gap-2",
   "text-gray-900",
   "dark:text-gray-100",
-  "[&>*]:basis-1/4",
-  "[&>*]:justify-center",
+  "*:basis-1/4",
+  "*:justify-center",
   "[&>div>*]:rounded",
   "[&>div>*]:border",
   "[&>div>*]:border-gray-900/[.5]",
-  "[&>div>*]:dark:border-gray-100/[.5]",
+  "dark:[&>div>*]:border-gray-100/[.5]",
 ];
 
 export const LanguageChart = ({

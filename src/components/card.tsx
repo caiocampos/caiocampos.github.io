@@ -62,12 +62,12 @@ const cardClassNames = [
   `hover:border-${configuration.main_color}-200`,
   `dark:hover:border-${configuration.main_color}-600`,
   "rounded-lg",
-  "shadow-sm",
+  "shadow-xs",
   `shadow-${configuration.main_color}-400`,
   `dark:shadow-${configuration.main_color}-700`,
   `bg-${configuration.main_color}-100/[.9]`,
   `dark:bg-${configuration.main_color}-900/[.9]`,
-  "backdrop-blur-sm",
+  "backdrop-blur-xs",
 ];
 
 export const Card = ({
