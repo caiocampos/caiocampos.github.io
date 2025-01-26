@@ -60,20 +60,19 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
     if (!hasLanguage) {
       language = LanguageEnum.Portuguese;
     }
-    const termTranslation: TermTranslation = await getTermTranslation(language);
-    const repositoriesBruteData: MinimalRepository[] = (
-      await getRepositoriesTranslation(
-        await GithubServices.getCachedAllUserRepos(
-          configuration.user_login,
-          configuration.orgs_login
-        ),
-        language
-      )
+    const repositoriesBruteData: MinimalRepository[] =
+      await GithubServices.getCachedAllUserRepos(
+        configuration.user_login,
+        configuration.orgs_login
+      );
+    const repositoriesTranslatedData: MinimalRepository[] = (
+      await getRepositoriesTranslation(repositoriesBruteData, language)
     ).sort(repositoryComparison);
+    const termTranslation: TermTranslation = await getTermTranslation(language);
     const repositories: RepositoryData[] =
-      repositoriesBruteData.map(parseRepositoryData);
+      repositoriesTranslatedData.map(parseRepositoryData);
     const wordDictionary = createRepositoryWordDictionary(
-      repositoriesBruteData,
+      repositoriesTranslatedData,
       termTranslation
     );
     return {

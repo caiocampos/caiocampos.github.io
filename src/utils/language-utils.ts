@@ -74,56 +74,46 @@ export const generateParams = (langs: Language[]): PageParams[] =>
     language,
   }));
 
+const keys: (keyof TermTranslation)[] = [
+  "archived",
+  "page",
+  "search",
+  "source",
+  "autotranslated",
+  "other",
+  "toggleTheme",
+  "light",
+  "dark",
+  "system",
+];
+
+const defaultPageSize = 2;
+
 export const getTermTranslation = async (
-  language: Language
+  language: Language,
+  pageSize = defaultPageSize
 ): Promise<TermTranslation> => {
   if (isLanguagePT(language)) {
     return termTranslationPT;
   }
-  const keys: (keyof TermTranslation)[] = [
-    "archived",
-    "page",
-    "search",
-    "source",
-    "autotranslated",
-    "other",
-    "toggleTheme",
-    "light",
-    "dark",
-    "system",
-  ];
-  const promises = keys.map((key) =>
-    LibretranslateServices.translate(
-      termTranslationPTForTranslation[key],
-      PT,
-      language
-    )
-  );
-
-  const [
-    archived,
-    page,
-    search,
-    source,
-    autotranslated,
-    other,
-    toggleTheme,
-    light,
-    dark,
-    system,
-  ] = await Promise.all(promises);
-  return {
-    archived,
-    page,
-    search,
-    source,
-    autotranslated,
-    other,
-    toggleTheme,
-    light,
-    dark,
-    system,
-  };
+  const base = [...keys];
+  const out: TermTranslation = { ...termTranslationPT };
+  while (base.length > 0) {
+    const page = base.splice(0, pageSize);
+    const promises = page.map(async (key) => ({
+      key,
+      value: await LibretranslateServices.translate(
+        termTranslationPTForTranslation[key],
+        PT,
+        language
+      ),
+    }));
+    const translatedPage = await Promise.all(promises);
+    translatedPage.forEach(({ key, value }) => {
+      out[key] = value;
+    });
+  }
+  return out;
 };
 
 export const getRepositoryTranslation = async (
@@ -147,7 +137,7 @@ export const getRepositoryTranslation = async (
 export const getRepositoriesTranslation = async (
   repositories: MinimalRepository[],
   language: Language,
-  pageSize = 3
+  pageSize = defaultPageSize
 ): Promise<MinimalRepository[]> => {
   const base = [...repositories];
   if (isLanguagePT(language)) {
