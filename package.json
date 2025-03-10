@@ -35,7 +35,7 @@
     "@types/node": "^22.13",
     "@types/react": "^19.0",
     "@types/react-dom": "^19.0",
-    "eslint": "^9.21",
+    "eslint": "^9.22",
     "eslint-config-next": "^15.2",
     "mini-css-extract-plugin": "^2.9",
     "postcss": "^8.5",
