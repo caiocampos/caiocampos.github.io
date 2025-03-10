@@ -10,7 +10,7 @@ interface FooterProps {
 const footerClassNames = [
   "fixed",
   "left-0",
-  "-bottom-2",
+  "top-[calc(100dvh-6.5rem)]",
   "p-4",
   "pb-6",
   "text-white",

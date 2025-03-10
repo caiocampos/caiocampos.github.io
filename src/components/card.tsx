@@ -68,6 +68,7 @@ const cardClassNames = [
   `bg-${configuration.main_color}-100/[.9]`,
   `dark:bg-${configuration.main_color}-900/[.9]`,
   "backdrop-blur-xs",
+  "drop-shadow-md",
 ];
 
 export const Card = ({

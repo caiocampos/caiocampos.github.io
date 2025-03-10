@@ -37,16 +37,14 @@ const getChartData = (
   const countData: Record<string, number> = {};
   repositories.forEach((repository) => {
     let key = repository.language ?? NL;
-    switch (key) {
-      case "JavaScript":
-      case "TypeScript":
-        key = "JavaScript/TypeScript";
-        break;
-      case "C":
-      case "C++":
-        key = "C/C++";
-        break;
-      default:
+    if (
+      configuration.group_languages !== false &&
+      configuration.language_family_config !== undefined
+    ) {
+      const family = configuration.language_family_config[key];
+      if (family !== undefined) {
+        key = family;
+      }
     }
     const countValue = countData[key] !== undefined ? countData[key] + 1 : 1;
     countData[key] = countValue;
@@ -134,6 +132,7 @@ const languageChartClassNames = [
   "aspect-square",
   "max-h-300",
   "min-w-80",
+  "drop-shadow-md",
 ];
 
 const languageChartLegendClassNames = [

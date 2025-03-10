@@ -116,9 +116,6 @@ export default function HomePage({
             <Flag language={language} />
           </span>
         </div>
-        <div className="mt-10 lg:mt-0">
-          <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
-        </div>
         <div className="absolute right-3 top-4">
           {languageList
             .filter((l) => l !== language)
@@ -133,6 +130,9 @@ export default function HomePage({
               </Link>
             ))}
         </div>
+      </div>
+      <div className="sticky w-full p-4 top-0 z-100 mt-10 lg:mt-0 drop-shadow-md">
+        <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
       </div>
       {filter === undefined ? (
         <div className="w-full flex justify-center p-4">

@@ -6,5 +6,13 @@
   "orgs_login": ["cao-ancap"],
   "main_color": "slate",
   "search_color": "sky",
-  "min_language_count": 2
+  "min_language_count": 2,
+  "group_languages": true,
+  "language_family_config": {
+    "C": "C/C++/Zig",
+    "C++": "C/C++/Zig",
+    "JavaScript": "JavaScript/TypeScript",
+    "TypeScript": "JavaScript/TypeScript",
+    "Zig": "C/C++/Zig"
+  }
 }

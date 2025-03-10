@@ -25,14 +25,14 @@
     "link": "https://dart.dev/"
   },
   {
-    "name": "Go",
-    "image": "https://img.shields.io/badge/GOLANG-007D9C?style=for-the-badge&logo=go&logoColor=white",
-    "link": "https://golang.org/"
-  },
-  {
     "name": "GDScript",
     "image": "https://img.shields.io/badge/Godot-333639?style=for-the-badge&logo=godot-engine&logoColor=478CBF",
     "link": "https://godotengine.org/"
+  },
+  {
+    "name": "Go",
+    "image": "https://img.shields.io/badge/GOLANG-007D9C?style=for-the-badge&logo=go&logoColor=white",
+    "link": "https://golang.org/"
   },
   {
     "name": "HTML",
@@ -83,5 +83,10 @@
     "name": "TypeScript",
     "image": "https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white",
     "link": "https://www.typescriptlang.org/"
+  },
+  {
+    "name": "Zig",
+    "image": "https://img.shields.io/badge/Zig-F7A41D?style=for-the-badge&logo=zig&logoColor=white",
+    "link": "https://ziglang.org/"
   }
 ]

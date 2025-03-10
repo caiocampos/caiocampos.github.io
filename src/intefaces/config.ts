@@ -7,6 +7,8 @@ export interface Configuration {
   main_color: string;
   search_color: string;
   min_language_count?: number;
+  group_languages?: boolean;
+  language_family_config?: Record<string, string>;
 }
 
 export interface LanguageData {
