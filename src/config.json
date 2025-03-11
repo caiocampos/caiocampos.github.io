@@ -11,7 +11,9 @@
   "language_family_config": {
     "C": "C/C++/Zig",
     "C++": "C/C++/Zig",
+    "Java": "Java/Kotlin",
     "JavaScript": "JavaScript/TypeScript",
+    "Kotlin": "Java/Kotlin",
     "TypeScript": "JavaScript/TypeScript",
     "Zig": "C/C++/Zig"
   }
