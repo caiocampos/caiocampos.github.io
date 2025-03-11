@@ -12,7 +12,7 @@ const footerClassNames = [
   "left-0",
   "top-[calc(100dvh-6.5rem)]",
   "p-4",
-  "pb-6",
+  "pb-24",
   "text-white",
   `bg-${configuration.main_color}-900/[.9]`,
   "w-full",
