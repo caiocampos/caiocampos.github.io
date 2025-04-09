@@ -22,14 +22,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: yarn install
-    - name: Run translate service
-      run: |
-           npm run libretranslate
-           docker ps
     - name: Build
       run: |
            export SERVER_URL=127.0.0.1
            yarn build
-    - name: Stop translate service
-      run: npm run libretranslate-stop
     
