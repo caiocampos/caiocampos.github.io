@@ -39,7 +39,7 @@
     "eslint-config-next": "^15.5",
     "mini-css-extract-plugin": "^2.9",
     "postcss": "^8.5",
-    "tailwindcss": "^4.1.12",
+    "tailwindcss": "^4.1.16",
     "ts-node": "^10.9",
     "typescript": "^5.8"
   }
