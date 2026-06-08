@@ -1,5 +1,6 @@
-const fs = require('fs');
-const configuration = require("./src/config.json");
+import fs from 'fs';
+import configuration from "./src/config.json" with { type: "json" };
+
 
 const { main_color: mainColor, search_color: searchColor } = configuration;
 

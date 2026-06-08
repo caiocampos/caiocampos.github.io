@@ -1,6 +1,6 @@
 import { Configuration, LanguageData } from "./intefaces/config";
-import Config from "./config.json";
-import Languages from "./languages.json";
+import Config from "./config.json" with { type: "json" };
+import Languages from "./languages.json" with { type: "json" };
 import { TermTranslation } from "./intefaces/translation";
 
 const languages: LanguageData[] = Languages;
