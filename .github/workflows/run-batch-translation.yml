@@ -23,7 +23,6 @@ jobs:
       REDIS_USER: ${{ secrets.REDIS_USER }}
       REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
       REDIS_DB: ${{ secrets.REDIS_DB }}
-      REDIS_DB: ${{ secrets.REDIS_DB }}
       REDIS_CACHE_TTL: 168h
 
     runs-on: ubuntu-latest
