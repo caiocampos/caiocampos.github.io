@@ -1,4 +1,4 @@
-name: Deploy
+name: Run batch translation
 
 on:
   schedule:
