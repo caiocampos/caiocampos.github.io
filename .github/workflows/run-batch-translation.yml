@@ -7,6 +7,24 @@ on:
 
 jobs:
   build:
+    env:
+      APP_PORT: 8080
+      APP_ENV: development
+      
+      TRANSLATION_API_URL: http://127.0.0.1:5000
+      TRANSLATION_API_TIMEOUT: 20s
+      
+      GITHUB_API_URL: https://api.github.com
+      GITHUB_API_TIMEOUT: 10s
+      GITHUB_API_USER_LOGIN: caiocampos
+      GITHUB_API_ORGS_LOGIN: ["cao-ancap"]
+
+      REDIS_ADDR: ${{ secrets.REDIS_ADDR }}
+      REDIS_USER: ${{ secrets.REDIS_USER }}
+      REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+      REDIS_DB: ${{ secrets.REDIS_DB }}
+      REDIS_DB: ${{ secrets.REDIS_DB }}
+      REDIS_CACHE_TTL: 168h
 
     runs-on: ubuntu-latest
     timeout-minutes: 30
