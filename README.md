@@ -4,4 +4,4 @@
 [![License](https://img.shields.io/github/license/caiocampos/caiocampos.github.io.svg)](LICENSE)
 
 
-Página inicial em Next
+Página Inicial em Next. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial 
