@@ -57,12 +57,11 @@ jobs:
         go-version: 1.26
 
     - name: Build server
-      run: bash ./middleware/server-build.sh
+      working-directory: ./middleware
+      run: bash server-build.sh
 
     - name: Give permission to run server
       run: chmod +x ./middleware/server
-
-
 
     - name: Run server
       run: |
