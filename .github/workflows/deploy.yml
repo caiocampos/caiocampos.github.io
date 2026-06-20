@@ -104,7 +104,7 @@ jobs:
 
     - name: Stop server
       if: always()
-      run: kill ${{ env:APP_PID }}
+      run: kill ${{ env.APP_PID }}
 
     - name: Adjustment
       run: |
