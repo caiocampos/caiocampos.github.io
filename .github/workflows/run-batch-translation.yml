@@ -28,10 +28,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
-    strategy:
-      matrix:
-        node-version: [24.x]
-
     steps:
     - name: Checkout cached-translation-middleware
       uses: actions/checkout@v6
