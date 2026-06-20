@@ -3,7 +3,7 @@ import {
   LibretranslateResponse,
 } from "./libretranslate-dtos";
 
-const serverUrl = `http://${process.env.SERVER_URL ?? "localhost"}:5000`;
+const serverUrl = `http://${process.env.SERVER_URL ?? "localhost"}:${process.env.SERVER_PORT ?? 8080}`;
 
 export class LibretranslateServices {
   public static async translate(
@@ -11,7 +11,7 @@ export class LibretranslateServices {
     sourceLanguage: string,
     targetLanguage: string,
     format: "text" | "html" = "text",
-    alternatives = 0
+    alternatives = 0,
   ): Promise<string> {
     const url = `${serverUrl}/translate`;
     const data: LibretranslateRequest = {

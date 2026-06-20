@@ -6,6 +6,10 @@ on:
 
 jobs:
   build:
+    env:
+      SERVER_URL: 127.0.0.1
+      SERVER_PORT: 8080
+      FULL_BUILD: false
 
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -23,7 +27,5 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - name: Build
-      run: |
-           export SERVER_URL=127.0.0.1
-           yarn build
+      run: yarn build
     

@@ -9,6 +9,27 @@ on:
 
 jobs:
   build:
+    env:
+      SERVER_URL: 127.0.0.1
+      SERVER_PORT: 8080
+      FULL_BUILD: true
+
+      APP_PORT: 8080
+      APP_ENV: production
+      
+      TRANSLATION_API_URL: http://127.0.0.1:5000
+      TRANSLATION_API_TIMEOUT: 20s
+      
+      GITHUB_API_URL: https://api.github.com
+      GITHUB_API_TIMEOUT: 10s
+      GITHUB_API_USER_LOGIN: caiocampos
+      GITHUB_API_ORGS_LOGIN: ["cao-ancap"]
+
+      REDIS_ADDR: ${{ secrets.REDIS_ADDR }}
+      REDIS_USER: ${{ secrets.REDIS_USER }}
+      REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+      REDIS_DB: ${{ secrets.REDIS_DB }}
+      REDIS_CACHE_TTL: 168h
 
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -22,27 +43,73 @@ jobs:
       uses: actions/checkout@v6
       with:
         persist-credentials: false
+
+    - name: Checkout cached-translation-middleware
+      uses: actions/checkout@v6
+      with:
+        persist-credentials: false
+        repository: caiocampos/cached-translation-middleware
+        path: middleware
+
+    - name: Set up Go
+      uses: actions/setup-go@v6
+      with:
+        go-version: 1.26
+
+    - name: Build server
+      run: bash ./middleware/server-build.sh
+
+    - name: Give permission to run server
+      run: chmod +x ./middleware/server
+
+
+
+    - name: Run server
+      run: |
+        nohup ./middleware/server > out.log 2>&1 &
+
+        PROCESS_PID=$!
+        echo "APP_PID=$PROCESS_PID" >> $GITHUB_ENV
+        
+        sleep 5
+        
+        if pgrep -f "server" > /dev/null
+        then
+            echo "Server running in background"
+        else
+            echo "Server failed"
+            exit 1
+        fi
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
     - name: Install
       run: yarn install
+
     - name: Run translate service
       run: |
            npm run libretranslate
            docker ps
+
     - name: Build
-      run: |
-           export SERVER_URL=127.0.0.1
-           export FULL_BUILD=true
-           yarn build
+      run: yarn build
+
     - name: Stop translate service
+      if: always()
       run: npm run libretranslate-stop
+
+    - name: Stop server
+      if: always()
+      run: kill ${{ env:APP_PID }}
+
     - name: Adjustment
       run: |
            cp .nojekyll ./out/.nojekyll
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@v4
       with:

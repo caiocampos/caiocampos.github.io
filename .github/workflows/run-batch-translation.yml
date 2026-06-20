@@ -9,7 +9,7 @@ jobs:
   build:
     env:
       APP_PORT: 8080
-      APP_ENV: development
+      APP_ENV: production
       
       TRANSLATION_API_URL: http://127.0.0.1:5000
       TRANSLATION_API_TIMEOUT: 20s
