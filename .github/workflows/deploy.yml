@@ -23,7 +23,7 @@ jobs:
       GITHUB_API_URL: https://api.github.com
       GITHUB_API_TIMEOUT: 10s
       GITHUB_API_USER_LOGIN: caiocampos
-      GITHUB_API_ORGS_LOGIN: ["cao-ancap"]
+      GITHUB_API_ORGS_LOGIN: "[\"cao-ancap\"]"
 
       REDIS_ADDR: ${{ secrets.REDIS_ADDR }}
       REDIS_USER: ${{ secrets.REDIS_USER }}
