@@ -11,5 +11,3 @@ services:
       test: ['CMD-SHELL', './venv/bin/python scripts/healthcheck.py']
     environment:
       - LT_LOAD_ONLY=pt,en,es,it,fr,de
-    volumes:
-      - ./lt-models:/home/libretranslate/.local:rw
