@@ -36,9 +36,6 @@ jobs:
            gh release download -R caiocampos/cached-translation-middleware -p "batch"
            chmod +x batch
 
-    - name: Build batch
-      run: bash batch-build.sh
-
     - name: Run libretranslate
       run: bash libretranslate.sh
 
