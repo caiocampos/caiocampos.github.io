@@ -2,5 +2,5 @@ FROM libretranslate/libretranslate:latest
 ARG TARGET_LANGS="pt,en,es,it,fr,de"
 ENV LT_LOAD_ONLY=$TARGET_LANGS
 
-RUN /app/venv/bin/python /app/install_models.py --load-only "$LT_LOAD_ONLY"
+RUN libretranslate --load-only $LT_LOAD_ONLY
 ENV LT_LOAD_ONLY=$TARGET_LANGS
