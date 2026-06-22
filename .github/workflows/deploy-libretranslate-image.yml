@@ -56,6 +56,5 @@ jobs:
           
           build-args: |
             TARGET_LANGS=${{ env.LANGUAGES }}
-          # Utiliza o cache nativo do GitHub Actions para acelerar os próximos builds do Docker
           cache-from: type=gha
           cache-to: type=gha,mode=max
