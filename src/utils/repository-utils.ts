@@ -4,7 +4,7 @@ import { splitString } from "./string-utils";
 import { TermTranslation } from "@/intefaces/translation";
 
 export const parseRepositoryData = (
-  bruteData: MinimalRepository
+  bruteData: MinimalRepository,
 ): RepositoryData => {
   const {
     id,
@@ -41,7 +41,7 @@ export interface RepositoryWordDictionaryItem {
 
 export const createRepositoryWordDictionary = (
   bruteData: MinimalRepository[],
-  termTranslation: TermTranslation
+  termTranslation: TermTranslation,
 ): RepositoryWordDictionary => {
   const dictionary: Record<string, Set<number>> = {};
   bruteData.forEach(({ id, name, description, language, archived, fork }) => {
@@ -49,7 +49,10 @@ export const createRepositoryWordDictionary = (
       dictionary["fork"] = updateSet(dictionary["fork"], id);
     }
     if (archived) {
-      dictionary[termTranslation.archived] = updateSet(dictionary[termTranslation.archived], id);
+      dictionary[termTranslation.archived] = updateSet(
+        dictionary[termTranslation.archived],
+        id,
+      );
     }
     if (language !== null && language !== undefined) {
       const word = language.toLowerCase();
@@ -57,11 +60,11 @@ export const createRepositoryWordDictionary = (
     }
     if (description !== null) {
       splitString(description).forEach(
-        (word) => (dictionary[word] = updateSet(dictionary[word], id))
+        (word) => (dictionary[word] = updateSet(dictionary[word], id)),
       );
     }
     splitString(name).forEach(
-      (word) => (dictionary[word] = updateSet(dictionary[word], id))
+      (word) => (dictionary[word] = updateSet(dictionary[word], id)),
     );
   });
   return Object.entries(dictionary).map(([key, idsSet]) => ({
@@ -72,7 +75,7 @@ export const createRepositoryWordDictionary = (
 
 const updateSet = (
   wordSet: Set<number> | undefined,
-  value: number
+  value: number,
 ): Set<number> => {
   if (wordSet === undefined) {
     wordSet = new Set<number>();
@@ -81,18 +84,25 @@ const updateSet = (
   return wordSet;
 };
 
+const calcForkArchive = (repo: MinimalRepository): number =>
+  repo.archived ? -2 : repo.fork ? -1 : 0;
+
+const calcStargazersForks = (repo: MinimalRepository): number =>
+  (repo.forks_count ?? 0) * 1.2 + (repo.stargazers_count ?? 0);
+
 export const repositoryComparison = (
   a: MinimalRepository,
-  b: MinimalRepository
+  b: MinimalRepository,
 ): number => {
-  const stargazersComparison =
-    (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0);
-  if (stargazersComparison !== 0) {
-    return stargazersComparison;
+  const forkArchiveComparison = calcForkArchive(b) - calcForkArchive(a);
+  if (forkArchiveComparison !== 0) {
+    return forkArchiveComparison;
   }
-  const forksComparison = (b.forks_count ?? 0) - (a.forks_count ?? 0);
-  if (forksComparison !== 0) {
-    return forksComparison;
+  const stargazersForksComparison =
+    calcStargazersForks(b) - calcStargazersForks(a);
+  (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0);
+  if (stargazersForksComparison !== 0) {
+    return stargazersForksComparison;
   }
   return (
     new Date(b.updated_at ?? 0).getTime() -
