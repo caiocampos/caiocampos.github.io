@@ -2,8 +2,7 @@ name: Deploy libretranslate image
 
 on:
   push:
-    branches:
-      - main
+    branches: [ nx-app ]
     paths:
       - 'libretranslate-dockerfile'
       - '.github/workflows/deploy-libretranslate-image.yml'
