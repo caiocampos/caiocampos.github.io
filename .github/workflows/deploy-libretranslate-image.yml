@@ -63,7 +63,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           
           build-args: |
-                      TARGET_LANGS=${{ env.LANGUAGES }} with_models=true
+                      TARGET_LANGS=${{ env.LANGUAGES }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
