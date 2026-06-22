@@ -12,7 +12,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: libretranslate
+  IMAGE_NAME: caiocampos/libretranslate
   LANGUAGES: "pt,en,es,it,fr,de"
 
 jobs:
