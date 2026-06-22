@@ -1,5 +1,5 @@
 FROM libretranslate/libretranslate:latest
-ARG TARGET_LANGS="pt,en,es,it,fr,de" with_models=true
+ARG TARGET_LANGS="pt,en,es,it,fr,de"
 ENV LT_LOAD_ONLY=$TARGET_LANGS
 
 COPY --chown=libretranslate:libretranslate ./lt-models /home/libretranslate/.local
