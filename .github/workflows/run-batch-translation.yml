@@ -29,16 +29,12 @@ jobs:
     timeout-minutes: 30
 
     steps:
-    - name: Checkout cached-translation-middleware
-      uses: actions/checkout@v6
-      with:
-        persist-credentials: false
-        repository: caiocampos/cached-translation-middleware
-
-    - name: Set up Go
-      uses: actions/setup-go@v6
-      with:
-        go-version: 1.26
+    - name: Download Batch Binary
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+           gh release download -R caiocampos/cached-translation-middleware -p "batch"
+           chmod +x batch
 
     - name: Build batch
       run: bash batch-build.sh

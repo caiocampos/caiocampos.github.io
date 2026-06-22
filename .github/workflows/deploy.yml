@@ -44,41 +44,12 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Checkout cached-translation-middleware
-      uses: actions/checkout@v6
-      with:
-        persist-credentials: false
-        repository: caiocampos/cached-translation-middleware
-        path: middleware
-
-    - name: Set up Go
-      uses: actions/setup-go@v6
-      with:
-        go-version: 1.26
-
-    - name: Build server
-      working-directory: ./middleware
-      run: bash server-build.sh
-
-    - name: Give permission to run server
-      run: chmod +x ./middleware/server
-
-    - name: Run server
+    - name: Download Server Binary
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        nohup ./middleware/server > out.log 2>&1 &
-
-        PROCESS_PID=$!
-        echo "APP_PID=$PROCESS_PID" >> $GITHUB_ENV
-        
-        sleep 5
-        
-        if pgrep -f "server" > /dev/null
-        then
-            echo "Server running in background"
-        else
-            echo "Server failed"
-            exit 1
-        fi
+           gh release download -R caiocampos/cached-translation-middleware -D middleware -p "server"
+           chmod +x ./middleware/server
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v6
@@ -93,6 +64,23 @@ jobs:
       run: |
            npm run libretranslate
            docker ps
+
+    - name: Run server
+      run: |
+          nohup ./middleware/server > out.log 2>&1 &
+
+          PROCESS_PID=$!
+          echo "APP_PID=$PROCESS_PID" >> $GITHUB_ENV
+
+          sleep 5
+
+          if pgrep -f "server" > /dev/null
+          then
+              echo "Server running in background"
+          else
+              echo "Server failed"
+              exit 1
+          fi
 
     - name: Build
       run: yarn build
