@@ -1,12 +1,12 @@
 name: Deploy libretranslate image
 
 on:
-  #push:
-  #  branches: [ nx-app ]
-  #  paths:
-  #    - 'libretranslate-dockerfile'
-  #    - 'libretranslate-docker-compose-build.yml'
-  #    - '.github/workflows/deploy-libretranslate-image.yml'
+  push:
+    branches: [ nx-app ]
+    paths:
+      - 'libretranslate-dockerfile'
+      - 'libretranslate-docker-compose-build.yml'
+      - '.github/workflows/deploy-libretranslate-image.yml'
   schedule:
     - cron: "0 3 * * 0,4"
   workflow_dispatch:
