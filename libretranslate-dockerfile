@@ -1,3 +1,9 @@
 FROM libretranslate/libretranslate:latest
 ARG TARGET_LANGS="pt,en,es,it,fr,de" with_models=true
 ENV LT_LOAD_ONLY=$TARGET_LANGS
+
+COPY ./lt-models /home/libretranslate/.local
+
+USER root
+RUN chown -R libretranslate:libretranslate /home/libretranslate/.local
+USER libretranslate
