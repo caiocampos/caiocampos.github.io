@@ -45,6 +45,11 @@ jobs:
                 type=raw,value=latest
                 type=sha,format=short
 
+      - name: Prepare
+        run: |
+             docker compose --file libretranslate-docker-compose-build.yml up -d --build --wait
+             docker compose --file libretranslate-docker-compose-build.yml down
+
       - name: Build and push Docker image
         uses: docker/build-push-action@v7
         with:
