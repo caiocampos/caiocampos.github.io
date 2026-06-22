@@ -6,7 +6,7 @@
   "orgs_login": ["cao-ancap"],
   "main_color": "slate",
   "search_color": "sky",
-  "min_language_count": 2,
+  "min_language_count": 3,
   "group_languages": true,
   "language_family_config": {
     "C": "C/C++/Zig",
