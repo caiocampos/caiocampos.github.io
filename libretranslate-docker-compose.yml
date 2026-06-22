@@ -2,7 +2,7 @@ version: "3"
 
 services:
   libretranslate:
-    image: libretranslate/libretranslate
+    image: ghcr.io/caiocampos/libretranslate:latest
     container_name: libretranslate
     restart: unless-stopped
     ports:
