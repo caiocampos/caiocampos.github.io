@@ -6,10 +6,13 @@ import { regexLink } from "./string-utils";
 
 export type Language = "pt" | "en" | "es" | "it" | "fr" | "de";
 
-export const languages: Language[] =
-  process.env.FULL_BUILD === "true"
-    ? ["pt", "en", "es", "it", "fr", "de"]
-    : ["pt"];
+const isFullBuild = (): boolean => process.env.FULL_BUILD === "true";
+
+export const languages: Language[] = isFullBuild()
+  ? ["pt", "en", "es", "it", "fr", "de"]
+  : ["pt"];
+
+export const defaultLanguage: Language = isFullBuild() ? "en" : "pt";
 
 export enum LanguageEnum {
   Portuguese = "pt",
@@ -53,7 +56,7 @@ export const isLanguagePT = (language: Language) => language === PT;
 
 export const getLanguageDisclaimer = (
   language: Language,
-  termTranslation: TermTranslation
+  termTranslation: TermTranslation,
 ) => {
   if (isLanguagePT(language)) {
     return languageName.pt;
@@ -92,7 +95,7 @@ const defaultPageSize = 2;
 
 export const getTermTranslation = async (
   language: Language,
-  pageSize = defaultPageSize
+  pageSize = defaultPageSize,
 ): Promise<TermTranslation> => {
   if (isLanguagePT(language)) {
     return termTranslationPT;
@@ -106,7 +109,7 @@ export const getTermTranslation = async (
       value: await LibretranslateServices.translate(
         termTranslationPTForTranslation[key],
         PT,
-        language
+        language,
       ),
     }));
     const translatedPage = await Promise.all(promises);
@@ -119,7 +122,7 @@ export const getTermTranslation = async (
 
 export const getRepositoryTranslation = async (
   repository: MinimalRepository,
-  language: Language
+  language: Language,
 ): Promise<MinimalRepository> => {
   const base = { ...repository };
   if (isLanguagePT(language) || base.description === null) {
@@ -129,7 +132,7 @@ export const getRepositoryTranslation = async (
   const description = await LibretranslateServices.translate(
     originalDescription,
     PT,
-    language
+    language,
   );
   base.description = [description, " ", ...linkParts].join("");
   return base;
@@ -138,7 +141,7 @@ export const getRepositoryTranslation = async (
 export const getRepositoriesTranslation = async (
   repositories: MinimalRepository[],
   language: Language,
-  pageSize = defaultPageSize
+  pageSize = defaultPageSize,
 ): Promise<MinimalRepository[]> => {
   const base = [...repositories];
   if (isLanguagePT(language)) {
@@ -148,7 +151,7 @@ export const getRepositoriesTranslation = async (
   while (base.length > 0) {
     const page = base.splice(0, pageSize);
     const translatedPage = await Promise.all(
-      page.map((repository) => getRepositoryTranslation(repository, language))
+      page.map((repository) => getRepositoryTranslation(repository, language)),
     );
     out.push(...translatedPage);
   }
