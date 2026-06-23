@@ -144,7 +144,7 @@ export default function HomePage({
           </ButtonGroup>
         </div>
       </div>
-      <div className="sticky w-full p-4 top-0 z-100 mt-10 lg:mt-0 drop-shadow-md">
+      <div className="sticky w-full p-4 top-0 z-100 mt-10 2xl:mt-0 drop-shadow-md">
         <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
       </div>
       {filter === undefined ? (
