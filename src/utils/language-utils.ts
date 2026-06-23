@@ -8,11 +8,10 @@ export type Language = "pt" | "en" | "es" | "it" | "fr" | "de";
 
 const isFullBuild = (): boolean => process.env.FULL_BUILD === "true";
 
-export const languages: Language[] = isFullBuild()
-  ? ["pt", "en", "es", "it", "fr", "de"]
-  : ["pt"];
+export const languages = (): Language[] =>
+  isFullBuild() ? ["pt", "en", "es", "it", "fr", "de"] : ["pt"];
 
-export const defaultLanguage: Language = isFullBuild() ? "en" : "pt";
+export const defaultLanguage = (): Language => (isFullBuild() ? "en" : "pt");
 
 export enum LanguageEnum {
   Portuguese = "pt",
