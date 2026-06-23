@@ -22,6 +22,7 @@ export const termTranslationPT: TermTranslation = {
   source: "Código fonte",
   autotranslated: "Traduzido automaticamente por inteligência artificial",
   other: "Outras",
+  toggleLanguage: "Mudar o idioma",
   toggleTheme: "Mudar o tema",
   light: "Claro",
   dark: "Escuro",
