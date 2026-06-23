@@ -1,5 +1,6 @@
 import { JSX, useCallback, useState } from "react";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import { Card, RepositoryCard } from "@/components/card";
 import { RepositoryData } from "@/intefaces/repository-data";
@@ -32,6 +33,9 @@ import { Flag } from "@/components/flag";
 import Link from "next/link";
 import { LanguageChart } from "@/components/language-chart";
 import { ThemeSelector } from "@/components/theme-selector";
+import { ButtonGroup, ButtonGroupText } from "@/components/ui/button-group";
+import { Button } from "@/components/ui/button";
+import { Languages } from "lucide-react";
 
 interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];
@@ -45,7 +49,7 @@ export const getStaticPaths = (() => {
   const pathsWithParams = generateParams(languages).map(
     ({ language }: PageParams) => ({
       params: { language },
-    })
+    }),
   );
   return {
     paths: pathsWithParams,
@@ -63,7 +67,7 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
     const repositoriesBruteData: MinimalRepository[] =
       await GithubServices.getCachedAllUserRepos(
         configuration.user_login,
-        configuration.orgs_login
+        configuration.orgs_login,
       );
     const repositoriesTranslatedData: MinimalRepository[] = (
       await getRepositoriesTranslation(repositoriesBruteData, language)
@@ -73,7 +77,7 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
       repositoriesTranslatedData.map(parseRepositoryData);
     const wordDictionary = createRepositoryWordDictionary(
       repositoriesTranslatedData,
-      termTranslation
+      termTranslation,
     );
     return {
       props: {
@@ -93,12 +97,13 @@ export default function HomePage({
   languageList,
   termTranslation,
 }: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element {
+  const router = useRouter();
   const [filter, setFilter] = useState<number[] | undefined>(undefined);
   const onSearch = useCallback(
     (text: string): void => {
       setFilter(filterResult(text, wordDictionary));
     },
-    [wordDictionary]
+    [wordDictionary],
   );
   return (
     <div className="w-screen">
@@ -117,18 +122,26 @@ export default function HomePage({
           </span>
         </div>
         <div className="absolute right-3 top-4">
-          {languageList
-            .filter((l) => l !== language)
-            .map((l) => (
-              <Link
-                key={l}
-                className="mx-1"
-                href={`/home/${l}`}
-                title={getLanguageDisclaimer(l, termTranslation)}
-              >
-                <Flag language={l} />
-              </Link>
-            ))}
+          <ButtonGroup>
+            <ButtonGroupText>
+              <Languages />
+            </ButtonGroupText>
+            {languageList
+              .filter((l) => l !== language)
+              .map((l) => (
+                <Button
+                  key={l}
+                  variant="secondary"
+                  onClick={() => {
+                    router.push(`/home/${l}`);
+                  }}
+                  title={getLanguageDisclaimer(l, termTranslation)}
+                >
+                  {l.toUpperCase()}
+                  <Flag language={l} />
+                </Button>
+              ))}
+          </ButtonGroup>
         </div>
       </div>
       <div className="sticky w-full p-4 top-0 z-100 mt-10 lg:mt-0 drop-shadow-md">
