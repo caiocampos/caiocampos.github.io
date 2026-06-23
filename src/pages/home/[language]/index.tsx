@@ -1,6 +1,5 @@
 import { JSX, useCallback, useState } from "react";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
-import { useRouter } from "next/router";
 import Head from "next/head";
 import { Card, RepositoryCard } from "@/components/card";
 import { RepositoryData } from "@/intefaces/repository-data";
@@ -30,12 +29,9 @@ import {
 } from "@/utils/language-utils";
 import { TermTranslation } from "@/intefaces/translation";
 import { Flag } from "@/components/flag";
-import Link from "next/link";
 import { LanguageChart } from "@/components/language-chart";
 import { ThemeSelector } from "@/components/theme-selector";
-import { ButtonGroup, ButtonGroupText } from "@/components/ui/button-group";
-import { Button } from "@/components/ui/button";
-import { Languages } from "lucide-react";
+import { LanguageSelector } from "@/components/language-selector";
 
 interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];
@@ -97,7 +93,6 @@ export default function HomePage({
   languageList,
   termTranslation,
 }: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element {
-  const router = useRouter();
   const [filter, setFilter] = useState<number[] | undefined>(undefined);
   const onSearch = useCallback(
     (text: string): void => {
@@ -121,28 +116,11 @@ export default function HomePage({
             <Flag language={language} />
           </span>
         </div>
-        <div className="absolute right-3 top-4">
-          <ButtonGroup>
-            <ButtonGroupText>
-              <Languages />
-            </ButtonGroupText>
-            {languageList
-              .filter((l) => l !== language)
-              .map((l) => (
-                <Button
-                  key={l}
-                  variant="secondary"
-                  onClick={() => {
-                    router.push(`/home/${l}`);
-                  }}
-                  title={getLanguageDisclaimer(l, termTranslation)}
-                >
-                  {l.toUpperCase()}
-                  <Flag language={l} />
-                </Button>
-              ))}
-          </ButtonGroup>
-        </div>
+        <LanguageSelector
+          className="absolute right-3 top-4"
+          languageList={languageList.filter((l) => l !== language)}
+          termTranslation={termTranslation}
+        />
       </div>
       <div className="sticky w-full p-4 top-0 z-100 mt-10 2xl:mt-0 drop-shadow-md">
         <SearchInput onSearch={onSearch} termTranslation={termTranslation} />

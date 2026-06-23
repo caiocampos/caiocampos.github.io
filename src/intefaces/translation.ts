@@ -5,6 +5,7 @@ export interface TermTranslation {
   source: string;
   autotranslated: string;
   other: string;
+  toggleLanguage: string;
   toggleTheme: string;
   light: string;
   dark: string;

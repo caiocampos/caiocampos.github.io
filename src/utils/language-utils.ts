@@ -81,6 +81,7 @@ const keys: (keyof TermTranslation)[] = [
   "source",
   "autotranslated",
   "other",
+  "toggleLanguage",
   "toggleTheme",
   "light",
   "dark",
