@@ -49,26 +49,27 @@ export const LanguageSelector = ({
         ))}
       </ButtonGroup>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
+      <DropdownMenu >
+        <DropdownMenuTrigger asChild className="min-[701px]:hidden">
           <Button
             className="border border-gray-600 dark:border-gray-400"
             variant="secondary"
             size="icon"
+            title={termTranslation.toggleLanguage}
           >
             <Languages className="h-[1.2rem] w-[1.2rem] transition-all" />
             <span className="sr-only">{termTranslation.toggleLanguage}</span>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
+        <DropdownMenuContent align="end" className="z-110">
           {languageList.map((l) => (
             <DropdownMenuItem
               key={l}
               onClick={() => {
                 router.push(`/home/${l}`);
               }}
-            >
               title={getLanguageDisclaimer(l, termTranslation)}
+            >
               <Flag language={l} />
               {l.toUpperCase()}
             </DropdownMenuItem>
