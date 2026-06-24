@@ -31,7 +31,7 @@ export const LanguageSelector = ({
     <div className={className}>
       <ButtonGroup className="max-[700px]:hidden">
         <ButtonGroupText>
-          <Languages />
+          <Languages className="text-black dark:text-white" />
         </ButtonGroupText>
         {languageList.map((l) => (
           <Button
