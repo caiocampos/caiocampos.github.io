@@ -50,7 +50,7 @@ export const LanguageSelector = ({
       </ButtonGroup>
 
       <DropdownMenu >
-        <DropdownMenuTrigger asChild className="min-[701px]:hidden">
+        <DropdownMenuTrigger asChild className="min-[700px]:hidden">
           <Button
             className="border border-gray-600 dark:border-gray-400"
             variant="secondary"
