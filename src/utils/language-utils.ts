@@ -6,10 +6,12 @@ import { regexLink } from "./string-utils";
 
 export type Language = "pt" | "en" | "es" | "it" | "fr" | "de";
 
-const isFullBuild = (): boolean => process.env.FULL_BUILD === "true";
+const isFullBuild = (): boolean =>
+  process.env.NEXT_PUBLIC_FULL_BUILD === "true";
 
-export const languages = (): Language[] =>
-  isFullBuild() ? ["pt", "en", "es", "it", "fr", "de"] : ["pt"];
+export const languages: Language[] = isFullBuild()
+  ? ["pt", "en", "es", "it", "fr", "de"]
+  : ["pt"];
 
 export const defaultLanguage = (): Language => (isFullBuild() ? "en" : "pt");
 

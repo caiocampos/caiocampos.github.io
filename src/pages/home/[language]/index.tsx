@@ -42,7 +42,7 @@ interface RepositoriesGetStaticProps {
 }
 
 export const getStaticPaths = (() => {
-  const pathsWithParams = generateParams(languages()).map(
+  const pathsWithParams = generateParams(languages).map(
     ({ language }: PageParams) => ({
       params: { language },
     }),
@@ -56,7 +56,7 @@ export const getStaticPaths = (() => {
 export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
   (async (context) => {
     let language = context.params?.language as Language;
-    const hasLanguage = languages().includes(language);
+    const hasLanguage = languages.includes(language);
     if (!hasLanguage) {
       language = LanguageEnum.Portuguese;
     }
@@ -81,7 +81,7 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
         wordDictionary,
         language,
         termTranslation,
-        languageList: languages(),
+        languageList: languages,
       },
     };
   }) satisfies GetStaticProps<RepositoriesGetStaticProps>;
