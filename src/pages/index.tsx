@@ -8,6 +8,6 @@ export default function Home(): void {
   useEffect(() => {
     const { language } = window?.navigator;
     const userLanguage = languages().find((l) => language.startsWith(l));
-    router.push(`/home/${userLanguage ?? defaultLanguage}`);
+    router.push(`/home/${userLanguage ?? defaultLanguage()}`);
   }, [router]);
 }
