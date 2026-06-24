@@ -5,7 +5,7 @@ import { ButtonGroup, ButtonGroupText } from "./ui/button-group";
 import { Languages } from "lucide-react";
 import { Button } from "./ui/button";
 import { Flag } from "./flag";
-import { TermTranslation } from "@/intefaces/translation";
+import { TermTranslationAdapter } from "@/intefaces/translation";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,10 +13,9 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 
-interface LanguageSelectorProps {
+interface LanguageSelectorProps extends TermTranslationAdapter {
   languageList: Language[];
-  termTranslation: TermTranslation;
-  className: HTMLProps<HTMLElement>["className"];
+  className?: HTMLProps<HTMLElement>["className"];
 }
 
 export const LanguageSelector = ({
@@ -49,7 +48,7 @@ export const LanguageSelector = ({
         ))}
       </ButtonGroup>
 
-      <DropdownMenu >
+      <DropdownMenu>
         <DropdownMenuTrigger asChild className="min-[700px]:hidden">
           <Button
             className="border border-gray-600 dark:border-gray-400"

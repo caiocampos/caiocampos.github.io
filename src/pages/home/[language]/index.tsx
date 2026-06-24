@@ -106,7 +106,7 @@ export default function HomePage({
         <html lang={locales[language]} />
         <title>{configuration.title}</title>
       </Head>
-      <div className="relative h-18 w-full p-4 pb-2">
+      <div className="relative h-14 w-full p-4 pb-2">
         <div className="absolute left-3 top-4 mx-1">
           <ThemeSelector termTranslation={termTranslation} />
           <span
@@ -122,7 +122,7 @@ export default function HomePage({
           termTranslation={termTranslation}
         />
       </div>
-      <div className="sticky w-full p-2 top-0 z-100 mt-0 2xl:-mt-16 drop-shadow-md">
+      <div className="sticky w-full p-2 z-100 top-0 drop-shadow-md">
         <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
       </div>
       {filter === undefined ? (

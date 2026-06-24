@@ -1,4 +1,4 @@
-import { useState, useEffect, JSX } from "react";
+import { useState, useEffect, JSX, HTMLProps } from "react";
 import { useRouter } from "next/router";
 import { TermTranslationAdapter } from "@/intefaces/translation";
 import { configuration } from "@/global";
@@ -7,6 +7,7 @@ import { X, Search } from "lucide-react";
 
 interface SearchProps extends TermTranslationAdapter {
   onSearch(text: string): void;
+  className?: HTMLProps<HTMLElement>["className"];
 }
 
 const searchInputClassNames = [
@@ -66,6 +67,7 @@ const searchKey = "s";
 export const SearchInput = ({
   onSearch,
   termTranslation,
+  className,
 }: SearchProps): JSX.Element => {
   const [text, setText] = useState("");
   const router = useRouter();
@@ -83,7 +85,7 @@ export const SearchInput = ({
   }, [router.query, onSearch]);
   return (
     <form
-      className="max-w-md mx-auto"
+      className={`max-w-md mx-auto ${className ?? ""}`}
       onSubmit={(e) => {
         e.preventDefault();
         search(text);
