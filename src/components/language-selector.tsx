@@ -27,6 +27,17 @@ export const LanguageSelector = ({
   if (languageList.length === 0) {
     return <></>;
   }
+  const dropdownMenuButton = (
+    <Button
+      className="border border-gray-600 dark:border-gray-400"
+      variant="secondary"
+      size="icon"
+      title={termTranslation.toggleLanguage}
+    >
+      <Languages className="h-[1.2rem] w-[1.2rem] transition-all" />
+      <span className="sr-only">{termTranslation.toggleLanguage}</span>
+    </Button>
+  );
   return (
     <div className={className}>
       <ButtonGroup className="max-[700px]:hidden">
@@ -49,17 +60,10 @@ export const LanguageSelector = ({
       </ButtonGroup>
 
       <DropdownMenu>
-        <DropdownMenuTrigger asChild className="min-[700px]:hidden">
-          <Button
-            className="border border-gray-600 dark:border-gray-400"
-            variant="secondary"
-            size="icon"
-            title={termTranslation.toggleLanguage}
-          >
-            <Languages className="h-[1.2rem] w-[1.2rem] transition-all" />
-            <span className="sr-only">{termTranslation.toggleLanguage}</span>
-          </Button>
-        </DropdownMenuTrigger>
+        <DropdownMenuTrigger
+          className="min-[700px]:hidden"
+          render={dropdownMenuButton}
+        />
         <DropdownMenuContent align="end" className="z-110">
           {languageList.map((l) => (
             <DropdownMenuItem
