@@ -1,6 +1,6 @@
 import { HTMLProps, JSX } from "react";
 import { useRouter } from "next/router";
-import { getLanguageDisclaimer, Language } from "@/utils/language-utils";
+import { getLanguageDisclaimer } from "@/utils/language-utils";
 import { ButtonGroup, ButtonGroupText } from "./ui/button-group";
 import { Languages } from "lucide-react";
 import { Button } from "./ui/button";
@@ -12,6 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { Language } from "@/types/languages";
 
 interface LanguageSelectorProps extends TermTranslationAdapter {
   languageList: Language[];

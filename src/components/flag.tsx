@@ -1,5 +1,6 @@
 import { JSX } from "react";
-import { flags, Language } from "@/utils/language-utils";
+import { flags } from "@/utils/language-utils";
+import { Language } from "@/types/languages";
 
 interface FlagProps {
   language: Language;
