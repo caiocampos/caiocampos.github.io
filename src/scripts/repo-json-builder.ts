@@ -26,17 +26,18 @@ const getTranslations = async (
     if (repo.archived || repo.fork || repo.description === null) {
       continue;
     }
+    const originalDescription = repo.description;
     const translated: MinimalRepositoryTranslatedData = {
       id: repo.id,
       name: repo.name,
       language: repo.language ?? null,
       html_url: repo.html_url,
-      descriptions: { [config.source_language]: repo.description },
+      descriptions: { [config.source_language]: originalDescription },
     };
     const translations = await Promise.all(
       config.target_languages.map(async (language) => {
         const description = await getDescriptionTranslation(
-          repo.description!,
+          originalDescription,
           language as Language,
         );
         return { language, description };
