@@ -69,20 +69,25 @@ export const SearchInput = ({
   termTranslation,
   className,
 }: SearchProps): JSX.Element => {
-  const [text, setText] = useState("");
   const router = useRouter();
+  const queryValue = router.query[searchKey];
+  const searchValue = typeof queryValue === "string" ? queryValue : "";
+  const [text, setText] = useState(searchValue);
+  const [lastText, setLastText] = useState(searchValue);
   const search = (value: string): void => {
     onSearch(value);
-    router.query[searchKey] = value;
-    router.push(router);
+    router.push({
+      pathname: router.pathname,
+      query: { ...router.query, [searchKey]: value },
+    });
   };
-  useEffect(() => {
-    const query = router.query;
-    const searchValue =
-      typeof query[searchKey] === "string" ? query[searchKey] : "";
+  if (searchValue !== lastText) {
+    setLastText(searchValue);
     setText(searchValue);
+  }
+  useEffect(() => {
     onSearch(searchValue);
-  }, [router.query, onSearch]);
+  }, [searchValue, onSearch]);
   return (
     <form
       className={`max-w-md mx-auto ${className ?? ""}`}

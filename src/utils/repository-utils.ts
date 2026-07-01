@@ -100,7 +100,6 @@ export const repositoryComparison = (
   }
   const stargazersForksComparison =
     calcStargazersForks(b) - calcStargazersForks(a);
-  (b.stargazers_count ?? 0) - (a.stargazers_count ?? 0);
   if (stargazersForksComparison !== 0) {
     return stargazersForksComparison;
   }

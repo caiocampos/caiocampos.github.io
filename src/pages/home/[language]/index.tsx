@@ -21,8 +21,6 @@ import {
   getRepositoriesTranslation,
   getTermTranslation,
   isLanguagePT,
-  Language,
-  LanguageEnum,
   languages,
   locales,
   PageParams,
@@ -32,6 +30,7 @@ import { Flag } from "@/components/flag";
 import { LanguageChart } from "@/components/language-chart";
 import { ThemeSelector } from "@/components/theme-selector";
 import { LanguageSelector } from "@/components/language-selector";
+import { Language, LanguageEnum } from "@/types/languages";
 
 interface RepositoriesGetStaticProps {
   repositories: RepositoryData[];

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "create-classes": "npx ts-node create-classes.ts",
+    "create-classes": "npx ts-node src/scripts/create-classes.ts",
     "predev": "npm run create-classes",
     "dev": "next dev",
     "dev:full": "NEXT_PUBLIC_FULL_BUILD=true npm run dev",
@@ -12,7 +12,8 @@
     "build": "next build",
     "build:full": "NEXT_PUBLIC_FULL_BUILD=true npm run build",
     "start": "serve out",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "prepush": "npm run lint",
     "libretranslate": "docker compose --file libretranslate-docker-compose.yml up -d --build --wait",
     "libretranslate-stop": "docker compose --file libretranslate-docker-compose.yml down"
   },

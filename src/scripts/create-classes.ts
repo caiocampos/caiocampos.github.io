@@ -1,5 +1,5 @@
 import fs from 'fs';
-import configuration from "./src/config.json" with { type: "json" };
+import configuration from "../config.json" with { type: "json" };
 
 
 const { main_color: mainColor, search_color: searchColor } = configuration;

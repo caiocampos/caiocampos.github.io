@@ -3,8 +3,7 @@ import { TermTranslation } from "@/intefaces/translation";
 import { MinimalRepository } from "@/services/github/github-dtos";
 import { LibretranslateServices } from "@/services/libretranslate/libretranslate-services";
 import { regexLink } from "./string-utils";
-
-export type Language = "pt" | "en" | "es" | "it" | "fr" | "de";
+import { Language, LanguageEnum } from "@/types/languages";
 
 const isFullBuild = (): boolean =>
   process.env.NEXT_PUBLIC_FULL_BUILD === "true";
@@ -14,15 +13,6 @@ export const languages: Language[] = isFullBuild()
   : ["pt"];
 
 export const defaultLanguage = (): Language => (isFullBuild() ? "en" : "pt");
-
-export enum LanguageEnum {
-  Portuguese = "pt",
-  English = "en",
-  Spanish = "es",
-  Italian = "it",
-  French = "fr",
-  German = "de",
-}
 
 const PT = LanguageEnum.Portuguese;
 
@@ -67,10 +57,6 @@ export const getLanguageDisclaimer = (
 
 export interface PageParams {
   language: Language;
-}
-
-export interface PageProps {
-  params: PageParams;
 }
 
 export const generateParams = (langs: Language[]): PageParams[] =>
