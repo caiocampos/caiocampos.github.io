@@ -332,3 +332,11 @@ export interface CodeOfConduct {
   html_url: string | null;
   [k: string]: unknown;
 }
+
+export interface MinimalRepositoryTranslatedData {
+  id: number;
+  name: string;
+  language: string | null;
+  html_url: string;
+  descriptions: { [k: string]: string };
+}

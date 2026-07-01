@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "create-classes": "npx ts-node src/scripts/create-classes.ts",
+    "create-classes": "tsx src/scripts/create-classes.ts",
     "predev": "npm run create-classes",
     "dev": "next dev",
     "dev:full": "NEXT_PUBLIC_FULL_BUILD=true npm run dev",
@@ -15,7 +15,8 @@
     "lint": "eslint .",
     "prepush": "npm run lint",
     "libretranslate": "docker compose --file libretranslate-docker-compose.yml up -d --build --wait",
-    "libretranslate-stop": "docker compose --file libretranslate-docker-compose.yml down"
+    "libretranslate-stop": "docker compose --file libretranslate-docker-compose.yml down",
+    "repo-json-builder": "tsx src/scripts/repo-json-builder.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
@@ -44,6 +45,7 @@
     "postcss": "^8.5",
     "tailwindcss": "^4.3.0",
     "ts-node": "^10.9",
+    "tsx": "^4.22",
     "typescript": "^6.0"
   }
 }

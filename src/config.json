@@ -16,5 +16,9 @@
     "Kotlin": "Java/Kotlin",
     "TypeScript": "JavaScript/TypeScript",
     "Zig": "C/C++/Zig"
+  },
+  "json_generator": {
+    "source_language": "pt",
+    "target_languages": ["en", "es"]
   }
 }
