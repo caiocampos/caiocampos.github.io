@@ -6,7 +6,7 @@ self.__BUILD_MANIFEST = {
     "static/chunks/1j5i53i1szmu4.js"
   ],
   "/home/[language]": [
-    "static/chunks/35a9vgyhvidxg.js"
+    "static/chunks/0_el2wvyl-vqw.js"
   ],
   "__rewrites": {
     "afterFiles": [],
