@@ -107,22 +107,34 @@ export const getTermTranslation = async (
   return out;
 };
 
-export const getRepositoryTranslation = async (
-  repository: MinimalRepository,
+export const getDescriptionTranslation = async (
+  description: string,
   language: Language,
-): Promise<MinimalRepository> => {
-  const base = { ...repository };
-  if (isLanguagePT(language) || base.description === null) {
-    return base;
+): Promise<string> => {
+  if (isLanguagePT(language)) {
+    return description;
   }
-  const [originalDescription, ...linkParts] = base.description.split(regexLink);
-  const description = await LibretranslateServices.translate(
+  const [originalDescription, ...linkParts] = description.split(regexLink);
+  const translatedDescription = await LibretranslateServices.translate(
     originalDescription,
     PT,
     language,
   );
-  base.description = [description, " ", ...linkParts].join("");
-  return base;
+  return [translatedDescription, " ", ...linkParts].join("");
+};
+
+export const getRepositoryTranslation = async (
+  repository: MinimalRepository,
+  language: Language,
+): Promise<MinimalRepository> => {
+  if (isLanguagePT(language) || repository.description === null) {
+    return repository;
+  }
+  const description = await getDescriptionTranslation(
+    repository.description,
+    language,
+  );
+  return { ...repository, description };
 };
 
 export const getRepositoriesTranslation = async (

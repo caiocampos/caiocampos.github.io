@@ -6,7 +6,7 @@ import {
 } from "@/services/github/github-dtos";
 import { GithubServices } from "@/services/github/github-services";
 import { Language } from "@/types/languages";
-import { getRepositoryTranslation } from "@/utils/language-utils";
+import { getDescriptionTranslation } from "@/utils/language-utils";
 
 const loadRepositories = async (): Promise<MinimalRepository[]> => {
   const repositoriesBruteData: MinimalRepository[] =
@@ -34,12 +34,12 @@ const getTranslations = async (
       descriptions: { [config.source_language]: repo.description },
     };
     const translations = await Promise.all(
-      config.target_languages.map(async (lang) => {
-        const translatedRepo = await getRepositoryTranslation(
-          repo,
-          lang as Language,
+      config.target_languages.map(async (language) => {
+        const description = await getDescriptionTranslation(
+          repo.description!,
+          language as Language,
         );
-        return { language: lang, description: translatedRepo.description };
+        return { language, description };
       }),
     );
     for (const translation of translations) {
