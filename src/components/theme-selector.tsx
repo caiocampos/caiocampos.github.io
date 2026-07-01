@@ -27,7 +27,7 @@ export const ThemeSelector = ({ termTranslation }: TermTranslationAdapter) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger render={dropdownMenuButton} />
-      <DropdownMenuContent align="end" className="z-110">
+      <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme("light")}>
           {termTranslation.light}
         </DropdownMenuItem>

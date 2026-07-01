@@ -122,7 +122,7 @@ export default function HomePage({
           termTranslation={termTranslation}
         />
       </div>
-      <div className="sticky w-full p-2 z-100 top-0 drop-shadow-md">
+      <div className="sticky w-full p-2 z-45 top-0 drop-shadow-md">
         <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
       </div>
       {filter === undefined ? (

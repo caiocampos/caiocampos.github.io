@@ -64,7 +64,7 @@ export const LanguageSelector = ({
           className="min-[700px]:hidden"
           render={dropdownMenuButton}
         />
-        <DropdownMenuContent align="end" className="z-110">
+        <DropdownMenuContent align="end">
           {languageList.map((l) => (
             <DropdownMenuItem
               key={l}
