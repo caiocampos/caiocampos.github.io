@@ -1,0 +1,35 @@
+[
+  {
+    "id": 904433725,
+    "name": "loan-app",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/loan-app",
+    "descriptions": {
+      "pt": " Aplicativo para registrar emprestimo de objetos ou dinheiro usando React Native (arquivado momentaneamente)",
+      "en": "Application to register loan of objects or money using React Native (momentarily archived) ",
+      "es": "Aplicación para registrar emprestimos de objetos o dinero usando React Native (arquivado brevemente) "
+    }
+  },
+  {
+    "id": 904433033,
+    "name": "quiz-app",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/quiz-app",
+    "descriptions": {
+      "pt": "Aplicativo de quiz usando React Native (arquivado momentaneamente)",
+      "en": "Quiz application using React Native (momentarily archived) ",
+      "es": "Aplicación de quiz utilizando React Native (arquivado brevemente) "
+    }
+  },
+  {
+    "id": 875798414,
+    "name": "readme-base",
+    "language": "HTML",
+    "html_url": "https://github.com/caiocampos/readme-base",
+    "descriptions": {
+      "pt": "Código base para a montagem do README da página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Base code for the README assembly of the profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Código base para el montaje del README de la página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+    }
+  }
+]
