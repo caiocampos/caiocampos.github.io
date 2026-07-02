@@ -120,7 +120,9 @@ export const getDescriptionTranslation = async (
     PT,
     language,
   );
-  return [translatedDescription, " ", ...linkParts].join("");
+  return linkParts.length > 0
+    ? [translatedDescription, " ", ...linkParts].join("")
+    : translatedDescription;
 };
 
 export const getRepositoryTranslation = async (

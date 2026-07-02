@@ -74,7 +74,7 @@ const drawRepos = (
       const u = Math.random();
       let w = calcStargazersForks(repo) - calcForkArchive(repo);
       if (w <= 0.0) {
-        w = 0.001;
+        w = 0.00001;
       }
       const key = -Math.log(u) / w;
       return {
@@ -82,7 +82,7 @@ const drawRepos = (
         repo,
       };
     })
-    .sort((a, b) => b.key - a.key);
+    .sort((a, b) => a.key - b.key);
 
   const size = config.max_size < items.length ? config.max_size : items.length;
   return items.slice(0, size).map(({ repo }) => repo);
