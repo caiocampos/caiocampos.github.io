@@ -1,35 +1,35 @@
 [
   {
-    "id": 402205460,
-    "name": "JS-Random-Stuff",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "id": 129411755,
+    "name": "Restaurantes",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/Restaurantes",
     "descriptions": {
-      "pt": "Projetos variados em JavaScript e TypeScript",
-      "en": "Miscellaneous projects in JavaScript and TypeScript",
-      "es": "Proyectos variados en JavaScript y TypeScript"
+      "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
+      "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
+      "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
     }
   },
   {
-    "id": 427346914,
-    "name": "md-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 882878947,
-    "name": "Restaurante-angular",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/Restaurante-angular",
+    "id": 508846906,
+    "name": "md-fuse-py",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/md-fuse-py",
     "descriptions": {
-      "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades. Utiliza Java, Spring, Angular 13, Bootstrap 4 e MongoDB (Maven e Gradle) ",
-      "en": "Restaurant's, Software prototype with login, authority management and CRAD of entities. Use Java, Spring, Angular 13, Bootstrap 4 and MongoDB (Maven and Gradle)",
-      "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades. Utiliza Java, Spring, Angular 13, Bootstrap 4 y MongoDB (Maven y Gradle)"
+      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
+      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
+      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
