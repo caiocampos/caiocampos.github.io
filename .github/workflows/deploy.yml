@@ -85,6 +85,9 @@ jobs:
     - name: Build
       run: yarn build
 
+    - name: Make JSON file with repository translation
+      run: yarn repo-json-builder
+
     - name: Stop translate service
       if: always()
       run: npm run libretranslate-stop
@@ -103,3 +106,10 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: master
         folder: out
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        branch: json_result
+        folder: json_result

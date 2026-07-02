@@ -1,3 +1,4 @@
+import fs, { mkdir } from "fs/promises";
 import { configuration } from "@/global";
 import { JsonGenerator } from "@/intefaces/config";
 import {
@@ -7,6 +8,8 @@ import {
 import { GithubServices } from "@/services/github/github-services";
 import { Language } from "@/types/languages";
 import { getDescriptionTranslation } from "@/utils/language-utils";
+import { calcForkArchive, calcStargazersForks } from "@/utils/repository-utils";
+import { dirname } from "path";
 
 const loadRepositories = async (): Promise<MinimalRepository[]> => {
   const repositoriesBruteData: MinimalRepository[] =
@@ -17,51 +20,100 @@ const loadRepositories = async (): Promise<MinimalRepository[]> => {
   return repositoriesBruteData;
 };
 
+const getTranslation = async (
+  repository: MinimalRepository,
+  config: JsonGenerator,
+): Promise<MinimalRepositoryTranslatedData | null> => {
+  if (repository.description === null) {
+    return null;
+  }
+  const originalDescription = repository.description;
+  const translated: MinimalRepositoryTranslatedData = {
+    id: repository.id,
+    name: repository.name,
+    language: repository.language ?? null,
+    html_url: repository.html_url,
+    descriptions: { [config.source_language]: originalDescription },
+  };
+  const translations = await Promise.all(
+    config.target_languages.map(async (language) => {
+      const description = await getDescriptionTranslation(
+        originalDescription,
+        language as Language,
+      );
+      return { language, description };
+    }),
+  );
+  for (const translation of translations) {
+    translated.descriptions[translation.language] = translation.description;
+  }
+  return translated;
+};
+
 const getTranslations = async (
-  repositoriesBruteData: MinimalRepository[],
+  repositories: MinimalRepository[],
   config: JsonGenerator,
 ): Promise<MinimalRepositoryTranslatedData[]> => {
   const repos: MinimalRepositoryTranslatedData[] = [];
-  for (const repo of repositoriesBruteData) {
-    if (repo.archived || repo.fork || repo.description === null) {
+  for (const repo of repositories) {
+    const translated = await getTranslation(repo, config);
+    if (translated === null) {
       continue;
-    }
-    const originalDescription = repo.description;
-    const translated: MinimalRepositoryTranslatedData = {
-      id: repo.id,
-      name: repo.name,
-      language: repo.language ?? null,
-      html_url: repo.html_url,
-      descriptions: { [config.source_language]: originalDescription },
-    };
-    const translations = await Promise.all(
-      config.target_languages.map(async (language) => {
-        const description = await getDescriptionTranslation(
-          originalDescription,
-          language as Language,
-        );
-        return { language, description };
-      }),
-    );
-    for (const translation of translations) {
-      translated.descriptions[translation.language] =
-        translation.description ?? "";
     }
     repos.push(translated);
   }
   return repos;
 };
 
+const drawRepos = (
+  repositories: MinimalRepository[],
+  config: JsonGenerator,
+): MinimalRepository[] => {
+  const items = repositories
+    .map((repo) => {
+      const u = Math.random();
+      let w = calcStargazersForks(repo) - calcForkArchive(repo);
+      if (w <= 0.0) {
+        w = 0.001;
+      }
+      const key = -Math.log(u) / w;
+      return {
+        key,
+        repo,
+      };
+    })
+    .sort((a, b) => b.key - a.key);
+
+  const size = config.max_size < items.length ? config.max_size : items.length;
+  return items.slice(0, size).map(({ repo }) => repo);
+};
+
+const writeJSONFile = async (
+  repos: MinimalRepositoryTranslatedData[],
+  config: JsonGenerator,
+): Promise<void> => {
+  try {
+    const folder = dirname(config.output_path);
+    await mkdir(folder, { recursive: true });
+    await fs.writeFile(
+      config.output_path,
+      JSON.stringify(repos, null, 2),
+      "utf8",
+    );
+  } catch (err) {
+    console.error(`Error to write file ${config.output_path}`, err);
+  }
+};
+
 const run = async (): Promise<void> => {
-  if (
-    configuration.json_generator === undefined ||
-    configuration.json_generator === null
-  ) {
+  const config = configuration.json_generator ?? null;
+  if (config === null) {
     return;
   }
   const repos = await loadRepositories();
-  const translated = await getTranslations(repos, configuration.json_generator);
-  console.log(JSON.stringify(translated));
+  const drawnRepos = drawRepos(repos, config);
+  const translated = await getTranslations(drawnRepos, config);
+  await writeJSONFile(translated, config);
 };
 
 run();

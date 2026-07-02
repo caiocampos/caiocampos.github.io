@@ -19,6 +19,8 @@
   },
   "json_generator": {
     "source_language": "pt",
-    "target_languages": ["en", "es"]
+    "target_languages": ["en", "es"],
+    "max_size": 3,
+    "output_path": "json_result/repos.json"
   }
 }

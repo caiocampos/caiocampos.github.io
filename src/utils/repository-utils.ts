@@ -84,10 +84,10 @@ const updateSet = (
   return wordSet;
 };
 
-const calcForkArchive = (repo: MinimalRepository): number =>
+export const calcForkArchive = (repo: MinimalRepository): number =>
   repo.archived ? -2 : repo.fork ? -1 : 0;
 
-const calcStargazersForks = (repo: MinimalRepository): number =>
+export const calcStargazersForks = (repo: MinimalRepository): number =>
   (repo.forks_count ?? 0) * 1.2 + (repo.stargazers_count ?? 0);
 
 export const repositoryComparison = (
