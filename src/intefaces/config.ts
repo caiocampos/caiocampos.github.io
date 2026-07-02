@@ -22,5 +22,6 @@ export interface JsonGenerator {
   source_language: string;
   target_languages: string[];
   max_size: number;
-  output_path: string;
+  partial_output_path: string;
+  final_output_path: string;
 }

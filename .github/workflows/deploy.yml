@@ -106,10 +106,3 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         branch: master
         folder: out
-
-    - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        branch: json_result
-        folder: json_result

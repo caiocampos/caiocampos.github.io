@@ -53,14 +53,21 @@ const getTranslation = async (
 const getTranslations = async (
   repositories: MinimalRepository[],
   config: JsonGenerator,
+  pageSize = 3,
 ): Promise<MinimalRepositoryTranslatedData[]> => {
+  const base = [...repositories];
   const repos: MinimalRepositoryTranslatedData[] = [];
-  for (const repo of repositories) {
-    const translated = await getTranslation(repo, config);
-    if (translated === null) {
-      continue;
+  while (base.length > 0) {
+    const page = base.splice(0, pageSize);
+    const translatedPage = await Promise.all(
+      page.map((repo) => getTranslation(repo, config)),
+    );
+    for (const item of translatedPage) {
+      if (item === null) {
+        continue;
+      }
+      repos.push(item);
     }
-    repos.push(translated);
   }
   return repos;
 };
@@ -74,7 +81,7 @@ const drawRepos = (
     repo: MinimalRepository;
   }[] = [];
   for (const repo of repositories) {
-    if (repo.archived || repo.fork) {
+    if (repo.archived || repo.fork || repo.description === null) {
       continue;
     }
     const u = Math.random();
@@ -91,20 +98,60 @@ const drawRepos = (
     .map(({ repo }) => repo);
 };
 
-const writeJSONFile = async (
+const createMDRecords = (
+  repos: MinimalRepositoryTranslatedData[],
+  config: JsonGenerator,
+): Record<string, string> => {
+  const languages = [config.source_language, ...config.target_languages];
+  const record: Record<string, string> = {};
+
+  for (const language of languages) {
+    record[`repos_${language}`] = repos
+      .map((repo) => {
+        const description = repo.descriptions[language];
+        if (description === undefined) {
+          return "";
+        }
+        return `[${repo.name}](${repo.html_url})
+      ${description}
+      `;
+      })
+      .join("\n");
+  }
+  return record;
+};
+
+const writePartialJSONFile = async (
   repos: MinimalRepositoryTranslatedData[],
   config: JsonGenerator,
 ): Promise<void> => {
   try {
-    const folder = dirname(config.output_path);
+    const folder = dirname(config.partial_output_path);
     await mkdir(folder, { recursive: true });
     await fs.writeFile(
-      config.output_path,
+      config.partial_output_path,
       JSON.stringify(repos, null, 2),
       "utf8",
     );
   } catch (err) {
-    console.error(`Error to write file ${config.output_path}`, err);
+    console.error(`Error to write file ${config.partial_output_path}`, err);
+  }
+};
+
+const writeFinalJSONFile = async (
+  record: Record<string, string>,
+  config: JsonGenerator,
+): Promise<void> => {
+  try {
+    const folder = dirname(config.final_output_path);
+    await mkdir(folder, { recursive: true });
+    await fs.writeFile(
+      config.final_output_path,
+      JSON.stringify(record, null, 2),
+      "utf8",
+    );
+  } catch (err) {
+    console.error(`Error to write file ${config.final_output_path}`, err);
   }
 };
 
@@ -115,8 +162,12 @@ const run = async (): Promise<void> => {
   }
   const repos = await loadRepositories();
   const drawnRepos = drawRepos(repos, config);
+
   const translated = await getTranslations(drawnRepos, config);
-  await writeJSONFile(translated, config);
+  await writePartialJSONFile(translated, config);
+
+  const md = createMDRecords(translated, config);
+  await writeFinalJSONFile(md, config);
 };
 
 run();

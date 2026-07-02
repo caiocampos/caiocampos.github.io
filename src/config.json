@@ -21,6 +21,7 @@
     "source_language": "pt",
     "target_languages": ["en", "es"],
     "max_size": 3,
-    "output_path": "json_result/repos.json"
+    "partial_output_path": "out/repos.json",
+    "final_output_path": "out/repos-md.json"
   }
 }
