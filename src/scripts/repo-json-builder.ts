@@ -8,7 +8,7 @@ import {
 import { GithubServices } from "@/services/github/github-services";
 import { Language } from "@/types/languages";
 import { getDescriptionTranslation } from "@/utils/language-utils";
-import { calcForkArchive, calcStargazersForks } from "@/utils/repository-utils";
+import { calcStargazersForks } from "@/utils/repository-utils";
 import { dirname } from "path";
 
 const loadRepositories = async (): Promise<MinimalRepository[]> => {
@@ -69,23 +69,26 @@ const drawRepos = (
   repositories: MinimalRepository[],
   config: JsonGenerator,
 ): MinimalRepository[] => {
-  const items = repositories
-    .map((repo) => {
-      const u = Math.random();
-      let w = calcStargazersForks(repo) - calcForkArchive(repo);
-      if (w <= 0.0) {
-        w = 0.00001;
-      }
-      const key = -Math.log(u) / w;
-      return {
-        key,
-        repo,
-      };
-    })
-    .sort((a, b) => a.key - b.key);
-
-  const size = config.max_size < items.length ? config.max_size : items.length;
-  return items.slice(0, size).map(({ repo }) => repo);
+  const items: {
+    key: number;
+    repo: MinimalRepository;
+  }[] = [];
+  for (const repo of repositories) {
+    if (repo.archived || repo.fork) {
+      continue;
+    }
+    const u = Math.random();
+    const w = calcStargazersForks(repo);
+    const key = -Math.log(u) / w;
+    items.push({
+      key,
+      repo,
+    });
+  }
+  return items
+    .sort((a, b) => a.key - b.key)
+    .slice(0, config.max_size)
+    .map(({ repo }) => repo);
 };
 
 const writeJSONFile = async (
