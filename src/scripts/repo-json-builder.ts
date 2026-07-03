@@ -112,9 +112,9 @@ const createMDRecords = (
         if (description === undefined) {
           return "";
         }
-        return `[${repo.name}](${repo.html_url})\n${description}`;
+        return `[${repo.name}](${repo.html_url})\n\n${description}`;
       })
-      .join("\n\n");
+      .join("\n\n\n\n");
   }
   return record;
 };
