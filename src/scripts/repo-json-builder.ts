@@ -114,7 +114,7 @@ const createMDRecords = (
         }
         return `[${repo.name}](${repo.html_url})\n\n${description}`;
       })
-      .join("\n\n\n\n");
+      .join("\n<br><br>\n");
   }
   return record;
 };
