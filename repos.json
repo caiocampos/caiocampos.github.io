@@ -1,16 +1,5 @@
 [
   {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
     "id": 200933441,
     "name": "go.db.restapi",
     "language": "Go",
@@ -22,14 +11,25 @@
     }
   },
   {
-    "id": 189728973,
-    "name": "POI-inc",
-    "language": "Kotlin",
-    "html_url": "https://github.com/caiocampos/POI-inc",
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
     "descriptions": {
-      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
-      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
-      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
+      "pt": "Projetos variados em JavaScript e TypeScript",
+      "en": "Miscellaneous projects in JavaScript and TypeScript",
+      "es": "Proyectos variados en JavaScript y TypeScript"
+    }
+  },
+  {
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "descriptions": {
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   }
 ]
