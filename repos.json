@@ -1,13 +1,24 @@
 [
   {
-    "id": 189728973,
-    "name": "POI-inc",
-    "language": "Kotlin",
-    "html_url": "https://github.com/caiocampos/POI-inc",
+    "id": 171151150,
+    "name": "img-fuse",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/img-fuse",
     "descriptions": {
-      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
-      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
-      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
+      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
+      "en": "Rust program project to merge images to use in digital cards",
+      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
+    }
+  },
+  {
+    "id": 219068444,
+    "name": "primes",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/primes",
+    "descriptions": {
+      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
+      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
+      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
     }
   },
   {
@@ -19,17 +30,6 @@
       "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
       "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
       "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
