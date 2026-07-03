@@ -85,7 +85,7 @@ const drawRepos = (
       continue;
     }
     const u = Math.random();
-    const w = calcStargazersForks(repo);
+    const w = 10 * calcStargazersForks(repo) + 1;
     const key = -Math.log(u) / w;
     items.push({
       key,
