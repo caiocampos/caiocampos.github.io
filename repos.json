@@ -1,35 +1,35 @@
 [
   {
-    "id": 402202135,
-    "name": "Zig-C-Random-Stuff",
-    "language": "C#",
-    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "id": 402206243,
+    "name": "Python-Random-Stuff",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em C, C++, C# e Zig",
-      "en": "Miscellaneous projects in C, C++, C# and Zig",
-      "es": "Proyectos variados en C, C++, C# y Zig"
+      "pt": "Projetos variados em Python",
+      "en": "Miscellaneous Python Projects",
+      "es": "Proyectos variados en Python"
     }
   },
   {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Look for food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   },
   {
-    "id": 402204409,
-    "name": "Go-Random-Stuff",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em Go",
-      "en": "Miscellaneous projects in Go",
-      "es": "Proyectos variados en Go"
+      "pt": "Projetos variados em JavaScript e TypeScript",
+      "en": "Miscellaneous projects in JavaScript and TypeScript",
+      "es": "Proyectos variados en JavaScript y TypeScript"
     }
   }
 ]
