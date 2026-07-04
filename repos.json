@@ -1,27 +1,5 @@
 [
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
-    "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
-    }
-  },
-  {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
-    "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
     "id": 427346914,
     "name": "md-fuse",
     "language": "Rust",
@@ -30,6 +8,28 @@
       "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
       "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
       "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
+    }
+  },
+  {
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
+    "descriptions": {
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   }
 ]
