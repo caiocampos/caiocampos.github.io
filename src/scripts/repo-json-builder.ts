@@ -112,7 +112,8 @@ const createMDRecords = (
         if (description === undefined) {
           return "";
         }
-        return `[${repo.name}](${repo.html_url})\n\n${repo.language}\n\n${description}`;
+        const mainLanguage = repo.language !== null ? ` - ${repo.language}` : "";
+        return `[${repo.name}](${repo.html_url})${mainLanguage}\n\n${description}`;
       })
       .join("\n<br><br>\n");
   }
