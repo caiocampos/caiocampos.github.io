@@ -1,13 +1,13 @@
 [
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "id": 402206243,
+    "name": "Python-Random-Stuff",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
     "descriptions": {
-      "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
-      "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
-      "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
+      "pt": "Projetos variados em Python",
+      "en": "Miscellaneous Python Projects",
+      "es": "Proyectos variados en Python"
     }
   },
   {
@@ -22,14 +22,14 @@
     }
   },
   {
-    "id": 509780798,
-    "name": "7backupper",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/7backupper",
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
-      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
-      "en": "Utility to automate creation of compressed backup files",
-      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
