@@ -1,35 +1,35 @@
 [
   {
-    "id": 419695528,
-    "name": "blog-posts",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   },
   {
-    "id": 402206243,
-    "name": "Python-Random-Stuff",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
+    "id": 402204409,
+    "name": "Go-Random-Stuff",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em Python",
-      "en": "Miscellaneous Python Projects",
-      "es": "Proyectos variados en Python"
+      "pt": "Projetos variados em Go",
+      "en": "Miscellaneous projects in Go",
+      "es": "Proyectos variados en Go"
     }
   },
   {
-    "id": 402205460,
-    "name": "JS-Random-Stuff",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Projetos variados em JavaScript e TypeScript",
-      "en": "Miscellaneous projects in JavaScript and TypeScript",
-      "es": "Proyectos variados en JavaScript y TypeScript"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   }
 ]
