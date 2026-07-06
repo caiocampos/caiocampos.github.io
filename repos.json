@@ -1,5 +1,27 @@
 [
   {
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
+    }
+  },
+  {
+    "id": 200933441,
+    "name": "go.db.restapi",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/go.db.restapi",
+    "descriptions": {
+      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
+      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
+      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
+    }
+  },
+  {
     "id": 129411755,
     "name": "Restaurantes",
     "language": "Go",
@@ -8,28 +30,6 @@
       "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
       "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
       "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
-    }
-  },
-  {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
-    "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
-    }
-  },
-  {
-    "id": 129097852,
-    "name": "Random-Stuff",
-    "language": "Lua",
-    "html_url": "https://github.com/caiocampos/Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Lua, Perl e outras linguagens",
-      "en": "Various projects in Lua, Perl and other languages",
-      "es": "Proyectos variados en Luna, Perl y otros lenguajes"
     }
   }
 ]
