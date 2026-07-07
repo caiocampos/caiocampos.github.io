@@ -1,5 +1,27 @@
 [
   {
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "descriptions": {
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
+    }
+  },
+  {
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
+    "descriptions": {
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+    }
+  },
+  {
     "id": 129411755,
     "name": "Restaurantes",
     "language": "Go",
@@ -8,28 +30,6 @@
       "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
       "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
       "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
-    }
-  },
-  {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
-    }
-  },
-  {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
