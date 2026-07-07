@@ -11,25 +11,25 @@
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "id": 219068444,
+    "name": "primes",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/primes",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
+      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
+      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
     }
   },
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "id": 508846906,
+    "name": "md-fuse-py",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/md-fuse-py",
     "descriptions": {
-      "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
-      "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
-      "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
+      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
+      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
+      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
