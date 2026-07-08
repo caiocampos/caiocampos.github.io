@@ -1,13 +1,13 @@
 [
   {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
@@ -22,14 +22,14 @@
     }
   },
   {
-    "id": 219068444,
-    "name": "primes",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/primes",
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
     "descriptions": {
-      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
-      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
-      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
     }
   }
 ]
