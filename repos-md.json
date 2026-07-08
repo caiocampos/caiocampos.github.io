@@ -1,5 +1,5 @@
 {
-  "repos_pt": "[blog-posts](https://github.com/caiocampos/blog-posts) - TypeScript\n\nPágina de postagens usando React, NestJS (Express) e MongoDB (Mongoose)\n<br><br>\n[md-fuse-py](https://github.com/caiocampos/md-fuse-py) - Python\n\nPrograma em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse\n<br><br>\n[Zig-C-Random-Stuff](https://github.com/caiocampos/Zig-C-Random-Stuff) - C#\n\nProjetos variados em C, C++, C# e Zig",
-  "repos_en": "[blog-posts](https://github.com/caiocampos/blog-posts) - TypeScript\n\nPost page using React, NestJS (Express) and MongoDB (Mongoose)\n<br><br>\n[md-fuse-py](https://github.com/caiocampos/md-fuse-py) - Python\n\nPython program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse\n<br><br>\n[Zig-C-Random-Stuff](https://github.com/caiocampos/Zig-C-Random-Stuff) - C#\n\nMiscellaneous projects in C, C++, C# and Zig",
-  "repos_es": "[blog-posts](https://github.com/caiocampos/blog-posts) - TypeScript\n\nPágina de posts usando React, NestJS (Express) y MongoDB (Mongoose)\n<br><br>\n[md-fuse-py](https://github.com/caiocampos/md-fuse-py) - Python\n\nGuión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse\n<br><br>\n[Zig-C-Random-Stuff](https://github.com/caiocampos/Zig-C-Random-Stuff) - C#\n\nProyectos variados en C, C++, C# y Zig"
+  "repos_pt": "",
+  "repos_en": "",
+  "repos_es": ""
 }
