@@ -15,6 +15,4 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-stale: 120
           days-before-delete: 7
-          comment-on-stale: 'Esta branch está inativa e será removida em breve.'
-          
-          branches-filter-regex: '^dependabot/'
+          branches-filter-regex: '^((?!dependabot))'
