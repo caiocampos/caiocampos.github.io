@@ -1,27 +1,5 @@
 [
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
-    "descriptions": {
-      "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
-      "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
-      "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
-    }
-  },
-  {
-    "id": 189728973,
-    "name": "POI-inc",
-    "language": "Kotlin",
-    "html_url": "https://github.com/caiocampos/POI-inc",
-    "descriptions": {
-      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
-      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
-      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
-    }
-  },
-  {
     "id": 419695528,
     "name": "blog-posts",
     "language": "TypeScript",
@@ -30,6 +8,28 @@
       "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
       "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
       "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 171151150,
+    "name": "img-fuse",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/img-fuse",
+    "descriptions": {
+      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
+      "en": "Rust program project to merge images to use in digital cards",
+      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
+    }
+  },
+  {
+    "id": 129411755,
+    "name": "Restaurantes",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "descriptions": {
+      "pt": "Restaurante's, protótipo de Software com login, gestão de autoridades e CRUD de entidades (arquivado momentaneamente)",
+      "en": "Restaurant's, Software prototype with login, authority management and CRAD entities (momentarily archived)",
+      "es": "Restaurante's, prototipo de Software con login, gestión de autoridades y CRUD de entidades (arquivado brevemente)"
     }
   }
 ]
