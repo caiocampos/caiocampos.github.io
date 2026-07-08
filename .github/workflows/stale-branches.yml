@@ -13,6 +13,6 @@ jobs:
         uses: crs-k/stale-branches@v9.0.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          days-before-stale: 120
-          days-before-delete: 7
+          days-before-stale: 90
+          days-before-delete: 105
           branches-filter-regex: '^((?!dependabot))'
