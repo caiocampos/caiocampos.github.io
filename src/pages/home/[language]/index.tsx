@@ -64,6 +64,11 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
         configuration.user_login,
         configuration.orgs_login,
       );
+    if (repositoriesBruteData.length === 0) {
+      const msg = "No repositories could be retrieved.";
+      console.error(msg);
+      throw Error(msg);
+    }
     const repositoriesTranslatedData: MinimalRepository[] = (
       await getRepositoriesTranslation(repositoriesBruteData, language)
     ).sort(repositoryComparison);
