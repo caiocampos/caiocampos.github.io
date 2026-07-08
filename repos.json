@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": 402206243,
+    "name": "Python-Random-Stuff",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em Python",
+      "en": "Miscellaneous Python Projects",
+      "es": "Proyectos variados en Python"
+    }
+  },
+  {
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
+    "descriptions": {
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+    }
+  },
+  {
+    "id": 167178482,
+    "name": "caiocampos.github.io",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "descriptions": {
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of the projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+    }
+  }
+]
