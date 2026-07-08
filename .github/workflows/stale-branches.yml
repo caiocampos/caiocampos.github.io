@@ -15,4 +15,4 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           days-before-stale: 90
           days-before-delete: 105
-          branches-filter-regex: '^((?!dependabot))'
+          branches-filter-regex: '^dependabot'
