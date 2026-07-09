@@ -1,24 +1,24 @@
 [
   {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
+    "id": 509780798,
+    "name": "7backupper",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
-    "id": 427346914,
-    "name": "md-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
+    "id": 402206243,
+    "name": "Python-Random-Stuff",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
     "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for several languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
+      "pt": "Projetos variados em Python",
+      "en": "Miscellaneous Python Projects",
+      "es": "Proyectos variados en Python"
     }
   },
   {
