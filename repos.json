@@ -1,27 +1,5 @@
 [
   {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
-    "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
     "id": 220121431,
     "name": "shrtr",
     "language": "TypeScript",
@@ -30,6 +8,28 @@
       "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
       "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
       "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 397396598,
+    "name": "asteroid-score",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/asteroid-score",
+    "descriptions": {
+      "pt": "Backend usando NestJS (Express) e MongoDB (Mongoose), para jogo Asteroids: https://github.com/cao-ancap/asteroids",
+      "en": "Backend using NestJS (Express) and MongoDB (Mongoose), for Asteroids game: https://github.com/cao-ancap/asteroids",
+      "es": "Backend usando NestJS (Express) y MongoDB (Mongoose), para juego Asteroids: https://github.com/cao-ancap/asteroids"
+    }
+  },
+  {
+    "id": 129539638,
+    "name": "restaurantes-app",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "descriptions": {
+      "pt": "Software com login, gestão de autoridades e CRUD de entidades. (Em migração)",
+      "en": "Software with login, authority management and CRAD of entities. (In migration)",
+      "es": "Software con acceso, gestión de autoridades y CRUD de entidades. (En migración)"
     }
   }
 ]
