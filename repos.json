@@ -1,35 +1,35 @@
 [
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e CRUD de entidades. (Em migração)",
-      "en": "Software with login, authority management and CRAD of entities. (In migration)",
-      "es": "Software con acceso, gestión de autoridades y CRUD de entidades. (En migración)"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of the projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   },
   {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "id": 402204953,
+    "name": "JVM-Random-Stuff",
+    "language": "Java",
+    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
+      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
+      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
     }
   },
   {
-    "id": 387616218,
-    "name": "asteroids",
-    "language": "GDScript",
-    "html_url": "https://github.com/cao-ancap/asteroids",
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Asteroids: Viaje pela vastidão do espaço e desvie de uma chuva de asteroides mortais! Controle uma nave espacial e evite os perigos que se aproximam, cada segundo conta! Quanto mais tempo você sobreviver, maior será sua pontuação. Jogo feito em Godot 3",
-      "en": "Asteroids: Travel through the vastness of space and divert from a rain of deadly asteroids! Control a spaceship and avoid the dangers approaching, every second counts! The longer you survive, the higher your score. Game made in Godot 3",
-      "es": "Asteroids: ¡Vija por la inmensidad del espacio y desvie de una lluvia de asteroides mortales! Control una nave espacial y evite los peligros que se aproximan, cada segundo cuenta! Cuanto más tiempo sobrevivirás, mayor será tu puntuación. Juego hecho en Godot 3"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   }
 ]
