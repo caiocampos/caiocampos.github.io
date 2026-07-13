@@ -11,25 +11,25 @@
     }
   },
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
+    "id": 889201502,
+    "name": "snake",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of the projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   },
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "id": 129539638,
+    "name": "restaurantes-app",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e CRUD de entidades, utilizando Go, Gin Gonic e MongoDB",
-      "en": "Software with login, authority management and CRAD of entities, using Go, Gin Gonic and MongoDB",
-      "es": "Software con inicio, gestión de autoridades y CRUD de entidades, utilizando Go, Gin Gonic y MongoDB"
+      "pt": "Software com login, gestão de autoridades e CRUD de entidades. (Em migração)",
+      "en": "Software with login, authority management and CRAD of entities. (In migration)",
+      "es": "Software con acceso, gestión de autoridades y CRUD de entidades. (En migración)"
     }
   }
 ]
