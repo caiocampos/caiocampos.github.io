@@ -1,35 +1,35 @@
 [
   {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
-    "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
-    "id": 402206243,
-    "name": "Python-Random-Stuff",
+    "id": 509780798,
+    "name": "7backupper",
     "language": "Python",
-    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Projetos variados em Python",
-      "en": "Miscellaneous Python Projects",
-      "es": "Proyectos variados en Python"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
+    "id": 220121431,
+    "name": "shrtr",
     "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 167178482,
+    "name": "caiocampos.github.io",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "descriptions": {
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of the projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   }
 ]
