@@ -1,35 +1,35 @@
 [
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e CRUD de entidades. (Em migração)",
-      "en": "Software with login, authority management and CRAD of entities. (In migration)",
-      "es": "Software con acceso, gestión de autoridades y CRUD de entidades. (En migración)"
+      "pt": "Projetos variados em JavaScript e TypeScript",
+      "en": "Miscellaneous projects in JavaScript and TypeScript",
+      "es": "Proyectos variados en JavaScript y TypeScript"
     }
   },
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of the projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   },
   {
-    "id": 200933441,
-    "name": "go.db.restapi",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/go.db.restapi",
+    "id": 402204953,
+    "name": "JVM-Random-Stuff",
+    "language": "Java",
+    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
     "descriptions": {
-      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
-      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
-      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
+      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
+      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
+      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
     }
   }
 ]
