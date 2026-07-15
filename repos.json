@@ -1,27 +1,5 @@
 [
   {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
-    "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
-    }
-  },
-  {
     "id": 402206638,
     "name": "Rust-Random-Stuff",
     "language": "Rust",
@@ -30,6 +8,28 @@
       "pt": "Projetos variados em Rust",
       "en": "Miscellaneous projects in Rust",
       "es": "Proyectos variados en Rust"
+    }
+  },
+  {
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em JavaScript e TypeScript",
+      "en": "Miscellaneous projects in JavaScript and TypeScript",
+      "es": "Proyectos variados en JavaScript y TypeScript"
+    }
+  },
+  {
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
+    "descriptions": {
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
