@@ -1,35 +1,35 @@
 [
   {
-    "id": 201666223,
-    "name": "rust-db-restapi",
+    "id": 508846906,
+    "name": "md-fuse-py",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "descriptions": {
+      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
+      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
+      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+    }
+  },
+  {
+    "id": 427346914,
+    "name": "md-fuse",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "html_url": "https://github.com/caiocampos/md-fuse",
     "descriptions": {
-      "pt": "Servidor rust simples com conexão ao PostgresSQL",
-      "en": "Simple rust server with PostgresSQL connection",
-      "es": "Servidor rust simple con conexión a PostgresSQL"
+      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
+      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
+      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
     }
   },
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
-    "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades, utilizando Go, Gin Gonic e MongoDB",
-      "en": "Software with login, authority management and C.R.U.D. of entities, using Go, Gin Gonic and MongoDB",
-      "es": "Software con inicio, gestión de autoridades y C.R.U.D. de entidades, utilizando Go, Gin Gonic y MongoDB"
-    }
-  },
-  {
-    "id": 904433725,
-    "name": "loan-app",
+    "id": 129539638,
+    "name": "restaurantes-app",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/loan-app",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Aplicativo para registrar emprestimo de objetos ou dinheiro usando React Native (arquivado momentaneamente)",
-      "en": "Application to register loan of objects or money using React Native (momentarily archived)",
-      "es": "Aplicación para registrar emprestimos de objetos o dinero usando React Native (arquivado brevemente)"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. (Em migração)",
+      "en": "Software with login, management of authorities and C.R.U.D. of entities. (In migration)",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. (En migración)"
     }
   }
 ]
