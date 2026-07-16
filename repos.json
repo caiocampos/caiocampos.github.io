@@ -1,35 +1,35 @@
 [
   {
-    "id": 509780798,
-    "name": "7backupper",
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
+    }
+  },
+  {
+    "id": 402206243,
+    "name": "Python-Random-Stuff",
     "language": "Python",
-    "html_url": "https://github.com/caiocampos/7backupper",
+    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
     "descriptions": {
-      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
-      "en": "Utility to automate creation of compressed backup files",
-      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
+      "pt": "Projetos variados em Python",
+      "en": "Miscellaneous Python Projects",
+      "es": "Proyectos variados en Python"
     }
   },
   {
-    "id": 220121431,
-    "name": "shrtr",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
-    "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   }
 ]
