@@ -1,5 +1,16 @@
 [
   {
+    "id": 509780798,
+    "name": "7backupper",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/7backupper",
+    "descriptions": {
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
+    }
+  },
+  {
     "id": 220121431,
     "name": "shrtr",
     "language": "TypeScript",
@@ -17,19 +28,8 @@
     "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
       "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
       "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
-    "id": 397396598,
-    "name": "asteroid-score",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/asteroid-score",
-    "descriptions": {
-      "pt": "Backend usando NestJS (Express) e MongoDB (Mongoose), para jogo Asteroids: https://github.com/cao-ancap/asteroids",
-      "en": "Backend using NestJS (Express) and MongoDB (Mongoose), for Asteroids game: https://github.com/cao-ancap/asteroids",
-      "es": "Backend usando NestJS (Express) y MongoDB (Mongoose), para juego Asteroids: https://github.com/cao-ancap/asteroids"
     }
   }
 ]
