@@ -1,35 +1,35 @@
 [
   {
-    "id": 402202135,
-    "name": "Zig-C-Random-Stuff",
-    "language": "C#",
-    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "id": 189728973,
+    "name": "POI-inc",
+    "language": "Kotlin",
+    "html_url": "https://github.com/caiocampos/POI-inc",
     "descriptions": {
-      "pt": "Projetos variados em C, C++, C# e Zig",
-      "en": "Miscellaneous projects in C, C++, C# and Zig",
-      "es": "Proyectos variados en C, C++, C# y Zig"
+      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
+      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
+      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
     }
   },
   {
-    "id": 402205460,
-    "name": "JS-Random-Stuff",
+    "id": 129539638,
+    "name": "restaurantes-app",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Projetos variados em JavaScript e TypeScript",
-      "en": "Miscellaneous projects in JavaScript and TypeScript",
-      "es": "Proyectos variados en JavaScript y TypeScript"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. (Em migração)",
+      "en": "Software with login, management of authorities and C.R.U.D. of entities. (In migration)",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. (En migración)"
     }
   },
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "id": 427346914,
+    "name": "md-fuse",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/md-fuse",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades, utilizando Go, Gin Gonic e MongoDB",
-      "en": "Software with login, authority management and C.R.U.D. of entities, using Go, Gin Gonic and MongoDB",
-      "es": "Software con inicio, gestión de autoridades y C.R.U.D. de entidades, utilizando Go, Gin Gonic y MongoDB"
+      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
+      "en": "Rust program to mount markdown files for several languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
+      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
     }
   }
 ]
