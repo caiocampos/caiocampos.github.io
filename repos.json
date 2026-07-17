@@ -1,24 +1,13 @@
 [
   {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
-    "id": 387616218,
-    "name": "asteroids",
-    "language": "GDScript",
-    "html_url": "https://github.com/cao-ancap/asteroids",
-    "descriptions": {
-      "pt": "Asteroids: Viaje pela vastidão do espaço e desvie de uma chuva de asteroides mortais! Controle uma nave espacial e evite os perigos que se aproximam, cada segundo conta! Quanto mais tempo você sobreviver, maior será sua pontuação. Jogo feito em Godot 3",
-      "en": "Asteroids: Travel through the vastness of space and divert from a rain of deadly asteroids! Control a spaceship and avoid the dangers approaching, every second counts! The longer you survive, the higher your score. Game made in Godot 3",
-      "es": "Asteroids: ¡Vija por la inmensidad del espacio y desvie de una lluvia de asteroides mortales! Control una nave espacial y evite los peligros que se aproximan, cada segundo cuenta! Cuanto más tiempo sobrevivirás, mayor será tu puntuación. Juego hecho en Godot 3"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   },
   {
@@ -30,6 +19,17 @@
       "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
       "en": "List of games developed by Anarchist Dog that can be tested in browser",
       "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+    }
+  },
+  {
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
     }
   }
 ]
