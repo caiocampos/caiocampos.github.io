@@ -1,35 +1,35 @@
 [
   {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
+    "id": 402204409,
+    "name": "Go-Random-Stuff",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
+      "pt": "Projetos variados em Go",
+      "en": "Miscellaneous projects in Go",
+      "es": "Proyectos variados en Go"
     }
   },
   {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
+    "id": 220121431,
+    "name": "shrtr",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
     "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
     }
   }
 ]
