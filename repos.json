@@ -1,35 +1,35 @@
 [
   {
-    "id": 419695528,
-    "name": "blog-posts",
+    "id": 129539638,
+    "name": "restaurantes-app",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
+      "en": "Software with login, management of authorities and C.R.U.D. of entities. For server project access: https://github.com/caiocampos/Restaurantes",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
     }
   },
   {
-    "id": 171151150,
-    "name": "img-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/img-fuse",
+    "id": 387616218,
+    "name": "asteroids",
+    "language": "GDScript",
+    "html_url": "https://github.com/cao-ancap/asteroids",
     "descriptions": {
-      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
-      "en": "Rust program project to merge images to use in digital cards",
-      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
+      "pt": "Asteroids: Viaje pela vastidão do espaço e desvie de uma chuva de asteroides mortais! Controle uma nave espacial e evite os perigos que se aproximam, cada segundo conta! Quanto mais tempo você sobreviver, maior será sua pontuação. Jogo feito em Godot 3",
+      "en": "Asteroids: Travel through the vastness of space and divert from a rain of deadly asteroids! Control a spaceship and avoid the dangers approaching, every second counts! The longer you survive, the higher your score. Game made in Godot 3",
+      "es": "Asteroids: ¡Vija por la inmensidad del espacio y desvie de una lluvia de asteroides mortales! Control una nave espacial y evite los peligros que se aproximan, cada segundo cuenta! Cuanto más tiempo sobrevivirás, mayor será tu puntuación. Juego hecho en Godot 3"
     }
   },
   {
-    "id": 219068444,
-    "name": "primes",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/primes",
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
-      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
-      "en": "WebAssembly Library (Wasm) created in Rust to perform various calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
-      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
