@@ -3,6 +3,8 @@ name: Deploy
 on:
   push:
     branches: [ nx-app ]
+    paths-ignore:
+      - '.github/**'
   schedule:
     - cron: "0 0-2,8-23/2 * * *"
   workflow_dispatch:
