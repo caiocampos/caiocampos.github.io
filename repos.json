@@ -1,35 +1,35 @@
 [
   {
-    "id": 200933441,
-    "name": "go.db.restapi",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/go.db.restapi",
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
-      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
-      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
-      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
     }
   },
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "id": 402204953,
+    "name": "JVM-Random-Stuff",
+    "language": "Java",
+    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
     "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
+      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
+      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
     }
   },
   {
-    "id": 220121431,
-    "name": "shrtr",
+    "id": 129539638,
+    "name": "restaurantes-app",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
+      "en": "Software with login, management of authorities and C.R.U.D. of entities. For server project access: https://github.com/caiocampos/Restaurantes",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
     }
   }
 ]
