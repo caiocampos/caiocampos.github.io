@@ -1,35 +1,35 @@
 [
   {
-    "id": 220121431,
-    "name": "shrtr",
+    "id": 129539638,
+    "name": "restaurantes-app",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
+      "en": "Software with login, management of authorities and C.R.U.D. of entities. For server project access: https://github.com/caiocampos/Restaurantes",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
     }
   },
   {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   },
   {
-    "id": 509780798,
-    "name": "7backupper",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/7backupper",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
-      "en": "Utility to automate creation of compressed backup files",
-      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
