@@ -1,35 +1,35 @@
 [
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   },
   {
-    "id": 220121431,
-    "name": "shrtr",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "id": 509780798,
+    "name": "7backupper",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "id": 189728973,
+    "name": "POI-inc",
+    "language": "Kotlin",
+    "html_url": "https://github.com/caiocampos/POI-inc",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
+      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
+      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
     }
   }
 ]
