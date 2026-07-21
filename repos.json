@@ -1,35 +1,35 @@
 [
   {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   },
   {
-    "id": 387783256,
-    "name": "web-games",
-    "language": "HTML",
-    "html_url": "https://github.com/cao-ancap/web-games",
+    "id": 220121431,
+    "name": "shrtr",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
-      "en": "List of games developed by Anarchist Dog that can be tested in browser",
-      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 402202135,
-    "name": "Zig-C-Random-Stuff",
-    "language": "C#",
-    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Projetos variados em C, C++, C# e Zig",
-      "en": "Miscellaneous projects in C, C++, C# and Zig",
-      "es": "Proyectos variados en C, C++, C# y Zig"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   }
 ]
