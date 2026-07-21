@@ -1,24 +1,13 @@
 [
   {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
+    "id": 402204953,
+    "name": "JVM-Random-Stuff",
+    "language": "Java",
+    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
-    }
-  },
-  {
-    "id": 129097852,
-    "name": "Random-Stuff",
-    "language": "Lua",
-    "html_url": "https://github.com/caiocampos/Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Lua, Perl e outras linguagens",
-      "en": "Various projects in Lua, Perl and other languages",
-      "es": "Proyectos variados en Luna, Perl y otros lenguajes"
+      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
+      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
+      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
     }
   },
   {
@@ -30,6 +19,17 @@
       "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
       "en": "List of games developed by Anarchist Dog that can be tested in browser",
       "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+    }
+  },
+  {
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
     }
   }
 ]
