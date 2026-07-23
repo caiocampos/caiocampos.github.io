@@ -1,5 +1,16 @@
 [
   {
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
+    "descriptions": {
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+    }
+  },
+  {
     "id": 387783256,
     "name": "web-games",
     "language": "HTML",
@@ -11,25 +22,14 @@
     }
   },
   {
-    "id": 427346914,
-    "name": "md-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
+    "id": 402204953,
+    "name": "JVM-Random-Stuff",
+    "language": "Java",
+    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
     "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
-    }
-  },
-  {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
+      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
+      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
+      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
     }
   }
 ]
