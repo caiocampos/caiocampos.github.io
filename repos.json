@@ -1,35 +1,35 @@
 [
   {
-    "id": 201666223,
-    "name": "rust-db-restapi",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Servidor rust simples com conexão ao PostgresSQL",
-      "en": "Simple rust server with PostgresSQL connection",
-      "es": "Servidor rust simple con conexión a PostgresSQL"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   },
   {
-    "id": 219068444,
-    "name": "primes",
+    "id": 427346914,
+    "name": "md-fuse",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/primes",
+    "html_url": "https://github.com/caiocampos/md-fuse",
     "descriptions": {
-      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
-      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
-      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
+      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
+      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
     }
   },
   {
-    "id": 402204409,
-    "name": "Go-Random-Stuff",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em Go",
-      "en": "Miscellaneous projects in Go",
-      "es": "Proyectos variados en Go"
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   }
 ]
