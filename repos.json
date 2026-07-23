@@ -1,16 +1,5 @@
 [
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
-    "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
     "id": 419695528,
     "name": "blog-posts",
     "language": "TypeScript",
@@ -22,14 +11,25 @@
     }
   },
   {
-    "id": 190287833,
-    "name": "node-server",
-    "language": "JavaScript",
-    "html_url": "https://github.com/caiocampos/node-server",
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
-      "pt": "Servidor node simples usando Express e MongoDB",
-      "en": "Simple node server using Express and MongoDB",
-      "es": "Servidor node simple usando Express y MongoDB"
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+    }
+  },
+  {
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   }
 ]
