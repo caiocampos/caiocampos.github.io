@@ -1,35 +1,35 @@
 [
   {
-    "id": 190287833,
-    "name": "node-server",
-    "language": "JavaScript",
-    "html_url": "https://github.com/caiocampos/node-server",
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
     "descriptions": {
-      "pt": "Servidor node simples usando Express e MongoDB",
-      "en": "Simple node server using Express and MongoDB",
-      "es": "Servidor node simple usando Express y MongoDB"
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
     }
   },
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   }
 ]
