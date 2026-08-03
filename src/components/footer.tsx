@@ -1,10 +1,10 @@
-import { JSX } from "react";
-import { configuration } from "@/global";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
+import { JSX } from "react"
+import { configuration } from "@/global"
+import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 interface FooterProps {
-  disclaimer: string | null;
+  disclaimer: string | null
 }
 
 const footerClassNames = [
@@ -20,7 +20,7 @@ const footerClassNames = [
   "border-t",
   `border-${configuration.main_color}-600`,
   "backdrop-blur-xs",
-];
+]
 
 export const Footer = ({ disclaimer }: FooterProps): JSX.Element => (
   <a href={`https://github.com/${configuration.user_login}`}>
@@ -41,11 +41,11 @@ export const Footer = ({ disclaimer }: FooterProps): JSX.Element => (
           alt="GitHub Logo"
         />
       </div>
-      <div className="absolute flex items-center h-26 align-middle right-0 top-0">
-        <div className="max-w-32 p-2 sm:max-w-52 text-white text-sm sm:text-base">
+      <div className="absolute top-0 right-0 flex h-26 items-center align-middle">
+        <div className="max-w-32 p-2 text-sm text-white sm:max-w-52 sm:text-base">
           {disclaimer}
         </div>
       </div>
     </div>
   </a>
-);
+)

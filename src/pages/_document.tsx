@@ -1,7 +1,7 @@
-import { configuration } from "@/global";
-import { Html, Head, Main, NextScript } from "next/document";
+import { configuration } from "@/global"
+import { Html, Head, Main, NextScript } from "next/document"
 
-const userAvatarHref = `https://avatars.githubusercontent.com/u/${configuration.user_id}`;
+const userAvatarHref = `https://avatars.githubusercontent.com/u/${configuration.user_id}`
 
 export default function Document() {
   return (
@@ -16,5 +16,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }

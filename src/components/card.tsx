@@ -1,49 +1,49 @@
-import { Fragment, JSX } from "react";
-import { RepositoryDataBase } from "@/intefaces/repository-data";
-import { LanguageBadge } from "./language-badge";
-import { configuration, languageDictionary } from "@/global";
-import { ExternalLink, GitFork, SquareCode, Star } from "lucide-react";
-import { TermTranslationAdapter } from "@/intefaces/translation";
-import { dots, regexDot, regexLink } from "@/utils/string-utils";
-import { cn } from "@/lib/utils";
+import { Fragment, JSX } from "react"
+import { RepositoryDataBase } from "@/intefaces/repository-data"
+import { LanguageBadge } from "./language-badge"
+import { configuration, languageDictionary } from "@/global"
+import { ExternalLink, GitFork, SquareCode, Star } from "lucide-react"
+import { TermTranslationAdapter } from "@/intefaces/translation"
+import { dots, regexDot, regexLink } from "@/utils/string-utils"
+import { cn } from "@/lib/utils"
 
 const getDescription = (description: string | null): JSX.Element => {
   if (description === null) {
-    return <></>;
+    return <></>
   }
-  const notEmpty = (p: string) => p !== "";
+  const notEmpty = (p: string) => p !== ""
   const elementList = description
     .split(regexDot)
     .filter(notEmpty)
     .map((part, i) => {
-      const key = `desc-part-${i}`;
+      const key = `desc-part-${i}`
       if (dots.includes(part)) {
         return (
           <Fragment key={key}>
             {part}
             <br />
           </Fragment>
-        );
+        )
       }
-      const linkParts = part.split(regexLink);
+      const linkParts = part.split(regexLink)
       if (linkParts.length > 1) {
         const linkParsed = linkParts.filter(notEmpty).map((linkPart, j) => {
-          const subKey = `${key}-${j}`;
+          const subKey = `${key}-${j}`
           if (new RegExp(regexLink).test(linkPart)) {
             return (
               <a key={subKey} href={linkPart}>
                 {linkPart}
               </a>
-            );
+            )
           }
-          return <Fragment key={subKey}>{linkPart}</Fragment>;
-        });
-        return <Fragment key={key}>{linkParsed}</Fragment>;
+          return <Fragment key={subKey}>{linkPart}</Fragment>
+        })
+        return <Fragment key={key}>{linkParsed}</Fragment>
       }
-      return <Fragment key={key}>{part}</Fragment>;
-    });
-  return <>{elementList}</>;
-};
+      return <Fragment key={key}>{part}</Fragment>
+    })
+  return <>{elementList}</>
+}
 
 interface CardProps extends RepositoryDataBase, TermTranslationAdapter {}
 
@@ -69,15 +69,15 @@ const cardClassNames = [
   `dark:bg-${configuration.main_color}-900/[.9]`,
   "backdrop-blur-xs",
   "drop-shadow-md",
-];
+]
 
 export const Card = ({
   children,
   className,
 }: {
-  children: React.ReactNode;
-  className?: string;
-}) => <div className={cn([...cardClassNames, className])}>{children}</div>;
+  children: React.ReactNode
+  className?: string
+}) => <div className={cn([...cardClassNames, className])}>{children}</div>
 
 export const RepositoryCard = ({
   name,
@@ -93,7 +93,7 @@ export const RepositoryCard = ({
 }: CardProps): JSX.Element => {
   return (
     <Card>
-      <div className="absolute inline-flex text-gray-900 dark:text-gray-100 text-right right-2 bottom-2">
+      <div className="absolute right-2 bottom-2 inline-flex text-right text-gray-900 dark:text-gray-100">
         {homepage ? (
           <a href={homepage} className="mr-2" title={termTranslation.page}>
             <ExternalLink size={32} strokeWidth={1} />
@@ -103,17 +103,17 @@ export const RepositoryCard = ({
           <SquareCode size={32} strokeWidth={1} />
         </a>
       </div>
-      <div className="p-4 flex flex-col justify-between leading-normal h-full">
+      <div className="flex h-full flex-col justify-between p-4 leading-normal">
         <div className="mb-6">
-          <div className="text-gray-900 dark:text-gray-100 font-bold text-xl mb-4 text-center">
+          <div className="mb-4 text-center text-xl font-bold text-gray-900 dark:text-gray-100">
             {name}
             {archived
               ? ` (${termTranslation.archived})`
               : fork
-              ? " (fork)"
-              : null}
+                ? " (fork)"
+                : null}
           </div>
-          <p className="text-gray-700 dark:text-gray-300 text-base whitespace-pre-line">
+          <p className="text-base whitespace-pre-line text-gray-700 dark:text-gray-300">
             {getDescription(description)}
           </p>
         </div>
@@ -140,5 +140,5 @@ export const RepositoryCard = ({
         </div>
       </div>
     </Card>
-  );
-};
+  )
+}

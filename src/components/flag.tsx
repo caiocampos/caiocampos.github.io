@@ -1,9 +1,9 @@
-import { JSX } from "react";
-import { flags } from "@/utils/language-utils";
-import { Language } from "@/types/languages";
+import { JSX } from "react"
+import { flags } from "@/utils/language-utils"
+import { Language } from "@/types/languages"
 
 interface FlagProps {
-  language: Language;
+  language: Language
 }
 
 export const Flag = ({ language }: FlagProps): JSX.Element => {
@@ -11,5 +11,5 @@ export const Flag = ({ language }: FlagProps): JSX.Element => {
     <span
       className={`flag fi fi-${flags[language]} border border-black`}
     ></span>
-  );
-};
+  )
+}

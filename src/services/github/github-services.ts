@@ -1,25 +1,25 @@
-import { MinimalRepository, OrganizationFull, PublicUser } from "./github-dtos";
+import { MinimalRepository, OrganizationFull, PublicUser } from "./github-dtos"
 
-type RepoSort = "created" | "updated" | "pushed" | "full_name";
-type RepoSortDirection = "asc" | "desc";
-type RepoType = "all" | "owner" | "member";
+type RepoSort = "created" | "updated" | "pushed" | "full_name"
+type RepoSortDirection = "asc" | "desc"
+type RepoType = "all" | "owner" | "member"
 
 export class GithubServices {
-  private static userRepos: Promise<MinimalRepository[]> | null = null;
-  private static orgsRepos: Promise<MinimalRepository[]> | null = null;
+  private static userRepos: Promise<MinimalRepository[]> | null = null
+  private static orgsRepos: Promise<MinimalRepository[]> | null = null
 
   public static async getUser(login: string): Promise<PublicUser> {
-    const url = `https://api.github.com/users/${login}`;
-    const res: Response = await fetch(url);
-    const repositories: PublicUser = await res.json();
-    return repositories;
+    const url = `https://api.github.com/users/${login}`
+    const res: Response = await fetch(url)
+    const repositories: PublicUser = await res.json()
+    return repositories
   }
 
   public static async getOrg(login: string): Promise<OrganizationFull> {
-    const url = `https://api.github.com/orgs/${login}`;
-    const res: Response = await fetch(url);
-    const repositories: OrganizationFull = await res.json();
-    return repositories;
+    const url = `https://api.github.com/orgs/${login}`
+    const res: Response = await fetch(url)
+    const repositories: OrganizationFull = await res.json()
+    return repositories
   }
 
   public static async getUserRepos(
@@ -38,10 +38,10 @@ export class GithubServices {
       sort,
       direction,
       type
-    );
-    const res: Response = await fetch(url);
-    const repositories: MinimalRepository[] = await res.json();
-    return repositories;
+    )
+    const res: Response = await fetch(url)
+    const repositories: MinimalRepository[] = await res.json()
+    return repositories
   }
 
   public static async getAllUserRepos(
@@ -50,14 +50,14 @@ export class GithubServices {
     direction?: RepoSortDirection,
     type?: RepoType
   ): Promise<MinimalRepository[]> {
-    const { public_repos } = await GithubServices.getUser(login);
+    const { public_repos } = await GithubServices.getUser(login)
 
-    const pageSize = 10;
-    const timesWillCall = Math.ceil(public_repos / pageSize);
+    const pageSize = 10
+    const timesWillCall = Math.ceil(public_repos / pageSize)
     const promises = Array.from({ length: timesWillCall }, (_, i) =>
       GithubServices.getUserRepos(login, pageSize, i + 1, sort, direction, type)
-    );
-    return (await Promise.all(promises)).flatMap((result) => result);
+    )
+    return (await Promise.all(promises)).flatMap((result) => result)
   }
 
   public static async getOrgRepos(
@@ -76,10 +76,10 @@ export class GithubServices {
       sort,
       direction,
       type
-    );
-    const res: Response = await fetch(url);
-    const repositories: MinimalRepository[] = await res.json();
-    return repositories;
+    )
+    const res: Response = await fetch(url)
+    const repositories: MinimalRepository[] = await res.json()
+    return repositories
   }
 
   public static async getAllOrgRepos(
@@ -88,14 +88,14 @@ export class GithubServices {
     direction?: RepoSortDirection,
     type?: RepoType
   ): Promise<MinimalRepository[]> {
-    const { public_repos } = await GithubServices.getUser(login);
+    const { public_repos } = await GithubServices.getUser(login)
 
-    const pageSize = 10;
-    const timesWillCall = Math.ceil(public_repos / pageSize);
+    const pageSize = 10
+    const timesWillCall = Math.ceil(public_repos / pageSize)
     const promises = Array.from({ length: timesWillCall }, (_, i) =>
       GithubServices.getUserRepos(login, pageSize, i + 1, sort, direction, type)
-    );
-    return (await Promise.all(promises)).flatMap((result) => result);
+    )
+    return (await Promise.all(promises)).flatMap((result) => result)
   }
 
   public static async getAllOrgsRepos(
@@ -110,7 +110,7 @@ export class GithubServices {
           GithubServices.getAllOrgRepos(login, sort, direction, type)
         )
       )
-    ).flatMap((result) => result);
+    ).flatMap((result) => result)
   }
 
   public static async getCachedAllUserRepos(
@@ -126,7 +126,7 @@ export class GithubServices {
         sort,
         direction,
         type
-      );
+      )
     }
     if (
       GithubServices.orgsRepos === null &&
@@ -138,11 +138,11 @@ export class GithubServices {
         sort,
         direction,
         type
-      );
+      )
     }
-    const userRepos = await GithubServices.userRepos;
-    const orgsRepos = (await GithubServices.orgsRepos) ?? [];
-    return [...userRepos, ...orgsRepos];
+    const userRepos = await GithubServices.userRepos
+    const orgsRepos = (await GithubServices.orgsRepos) ?? []
+    return [...userRepos, ...orgsRepos]
   }
 
   private static makeRepoURL(
@@ -154,19 +154,19 @@ export class GithubServices {
     direction?: RepoSortDirection,
     type?: RepoType
   ): string {
-    let url = `https://api.github.com/${userType}/${login}/repos?sort=${sort}`;
+    let url = `https://api.github.com/${userType}/${login}/repos?sort=${sort}`
     if (direction) {
-      url += `&direction=${direction}`;
+      url += `&direction=${direction}`
     }
     if (per_page) {
-      url += `&per_page=${per_page}`;
+      url += `&per_page=${per_page}`
     }
     if (page) {
-      url += `&page=${page}`;
+      url += `&page=${page}`
     }
     if (type) {
-      url += `&type=${type}`;
+      url += `&type=${type}`
     }
-    return url;
+    return url
   }
 }

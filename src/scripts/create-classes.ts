@@ -1,8 +1,7 @@
-import fs from 'fs';
-import configuration from "../config.json" with { type: "json" };
+import fs from "fs"
+import configuration from "../config.json" with { type: "json" }
 
-
-const { main_color: mainColor, search_color: searchColor } = configuration;
+const { main_color: mainColor, search_color: searchColor } = configuration
 
 const clasnames = [
   ...[
@@ -26,9 +25,9 @@ const clasnames = [
     `active:bg-${searchColor}-900`,
     `dark:active:bg-${searchColor}-800`,
   ],
-];
+]
 
 fs.writeFile("src/styles/classes.txt", clasnames.join("\n"), (err: unknown) => {
-  if (err) return console.error(err);
-  console.info("creating classes file");
-});
+  if (err) return console.error(err)
+  console.info("creating classes file")
+})

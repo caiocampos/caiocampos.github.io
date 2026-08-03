@@ -1,20 +1,20 @@
-import { JSX, useCallback, useState } from "react";
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
-import Head from "next/head";
-import { Card, RepositoryCard } from "@/components/card";
-import { RepositoryData } from "@/intefaces/repository-data";
-import { configuration } from "@/global";
-import { Footer } from "@/components/footer";
-import { GithubServices } from "@/services/github/github-services";
+import { JSX, useCallback, useState } from "react"
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next"
+import Head from "next/head"
+import { Card, RepositoryCard } from "@/components/card"
+import { RepositoryData } from "@/intefaces/repository-data"
+import { configuration } from "@/global"
+import { Footer } from "@/components/footer"
+import { GithubServices } from "@/services/github/github-services"
 import {
   createRepositoryWordDictionary,
   parseRepositoryData,
   repositoryComparison,
   RepositoryWordDictionary,
-} from "@/utils/repository-utils";
-import { SearchInput } from "@/components/search";
-import { filterResult } from "@/utils/search-utils";
-import { MinimalRepository } from "@/services/github/github-dtos";
+} from "@/utils/repository-utils"
+import { SearchInput } from "@/components/search"
+import { filterResult } from "@/utils/search-utils"
+import { MinimalRepository } from "@/services/github/github-dtos"
 import {
   generateParams,
   getLanguageDisclaimer,
@@ -24,61 +24,61 @@ import {
   languages,
   locales,
   PageParams,
-} from "@/utils/language-utils";
-import { TermTranslation } from "@/intefaces/translation";
-import { Flag } from "@/components/flag";
-import { LanguageChart } from "@/components/language-chart";
-import { ThemeSelector } from "@/components/theme-selector";
-import { LanguageSelector } from "@/components/language-selector";
-import { Language, LanguageEnum } from "@/types/languages";
+} from "@/utils/language-utils"
+import { TermTranslation } from "@/intefaces/translation"
+import { Flag } from "@/components/flag"
+import { LanguageChart } from "@/components/language-chart"
+import { ThemeSelector } from "@/components/theme-selector"
+import { LanguageSelector } from "@/components/language-selector"
+import { Language, LanguageEnum } from "@/types/languages"
 
 interface RepositoriesGetStaticProps {
-  repositories: RepositoryData[];
-  wordDictionary: RepositoryWordDictionary;
-  language: Language;
-  languageList: Language[];
-  termTranslation: TermTranslation;
+  repositories: RepositoryData[]
+  wordDictionary: RepositoryWordDictionary
+  language: Language
+  languageList: Language[]
+  termTranslation: TermTranslation
 }
 
 export const getStaticPaths = (() => {
   const pathsWithParams = generateParams(languages).map(
     ({ language }: PageParams) => ({
       params: { language },
-    }),
-  );
+    })
+  )
   return {
     paths: pathsWithParams,
     fallback: false,
-  };
-}) satisfies GetStaticPaths;
+  }
+}) satisfies GetStaticPaths
 
 export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
   (async (context) => {
-    let language = context.params?.language as Language;
-    const hasLanguage = languages.includes(language);
+    let language = context.params?.language as Language
+    const hasLanguage = languages.includes(language)
     if (!hasLanguage) {
-      language = LanguageEnum.Portuguese;
+      language = LanguageEnum.Portuguese
     }
     const repositoriesBruteData: MinimalRepository[] =
       await GithubServices.getCachedAllUserRepos(
         configuration.user_login,
-        configuration.orgs_login,
-      );
+        configuration.orgs_login
+      )
     if (repositoriesBruteData.length === 0) {
-      const msg = "No repositories could be retrieved.";
-      console.error(msg);
-      throw Error(msg);
+      const msg = "No repositories could be retrieved."
+      console.error(msg)
+      throw Error(msg)
     }
     const repositoriesTranslatedData: MinimalRepository[] = (
       await getRepositoriesTranslation(repositoriesBruteData, language)
-    ).sort(repositoryComparison);
-    const termTranslation: TermTranslation = await getTermTranslation(language);
+    ).sort(repositoryComparison)
+    const termTranslation: TermTranslation = await getTermTranslation(language)
     const repositories: RepositoryData[] =
-      repositoriesTranslatedData.map(parseRepositoryData);
+      repositoriesTranslatedData.map(parseRepositoryData)
     const wordDictionary = createRepositoryWordDictionary(
       repositoriesTranslatedData,
-      termTranslation,
-    );
+      termTranslation
+    )
     return {
       props: {
         repositories,
@@ -87,8 +87,8 @@ export const getStaticProps: GetStaticProps<RepositoriesGetStaticProps> =
         termTranslation,
         languageList: languages,
       },
-    };
-  }) satisfies GetStaticProps<RepositoriesGetStaticProps>;
+    }
+  }) satisfies GetStaticProps<RepositoriesGetStaticProps>
 
 export default function HomePage({
   repositories,
@@ -97,13 +97,13 @@ export default function HomePage({
   languageList,
   termTranslation,
 }: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element {
-  const [filter, setFilter] = useState<number[] | undefined>(undefined);
+  const [filter, setFilter] = useState<number[] | undefined>(undefined)
   const onSearch = useCallback(
     (text: string): void => {
-      setFilter(filterResult(text, wordDictionary));
+      setFilter(filterResult(text, wordDictionary))
     },
-    [wordDictionary],
-  );
+    [wordDictionary]
+  )
   return (
     <div className="w-screen">
       <Head>
@@ -111,7 +111,7 @@ export default function HomePage({
         <title>{configuration.title}</title>
       </Head>
       <div className="relative h-14 w-full p-4 pb-2">
-        <div className="absolute left-3 top-4 mx-1">
+        <div className="absolute top-4 left-3 mx-1">
           <ThemeSelector termTranslation={termTranslation} />
           <span
             className="ml-2"
@@ -121,16 +121,16 @@ export default function HomePage({
           </span>
         </div>
         <LanguageSelector
-          className="absolute right-3 top-4"
+          className="absolute top-4 right-3"
           languageList={languageList.filter((l) => l !== language)}
           termTranslation={termTranslation}
         />
       </div>
-      <div className="sticky w-full p-2 z-45 top-0 drop-shadow-md">
+      <div className="sticky top-0 z-45 w-full p-2 drop-shadow-md">
         <SearchInput onSearch={onSearch} termTranslation={termTranslation} />
       </div>
       {filter === undefined ? (
-        <div className="w-full flex justify-center p-4">
+        <div className="flex w-full justify-center p-4">
           <Card className="flex-none">
             <LanguageChart
               repositories={repositories}
@@ -139,7 +139,7 @@ export default function HomePage({
           </Card>
         </div>
       ) : null}
-      <div className="w-full flex flex-wrap gap-4 items-stretch p-4 pb-32">
+      <div className="flex w-full flex-wrap items-stretch gap-4 p-4 pb-32">
         {repositories
           .filter(({ id }) => filter === undefined || filter.includes(id))
           .map((repository) => (
@@ -156,5 +156,5 @@ export default function HomePage({
         }
       />
     </div>
-  );
+  )
 }

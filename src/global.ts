@@ -1,19 +1,19 @@
-import { Configuration, LanguageData } from "./intefaces/config";
-import Config from "./config.json" with { type: "json" };
-import Languages from "./languages.json" with { type: "json" };
-import { TermTranslation } from "./intefaces/translation";
+import { Configuration, LanguageData } from "./intefaces/config"
+import Config from "./config.json" with { type: "json" }
+import Languages from "./languages.json" with { type: "json" }
+import { TermTranslation } from "./intefaces/translation"
 
-const languages: LanguageData[] = Languages;
+const languages: LanguageData[] = Languages
 
-export const configuration: Configuration = Config;
+export const configuration: Configuration = Config
 
 export const languageDictionary = languages.reduce(
   (accumulator, currentValue) => {
-    accumulator[currentValue.name] = currentValue;
-    return accumulator;
+    accumulator[currentValue.name] = currentValue
+    return accumulator
   },
   {} as Record<string, LanguageData>
-);
+)
 
 export const termTranslationPT: TermTranslation = {
   archived: "arquivado",
@@ -27,10 +27,10 @@ export const termTranslationPT: TermTranslation = {
   light: "Claro",
   dark: "Escuro",
   system: "Tema do sistema",
-};
+}
 
 export const termTranslationPTForTranslation: TermTranslation = {
   ...termTranslationPT,
   light: "Brilhante",
-  system: "Automático"
-};
+  system: "Automático",
+}

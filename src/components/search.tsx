@@ -1,13 +1,13 @@
-import { useState, useEffect, JSX, HTMLProps } from "react";
-import { useRouter } from "next/router";
-import { TermTranslationAdapter } from "@/intefaces/translation";
-import { configuration } from "@/global";
-import { cn } from "@/lib/utils";
-import { X, Search } from "lucide-react";
+import { useState, useEffect, JSX, HTMLProps } from "react"
+import { useRouter } from "next/router"
+import { TermTranslationAdapter } from "@/intefaces/translation"
+import { configuration } from "@/global"
+import { cn } from "@/lib/utils"
+import { X, Search } from "lucide-react"
 
 interface SearchProps extends TermTranslationAdapter {
-  onSearch(text: string): void;
-  className?: HTMLProps<HTMLElement>["className"];
+  onSearch(text: string): void
+  className?: HTMLProps<HTMLElement>["className"]
 }
 
 const searchInputClassNames = [
@@ -27,7 +27,7 @@ const searchInputClassNames = [
   "dark:placeholder-gray-400",
   "dark:text-gray-100",
   "dark:focus:border-blue-500",
-];
+]
 
 const searchClearButtonClassNames = [
   "absolute",
@@ -40,7 +40,7 @@ const searchClearButtonClassNames = [
   "pe-3",
   "text-gray-400",
   "dark:text-gray-400",
-];
+]
 
 const searchButtonClassNames = [
   "absolute",
@@ -60,40 +60,40 @@ const searchButtonClassNames = [
   `dark:hover:bg-${configuration.search_color}-700`,
   `active:bg-${configuration.search_color}-900`,
   `dark:active:bg-${configuration.search_color}-800`,
-];
+]
 
-const searchKey = "s";
+const searchKey = "s"
 
 export const SearchInput = ({
   onSearch,
   termTranslation,
   className,
 }: SearchProps): JSX.Element => {
-  const router = useRouter();
-  const queryValue = router.query[searchKey];
-  const searchValue = typeof queryValue === "string" ? queryValue : "";
-  const [text, setText] = useState(searchValue);
-  const [lastText, setLastText] = useState(searchValue);
+  const router = useRouter()
+  const queryValue = router.query[searchKey]
+  const searchValue = typeof queryValue === "string" ? queryValue : ""
+  const [text, setText] = useState(searchValue)
+  const [lastText, setLastText] = useState(searchValue)
   const search = (value: string): void => {
-    onSearch(value);
+    onSearch(value)
     router.push({
       pathname: router.pathname,
       query: { ...router.query, [searchKey]: value },
-    });
-  };
+    })
+  }
   if (searchValue !== lastText) {
-    setLastText(searchValue);
-    setText(searchValue);
+    setLastText(searchValue)
+    setText(searchValue)
   }
   useEffect(() => {
-    onSearch(searchValue);
-  }, [searchValue, onSearch]);
+    onSearch(searchValue)
+  }, [searchValue, onSearch])
   return (
     <form
-      className={`max-w-md mx-auto ${className ?? ""}`}
+      className={`mx-auto max-w-md ${className ?? ""}`}
       onSubmit={(e) => {
-        e.preventDefault();
-        search(text);
+        e.preventDefault()
+        search(text)
       }}
     >
       <div className="flex">
@@ -109,8 +109,8 @@ export const SearchInput = ({
             type="button"
             className={cn(searchClearButtonClassNames)}
             onClick={() => {
-              setText("");
-              search("");
+              setText("")
+              search("")
             }}
           >
             <X size={16} />
@@ -119,7 +119,7 @@ export const SearchInput = ({
             type="button"
             className={cn(searchButtonClassNames)}
             onClick={() => {
-              search(text);
+              search(text)
             }}
           >
             <Search size={16} />
@@ -127,5 +127,5 @@ export const SearchInput = ({
         </div>
       </div>
     </form>
-  );
-};
+  )
+}
