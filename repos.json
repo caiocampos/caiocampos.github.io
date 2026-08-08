@@ -11,25 +11,25 @@
     }
   },
   {
-    "id": 387783256,
-    "name": "web-games",
-    "language": "HTML",
-    "html_url": "https://github.com/cao-ancap/web-games",
+    "id": 189728973,
+    "name": "POI-inc",
+    "language": "Kotlin",
+    "html_url": "https://github.com/caiocampos/POI-inc",
     "descriptions": {
-      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
-      "en": "List of games developed by Anarchist Dog that can be tested in browser",
-      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
+      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
+      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
     }
   },
   {
-    "id": 201666223,
-    "name": "rust-db-restapi",
+    "id": 171151150,
+    "name": "img-fuse",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "html_url": "https://github.com/caiocampos/img-fuse",
     "descriptions": {
-      "pt": "Servidor rust simples com conexão ao PostgresSQL",
-      "en": "Simple rust server with PostgresSQL connection",
-      "es": "Servidor rust simple con conexión a PostgresSQL"
+      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
+      "en": "Rust program project to merge images to use in digital cards",
+      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
     }
   }
 ]
