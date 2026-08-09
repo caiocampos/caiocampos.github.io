@@ -1,35 +1,35 @@
 [
   {
-    "id": 427346914,
-    "name": "md-fuse",
+    "id": 190287833,
+    "name": "node-server",
+    "language": "JavaScript",
+    "html_url": "https://github.com/caiocampos/node-server",
+    "descriptions": {
+      "pt": "Servidor node simples usando Express e MongoDB",
+      "en": "Simple node server using Express and MongoDB",
+      "es": "Servidor node simple usando Express y MongoDB"
+    }
+  },
+  {
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
     "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   },
   {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
-    "id": 402204953,
-    "name": "JVM-Random-Stuff",
-    "language": "Java",
-    "html_url": "https://github.com/caiocampos/JVM-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em linguagens para JVM (Java, Kotlin, etc)",
-      "en": "Various projects in languages for JVM (Java, Kotlin, etc.)",
-      "es": "Proyectos variados en lenguajes para JVM (Java, Kotlin, etc)"
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
