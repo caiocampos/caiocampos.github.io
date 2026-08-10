@@ -21,7 +21,7 @@
     "shadcn-update": "for file in src/components/ui/*.tsx; do npx shadcn@latest add -y -o $(basename \"$file\" .tsx); done"
   },
   "dependencies": {
-    "@base-ui/react": "^1.6.0",
+    "@base-ui/react": "^1.7.0",
     "class-variance-authority": "^0.7",
     "clsx": "^2.1",
     "flag-icons": "^7.5.0",
