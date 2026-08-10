@@ -1,35 +1,35 @@
 [
   {
-    "id": 889201502,
-    "name": "snake",
+    "id": 220121431,
+    "name": "shrtr",
     "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   },
   {
-    "id": 387783256,
-    "name": "web-games",
-    "language": "HTML",
-    "html_url": "https://github.com/cao-ancap/web-games",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
-      "en": "List of games developed by Anarchist Dog that can be tested in browser",
-      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of the projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   }
 ]
