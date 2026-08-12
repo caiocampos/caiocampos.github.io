@@ -1,13 +1,24 @@
 [
   {
-    "id": 220121431,
-    "name": "shrtr",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "id": 219068444,
+    "name": "primes",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/primes",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
+      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
+      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+    }
+  },
+  {
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em JavaScript e TypeScript",
+      "en": "Miscellaneous projects in JavaScript and TypeScript",
+      "es": "Proyectos variados en JavaScript y TypeScript"
     }
   },
   {
@@ -19,17 +30,6 @@
       "pt": "Middleware para o serviço de tradução da página de portfólio desenvolvido em Go com estratégia Cache-Aside e Background Refresh, utilizando Gin Gonic e Redis. Para o projeto da página acesse: https://github.com/caiocampos/caiocampos.github.io",
       "en": "Middleware for the translation service of the portfolio page developed in Go with Cache-Aside and Background Refresh strategy, using Gin Gonic and Redis. For page project access: https://github.com/caiocampos/caiocampos.github.io",
       "es": "Middleware para el servicio de traducción de la página de cartera desarrollado en Go con estrategia Cache-Aside y Background Refresh, utilizando Gin Gonic y Redis. Para acceder al proyecto de la página: https://github.com/caiocampos/caiocampos.github.io"
-    }
-  },
-  {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
