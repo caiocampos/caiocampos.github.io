@@ -1,5 +1,27 @@
 [
   {
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
+    }
+  },
+  {
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
+    "descriptions": {
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+    }
+  },
+  {
     "id": 129539638,
     "name": "restaurantes-app",
     "language": "TypeScript",
@@ -8,28 +30,6 @@
       "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
       "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
       "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
-    }
-  },
-  {
-    "id": 427346914,
-    "name": "md-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
-    "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
-    }
-  },
-  {
-    "id": 220121431,
-    "name": "shrtr",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
-    "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
