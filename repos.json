@@ -1,35 +1,35 @@
 [
   {
-    "id": 220121431,
-    "name": "shrtr",
+    "id": 889201502,
+    "name": "snake",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   },
   {
-    "id": 387783256,
-    "name": "web-games",
-    "language": "HTML",
-    "html_url": "https://github.com/cao-ancap/web-games",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
-      "en": "List of games developed by Anarchist Dog that can be tested in browser",
-      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 189728973,
-    "name": "POI-inc",
-    "language": "Kotlin",
-    "html_url": "https://github.com/caiocampos/POI-inc",
+    "id": 427346914,
+    "name": "md-fuse",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/md-fuse",
     "descriptions": {
-      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
-      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
-      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
+      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
+      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
+      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
     }
   }
 ]
