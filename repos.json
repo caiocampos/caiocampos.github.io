@@ -1,24 +1,13 @@
 [
   {
-    "id": 387616218,
-    "name": "asteroids",
-    "language": "GDScript",
-    "html_url": "https://github.com/cao-ancap/asteroids",
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
     "descriptions": {
-      "pt": "Asteroids: Viaje pela vastidão do espaço e desvie de uma chuva de asteroides mortais! Controle uma nave espacial e evite os perigos que se aproximam, cada segundo conta! Quanto mais tempo você sobreviver, maior será sua pontuação. Jogo feito em Godot 3",
-      "en": "Asteroids: Travel through the vastness of space and divert from a rain of deadly asteroids! Control a spaceship and avoid the dangers approaching, every second counts! The longer you survive, the higher your score. Game made in Godot 3",
-      "es": "Asteroids: ¡Vija por la inmensidad del espacio y desvie de una lluvia de asteroides mortales! Control una nave espacial y evite los peligros que se aproximan, cada segundo cuenta! Cuanto más tiempo sobrevivirás, mayor será tu puntuación. Juego hecho en Godot 3"
-    }
-  },
-  {
-    "id": 219068444,
-    "name": "primes",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/primes",
-    "descriptions": {
-      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
-      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
-      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
     }
   },
   {
@@ -30,6 +19,17 @@
       "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
       "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
       "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
+    "descriptions": {
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   }
 ]
