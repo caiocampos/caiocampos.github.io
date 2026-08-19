@@ -1,35 +1,35 @@
 [
   {
-    "id": 387783256,
-    "name": "web-games",
-    "language": "HTML",
-    "html_url": "https://github.com/cao-ancap/web-games",
+    "id": 189728973,
+    "name": "POI-inc",
+    "language": "Kotlin",
+    "html_url": "https://github.com/caiocampos/POI-inc",
     "descriptions": {
-      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
-      "en": "List of games developed by Anarchist Dog that can be tested in browser",
-      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
+      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
+      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
     }
   },
   {
-    "id": 402202135,
-    "name": "Zig-C-Random-Stuff",
-    "language": "C#",
-    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
+    "id": 427346914,
+    "name": "md-fuse",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/md-fuse",
     "descriptions": {
-      "pt": "Projetos variados em C, C++, C# e Zig",
-      "en": "Miscellaneous projects in C, C++, C# and Zig",
-      "es": "Proyectos variados en C, C++, C# y Zig"
+      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
+      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
+      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
     }
   },
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "id": 219068444,
+    "name": "primes",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/primes",
     "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
+      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
+      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
     }
   }
 ]
