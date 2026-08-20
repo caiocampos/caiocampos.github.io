@@ -1,35 +1,35 @@
 [
   {
-    "id": 129097852,
-    "name": "Random-Stuff",
-    "language": "Lua",
-    "html_url": "https://github.com/caiocampos/Random-Stuff",
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
     "descriptions": {
-      "pt": "Projetos variados em Lua, Perl e outras linguagens",
-      "en": "Various projects in Lua, Perl and other languages",
-      "es": "Proyectos variados en Luna, Perl y otros lenguajes"
+      "pt": "Projetos variados em JavaScript, TypeScript e Google Apps Script",
+      "en": "Miscellaneous projects in JavaScript, TypeScript and Google Apps Script",
+      "es": "Proyectos variados en JavaScript, TypeScript y Google Apps Script"
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   },
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "id": 509780798,
+    "name": "7backupper",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   }
 ]
