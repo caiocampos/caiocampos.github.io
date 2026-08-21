@@ -1,24 +1,13 @@
 [
   {
-    "id": 219068444,
-    "name": "primes",
+    "id": 201666223,
+    "name": "rust-db-restapi",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/primes",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
-      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
-      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
-    }
-  },
-  {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   },
   {
@@ -30,6 +19,17 @@
       "pt": "Projetos variados em C, C++, C# e Zig",
       "en": "Miscellaneous projects in C, C++, C# and Zig",
       "es": "Proyectos variados en C, C++, C# y Zig"
+    }
+  },
+  {
+    "id": 402204409,
+    "name": "Go-Random-Stuff",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
+    "descriptions": {
+      "pt": "Projetos variados em Go",
+      "en": "Miscellaneous projects in Go",
+      "es": "Proyectos variados en Go"
     }
   }
 ]
