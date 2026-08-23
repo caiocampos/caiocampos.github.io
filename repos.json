@@ -1,35 +1,35 @@
 [
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "id": 200933441,
+    "name": "go.db.restapi",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/go.db.restapi",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
+      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
+      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
     }
   },
   {
-    "id": 171151150,
-    "name": "img-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/img-fuse",
+    "id": 190287833,
+    "name": "node-server",
+    "language": "JavaScript",
+    "html_url": "https://github.com/caiocampos/node-server",
     "descriptions": {
-      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
-      "en": "Rust program project to merge images to use in digital cards",
-      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
+      "pt": "Servidor node simples usando Express e MongoDB",
+      "en": "Simple node server using Express and MongoDB",
+      "es": "Servidor node simple usando Express y MongoDB"
     }
   },
   {
-    "id": 419695528,
-    "name": "blog-posts",
+    "id": 220121431,
+    "name": "shrtr",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
