@@ -1,13 +1,24 @@
 [
   {
-    "id": 201666223,
-    "name": "rust-db-restapi",
+    "id": 219068444,
+    "name": "primes",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "html_url": "https://github.com/caiocampos/primes",
     "descriptions": {
-      "pt": "Servidor rust simples com conexão ao PostgresSQL",
-      "en": "Simple rust server with PostgresSQL connection",
-      "es": "Servidor rust simple con conexión a PostgresSQL"
+      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
+      "en": "WebAssembly Library (Wasm) created in Rust to perform several calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
+      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+    }
+  },
+  {
+    "id": 889201502,
+    "name": "snake",
+    "language": "TypeScript",
+    "html_url": "https://github.com/cao-ancap/snake",
+    "descriptions": {
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   },
   {
@@ -19,17 +30,6 @@
       "pt": "Projetos variados em Lua, Perl e outras linguagens",
       "en": "Various projects in Lua, Perl and other languages",
       "es": "Proyectos variados en Luna, Perl y otros lenguajes"
-    }
-  },
-  {
-    "id": 200933441,
-    "name": "go.db.restapi",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/go.db.restapi",
-    "descriptions": {
-      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
-      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
-      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
     }
   }
 ]
