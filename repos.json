@@ -1,35 +1,35 @@
 [
   {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   },
   {
-    "id": 189728973,
-    "name": "POI-inc",
-    "language": "Kotlin",
-    "html_url": "https://github.com/caiocampos/POI-inc",
+    "id": 129097852,
+    "name": "Random-Stuff",
+    "language": "Lua",
+    "html_url": "https://github.com/caiocampos/Random-Stuff",
     "descriptions": {
-      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
-      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
-      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
+      "pt": "Projetos variados em Lua, Perl e outras linguagens",
+      "en": "Various projects in Lua, Perl and other languages",
+      "es": "Proyectos variados en Luna, Perl y otros lenguajes"
     }
   },
   {
-    "id": 129411755,
-    "name": "Restaurantes",
+    "id": 200933441,
+    "name": "go.db.restapi",
     "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "html_url": "https://github.com/caiocampos/go.db.restapi",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades, utilizando Go, Gin Gonic e MongoDB. Para o projeto da página acesse: https://github.com/caiocampos/restaurantes-app",
-      "en": "Software with login, authority management and entity C.R.U.D., using Go, Gin Gonic and MongoDB. For page project go to: https://github.com/caiocampos/restaurantes-app",
-      "es": "Software con login, gestión de autoridades y C.R.U.D. de entidades, utilizando Go, Gin Gonic y MongoDB. Para acceder al proyecto de la página: https://github.com/caiocampos/restaurantes-app"
+      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
+      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
+      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
     }
   }
 ]
