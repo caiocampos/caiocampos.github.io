@@ -1,24 +1,24 @@
 [
   {
-    "id": 201666223,
-    "name": "rust-db-restapi",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "id": 220121431,
+    "name": "shrtr",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Servidor rust simples com conexão ao PostgresSQL",
-      "en": "Simple rust server with PostgresSQL connection",
-      "es": "Servidor rust simple con conexión a PostgresSQL"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 402204409,
-    "name": "Go-Random-Stuff",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
+    "id": 509780798,
+    "name": "7backupper",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Projetos variados em Go",
-      "en": "Miscellaneous projects in Go",
-      "es": "Proyectos variados en Go"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
