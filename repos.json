@@ -1,35 +1,35 @@
 [
   {
-    "id": 190287833,
-    "name": "node-server",
-    "language": "JavaScript",
-    "html_url": "https://github.com/caiocampos/node-server",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Servidor node simples usando Express e MongoDB",
-      "en": "Simple node server using Express and MongoDB",
-      "es": "Servidor node simple usando Express y MongoDB"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   },
   {
-    "id": 171151150,
-    "name": "img-fuse",
+    "id": 220121431,
+    "name": "shrtr",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/shrtr",
+    "descriptions": {
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/img-fuse",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
     "descriptions": {
-      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
-      "en": "Rust program project to merge images to use in digital cards",
-      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
-    }
-  },
-  {
-    "id": 402202135,
-    "name": "Zig-C-Random-Stuff",
-    "language": "C#",
-    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em C, C++, C# e Zig",
-      "en": "Miscellaneous projects in C, C++, C# and Zig",
-      "es": "Proyectos variados en C, C++, C# y Zig"
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   }
 ]
