@@ -1,35 +1,35 @@
 [
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "id": 508846906,
+    "name": "md-fuse-py",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/md-fuse-py",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, management of authorities and C.R.U.D. of entities. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
+      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
+      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "id": 402206243,
+    "name": "Python-Random-Stuff",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Projetos variados em Python",
+      "en": "Miscellaneous Python projects",
+      "es": "Proyectos variados en Python"
     }
   },
   {
-    "id": 402205460,
-    "name": "JS-Random-Stuff",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Projetos variados em JavaScript, TypeScript e Google Apps Script",
-      "en": "Miscellaneous projects in JavaScript, TypeScript and Google Apps Script",
-      "es": "Proyectos variados en JavaScript, TypeScript y Google Apps Script"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   }
 ]
