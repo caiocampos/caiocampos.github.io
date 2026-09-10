@@ -1,35 +1,35 @@
 [
   {
-    "id": 189728973,
-    "name": "POI-inc",
-    "language": "Kotlin",
-    "html_url": "https://github.com/caiocampos/POI-inc",
+    "id": 509780798,
+    "name": "7backupper",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
-      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
-      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "id": 508846906,
+    "name": "md-fuse-py",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/md-fuse-py",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, management of authorities and C.R.U.D. of entities. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
+      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
+      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
     }
   },
   {
-    "id": 387783256,
-    "name": "web-games",
-    "language": "HTML",
-    "html_url": "https://github.com/cao-ancap/web-games",
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
     "descriptions": {
-      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
-      "en": "List of games developed by Anarchist Dog that can be tested in browser",
-      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
