@@ -1,35 +1,35 @@
 [
   {
-    "id": 402204409,
-    "name": "Go-Random-Stuff",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Go-Random-Stuff",
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
     "descriptions": {
-      "pt": "Projetos variados em Go",
-      "en": "Miscellaneous projects in Go",
-      "es": "Proyectos variados en Go"
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
     }
   },
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
+    "id": 220121431,
+    "name": "shrtr",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "html_url": "https://github.com/caiocampos/shrtr",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, management of authorities and C.R.U.D. of entities. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
+    "id": 889201502,
+    "name": "snake",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   }
 ]
