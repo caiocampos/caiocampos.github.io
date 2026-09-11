@@ -1,35 +1,35 @@
 [
   {
-    "id": 167178482,
-    "name": "caiocampos.github.io",
+    "id": 419695528,
+    "name": "blog-posts",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
-      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
-      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 190287833,
-    "name": "node-server",
-    "language": "JavaScript",
-    "html_url": "https://github.com/caiocampos/node-server",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Servidor node simples usando Express e MongoDB",
-      "en": "Simple node server using Express and MongoDB",
-      "es": "Servidor node simple usando Express y MongoDB"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   },
   {
-    "id": 220121431,
-    "name": "shrtr",
+    "id": 397396598,
+    "name": "asteroid-score",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/shrtr",
+    "html_url": "https://github.com/caiocampos/asteroid-score",
     "descriptions": {
-      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
-      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Backend usando NestJS (Express) e MongoDB (Mongoose), para jogo Asteroids: https://github.com/cao-ancap/asteroids",
+      "en": "Backend using NestJS (Express) and MongoDB (Mongoose), for Asteroids game: https://github.com/cao-ancap/asteroids",
+      "es": "Backend usando NestJS (Express) y MongoDB (Mongoose), para juego Asteroids: https://github.com/cao-ancap/asteroids"
     }
   }
 ]
