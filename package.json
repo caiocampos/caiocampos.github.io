@@ -40,7 +40,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.5",
     "@types/react": "^19.3",
-    "@types/react-dom": "^19.2",
+    "@types/react-dom": "^19.3",
     "eslint": "^10.10",
     "eslint-config-next": "^16.3",
     "mini-css-extract-plugin": "^2.10",
