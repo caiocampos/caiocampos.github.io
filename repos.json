@@ -1,35 +1,35 @@
 [
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "id": 189728973,
+    "name": "POI-inc",
+    "language": "Kotlin",
+    "html_url": "https://github.com/caiocampos/POI-inc",
     "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+      "pt": "POI-inc, protótipo de Software de gerência de Pontos de Interesse, usando Kotlin, Spring e MongoDB",
+      "en": "POI-inc, prototype Points of Interest Management Software using Kotlin, Spring and MongoDB",
+      "es": "POI-inc, prototipo de software de gestión de puntos de interés, usando Kotlin, Spring y MongoDB"
     }
   },
   {
-    "id": 402206243,
-    "name": "Python-Random-Stuff",
+    "id": 509780798,
+    "name": "7backupper",
     "language": "Python",
-    "html_url": "https://github.com/caiocampos/Python-Random-Stuff",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Projetos variados em Python",
-      "en": "Miscellaneous Python projects",
-      "es": "Proyectos variados en Python"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "id": 129097852,
+    "name": "Random-Stuff",
+    "language": "Lua",
+    "html_url": "https://github.com/caiocampos/Random-Stuff",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Projetos variados em Lua, Perl e outras linguagens",
+      "en": "Various projects in Lua, Perl and other languages",
+      "es": "Proyectos variados en Luna, Perl y otros lenguajes"
     }
   }
 ]
