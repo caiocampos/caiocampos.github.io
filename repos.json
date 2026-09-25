@@ -11,25 +11,25 @@
     }
   },
   {
-    "id": 201666223,
-    "name": "rust-db-restapi",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Servidor rust simples com conexão ao PostgresSQL",
-      "en": "Simple rust server with PostgresSQL connection",
-      "es": "Servidor rust simple con conexión a PostgresSQL"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
+    "id": 129539638,
+    "name": "restaurantes-app",
     "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Look for food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
+      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
     }
   }
 ]
