@@ -1,35 +1,35 @@
 [
   {
-    "id": 200933441,
-    "name": "go.db.restapi",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/go.db.restapi",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
-      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
-      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   },
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
-    "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "id": 129539638,
+    "name": "restaurantes-app",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
     "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
+      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
     }
   },
   {
-    "id": 895824962,
-    "name": "Dart-Random-Stuff",
-    "language": "Dart",
-    "html_url": "https://github.com/caiocampos/Dart-Random-Stuff",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Projetos variados em Dart",
-      "en": "Miscellaneous projects in Dart",
-      "es": "Proyectos variados en Dart"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that handles translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   }
 ]
