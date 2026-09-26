@@ -1,5 +1,27 @@
 [
   {
+    "id": 200933441,
+    "name": "go.db.restapi",
+    "language": "Go",
+    "html_url": "https://github.com/caiocampos/go.db.restapi",
+    "descriptions": {
+      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
+      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
+      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
+    }
+  },
+  {
+    "id": 508846906,
+    "name": "md-fuse-py",
+    "language": "Python",
+    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "descriptions": {
+      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
+      "en": "Python program to mount markdown files for various languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
+      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+    }
+  },
+  {
     "id": 895824962,
     "name": "Dart-Random-Stuff",
     "language": "Dart",
@@ -8,28 +30,6 @@
       "pt": "Projetos variados em Dart",
       "en": "Miscellaneous projects in Dart",
       "es": "Proyectos variados en Dart"
-    }
-  },
-  {
-    "id": 419695528,
-    "name": "blog-posts",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
-    "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
     }
   }
 ]
