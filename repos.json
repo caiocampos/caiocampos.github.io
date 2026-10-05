@@ -1,35 +1,35 @@
 [
   {
-    "id": 508846906,
-    "name": "md-fuse-py",
+    "id": 509780798,
+    "name": "7backupper",
     "language": "Python",
-    "html_url": "https://github.com/caiocampos/md-fuse-py",
+    "html_url": "https://github.com/caiocampos/7backupper",
     "descriptions": {
-      "pt": "Programa em Python para montar arquivos markdown para diversas línguas. Para a versão em Rust acesse: https://github.com/caiocampos/md-fuse",
-      "en": "Python program to mount markdown files for several languages. For the version in Rust access: https://github.com/caiocampos/md-fuse",
-      "es": "Guión en Python para montar archivos markdown para varios idiomas. Para la versión en Rust visite: https://github.com/caiocampos/md-fuse"
+      "pt": "Utilitário para automatizar criação de arquivos de backup compactados",
+      "en": "Utility to automate creation of compressed backup files",
+      "es": "Utilidad para automatizar la creación de archivos de copia de seguridad compactados"
     }
   },
   {
-    "id": 190287833,
-    "name": "node-server",
-    "language": "JavaScript",
-    "html_url": "https://github.com/caiocampos/node-server",
+    "id": 895824962,
+    "name": "Dart-Random-Stuff",
+    "language": "Dart",
+    "html_url": "https://github.com/caiocampos/Dart-Random-Stuff",
     "descriptions": {
-      "pt": "Servidor node simples usando Express e MongoDB",
-      "en": "Simple node server using Express and MongoDB",
-      "es": "Servidor node simple usando Express y MongoDB"
+      "pt": "Projetos variados em Dart",
+      "en": "Miscellaneous projects in Dart",
+      "es": "Proyectos variados en Dart"
     }
   },
   {
-    "id": 129411755,
-    "name": "Restaurantes",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/Restaurantes",
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades, utilizando Go, Gin Gonic e MongoDB. Para o projeto da página acesse: https://github.com/caiocampos/restaurantes-app",
-      "en": "Software with login, administration of authorities and C.R.U.D. of entities, using Go, Gin Gonic and MongoDB. For page project go to: https://github.com/caiocampos/restaurantes-app",
-      "es": "Software con login, gestión de autoridades y C.R.U.D. de entidades, utilizando Go, Gin Gonic y MongoDB. Para acceder al proyecto de la página: https://github.com/caiocampos/restaurantes-app"
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
