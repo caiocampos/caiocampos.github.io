@@ -1,5 +1,27 @@
 [
   {
+    "id": 220121431,
+    "name": "shrtr",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/shrtr",
+    "descriptions": {
+      "pt": "Encurtador de links usando React, NestJS (Express) e MongoDB (Mongoose) ",
+      "en": "Link shortener using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Encurtador de enlaces usando React, NestJS (Express) y MongoDB (Mongoose)"
+    }
+  },
+  {
+    "id": 201666223,
+    "name": "rust-db-restapi",
+    "language": "Rust",
+    "html_url": "https://github.com/caiocampos/rust-db-restapi",
+    "descriptions": {
+      "pt": "Servidor rust simples com conexão ao PostgresSQL",
+      "en": "Simple rust server with PostgresSQL connection",
+      "es": "Servidor rust simple con conexión a PostgresSQL"
+    }
+  },
+  {
     "id": 419695528,
     "name": "blog-posts",
     "language": "TypeScript",
@@ -8,28 +30,6 @@
       "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
       "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
       "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
-    }
-  },
-  {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
-    "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
-    }
-  },
-  {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
     }
   }
 ]
