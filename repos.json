@@ -1,5 +1,16 @@
 [
   {
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
+    "descriptions": {
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
+    }
+  },
+  {
     "id": 508846906,
     "name": "md-fuse-py",
     "language": "Python",
@@ -11,25 +22,14 @@
     }
   },
   {
-    "id": 889201502,
-    "name": "snake",
+    "id": 402205460,
+    "name": "JS-Random-Stuff",
     "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
+    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
     "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
-    }
-  },
-  {
-    "id": 427346914,
-    "name": "md-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
-    "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
+      "pt": "Projetos variados em JavaScript, TypeScript e Google Apps Script",
+      "en": "Miscellaneous projects in JavaScript, TypeScript and Google Apps Script",
+      "es": "Proyectos variados en JavaScript, TypeScript y Google Apps Script"
     }
   }
 ]
