@@ -1,5 +1,27 @@
 [
   {
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
+    "descriptions": {
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
+    }
+  },
+  {
+    "id": 129539638,
+    "name": "restaurantes-app",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "descriptions": {
+      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
+      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
+      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+    }
+  },
+  {
     "id": 167178482,
     "name": "caiocampos.github.io",
     "language": "TypeScript",
@@ -8,28 +30,6 @@
       "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
       "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that manipulates translation cache: https://github.com/caiocampos/cached-translation-middleware",
       "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
-    }
-  },
-  {
-    "id": 402202135,
-    "name": "Zig-C-Random-Stuff",
-    "language": "C#",
-    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em C, C++, C# e Zig",
-      "en": "Miscellaneous projects in C, C++, C# and Zig",
-      "es": "Proyectos variados en C, C++, C# y Zig"
-    }
-  },
-  {
-    "id": 402206638,
-    "name": "Rust-Random-Stuff",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
-    "descriptions": {
-      "pt": "Projetos variados em Rust",
-      "en": "Miscellaneous projects in Rust",
-      "es": "Proyectos variados en Rust"
     }
   }
 ]
