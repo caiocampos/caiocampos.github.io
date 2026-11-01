@@ -1,16 +1,5 @@
 [
   {
-    "id": 889201502,
-    "name": "snake",
-    "language": "TypeScript",
-    "html_url": "https://github.com/cao-ancap/snake",
-    "descriptions": {
-      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
-      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
-      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
-    }
-  },
-  {
     "id": 419695528,
     "name": "blog-posts",
     "language": "TypeScript",
@@ -22,14 +11,25 @@
     }
   },
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
-    "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "id": 402202135,
+    "name": "Zig-C-Random-Stuff",
+    "language": "C#",
+    "html_url": "https://github.com/caiocampos/Zig-C-Random-Stuff",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Projetos variados em C, C++, C# e Zig",
+      "en": "Miscellaneous projects in C, C++, C# and Zig",
+      "es": "Proyectos variados en C, C++, C# y Zig"
+    }
+  },
+  {
+    "id": 319447815,
+    "name": "CaioCampos",
+    "language": null,
+    "html_url": "https://github.com/caiocampos/CaioCampos",
+    "descriptions": {
+      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
+      "en": "Profile page on github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
+      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
     }
   }
 ]
