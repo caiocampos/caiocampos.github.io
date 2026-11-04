@@ -1,35 +1,35 @@
 [
   {
-    "id": 171151150,
-    "name": "img-fuse",
+    "id": 402206638,
+    "name": "Rust-Random-Stuff",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/img-fuse",
+    "html_url": "https://github.com/caiocampos/Rust-Random-Stuff",
     "descriptions": {
-      "pt": "Projeto de programa em rust para mesclar imagens para usar em cards digitais",
-      "en": "Rust program project to merge images to use in digital cards",
-      "es": "Proyecto de programa en rust para mezclar imágenes para usar en tarjetas digitales"
+      "pt": "Projetos variados em Rust",
+      "en": "Miscellaneous projects in Rust",
+      "es": "Proyectos variados en Rust"
     }
   },
   {
-    "id": 427346914,
-    "name": "md-fuse",
-    "language": "Rust",
-    "html_url": "https://github.com/caiocampos/md-fuse",
+    "id": 129097852,
+    "name": "Random-Stuff",
+    "language": "Lua",
+    "html_url": "https://github.com/caiocampos/Random-Stuff",
     "descriptions": {
-      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
-      "en": "Rust program to mount markdown files for various languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
-      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
+      "pt": "Projetos variados em Lua, Perl e outras linguagens",
+      "en": "Various projects in Lua, Perl and other languages",
+      "es": "Proyectos variados en Luna, Perl y otros lenguajes"
     }
   },
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that manipulates translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   }
 ]
