@@ -1,35 +1,35 @@
 [
   {
-    "id": 219068444,
-    "name": "primes",
+    "id": 427346914,
+    "name": "md-fuse",
     "language": "Rust",
-    "html_url": "https://github.com/caiocampos/primes",
+    "html_url": "https://github.com/caiocampos/md-fuse",
     "descriptions": {
-      "pt": "Biblioteca WebAssembly (Wasm) criada em Rust para efetuar diversos cálculos relacionados à números primos (página utilizando Angular 22). Pacote npm: https://www.npmjs.com/package/@caiocampos/primes",
-      "en": "WebAssembly Library (Wasm) created in Rust to perform various calculations related to prime numbers (page using Angular 22). npm package: https://www.npmjs.com/package/@caiocampos/primes",
-      "es": "Biblioteca WebAssembly (Wasm) creada en Rust para realizar diversos cálculos relacionados con números primos (página utilizando Angular 22). Paquete npm: https://www.npmjs.com/package/@caiocampos/primes"
+      "pt": "Programa em Rust para montar arquivos markdown para diversas línguas. Para a versão em Python acesse: https://github.com/caiocampos/md-fuse-py",
+      "en": "Rust program to mount markdown files for several languages. For Python version access: https://github.com/caiocampos/md-fuse-py",
+      "es": "Programa en Rust para montar archivos markdown para diversas lenguas. Para la versión de Python visite: https://github.com/caiocampos/md-fuse-py"
     }
   },
   {
-    "id": 129539638,
-    "name": "restaurantes-app",
+    "id": 167178482,
+    "name": "caiocampos.github.io",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/restaurantes-app",
+    "html_url": "https://github.com/caiocampos/caiocampos.github.io",
     "descriptions": {
-      "pt": "Software com login, gestão de autoridades e C.R.U.D. de entidades. Para o projeto do servidor acesse: https://github.com/caiocampos/Restaurantes",
-      "en": "Software with login, authority management and entity C.R.U.D. For server project access: https://github.com/caiocampos/Restaurantes",
-      "es": "Software con acceso, gestión de autoridades y C.R.U.D. de entidades. Para acceder al proyecto del servidor: https://github.com/caiocampos/Restaurantes"
+      "pt": "Página Inicial em Next 16. A página lista os repositórios do github e traduz a descrição dos projetos utilizando inteligência artificial. Projeto que manipula o cache de tradução: https://github.com/caiocampos/cached-translation-middleware",
+      "en": "Home on Next 16. The page lists github repositories and translates the description of projects using artificial intelligence. Project that manipulates translation cache: https://github.com/caiocampos/cached-translation-middleware",
+      "es": "Página de inicio en Next 16. La página lista los repositorios de github y traduce la descripción de los proyectos utilizando inteligencia artificial. Proyecto que manipula la caché de traducción: https://github.com/caiocampos/cached-translation-middleware"
     }
   },
   {
-    "id": 419695528,
-    "name": "blog-posts",
+    "id": 889201502,
+    "name": "snake",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/blog-posts",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
-      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
-      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
     }
   }
 ]
