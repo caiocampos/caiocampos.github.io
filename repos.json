@@ -1,35 +1,35 @@
 [
   {
-    "id": 200933441,
-    "name": "go.db.restapi",
-    "language": "Go",
-    "html_url": "https://github.com/caiocampos/go.db.restapi",
+    "id": 387783256,
+    "name": "web-games",
+    "language": "HTML",
+    "html_url": "https://github.com/cao-ancap/web-games",
     "descriptions": {
-      "pt": "Servidor Go utilizando Fiber e Parsley, com conexão ao MongoDB, e cache com Redis ou Valkey",
-      "en": "Go server using Fiber and Parsley, with MongoDB connection, and cache with Redis or Valkey",
-      "es": "Servidor Go utilizando Fiber y Parsley, con conexión a MongoDB, y caché con Redis o Valkey"
+      "pt": "Lista de jogos desenvolvidos por Cachorro Anarquista que podem ser testados em navegador",
+      "en": "List of games developed by Anarchist Dog that can be tested in browser",
+      "es": "Lista de juegos desarrollados por Perro Anarquista que pueden ser probados en navegador"
     }
   },
   {
-    "id": 319447815,
-    "name": "CaioCampos",
-    "language": null,
-    "html_url": "https://github.com/caiocampos/CaioCampos",
-    "descriptions": {
-      "pt": "Página de perfil no github, montada por automação utilizando md-fuse: https://github.com/caiocampos/md-fuse",
-      "en": "Profile page in github, mounted by automation using md-fuse: https://github.com/caiocampos/md-fuse",
-      "es": "Página de perfil en github, montada por automatización utilizando md-fuse: https://github.com/caiocampos/md-fuse"
-    }
-  },
-  {
-    "id": 402205460,
-    "name": "JS-Random-Stuff",
+    "id": 889201502,
+    "name": "snake",
     "language": "TypeScript",
-    "html_url": "https://github.com/caiocampos/JS-Random-Stuff",
+    "html_url": "https://github.com/cao-ancap/snake",
     "descriptions": {
-      "pt": "Projetos variados em JavaScript, TypeScript e Google Apps Script",
-      "en": "Miscellaneous projects in JavaScript, TypeScript and Google Apps Script",
-      "es": "Proyectos variados en JavaScript, TypeScript y Google Apps Script"
+      "pt": "Snake: Busque comida pelo seu terrítório mas evite obstáculos pelo caminho. Jogo feito em TypeScript",
+      "en": "Snake: Seek food through your territory but avoid obstacles along the way. Game made in TypeScript",
+      "es": "Snake: Busque comida por su terrítorio pero evite obstáculos por el camino. Juego hecho en TypeScript"
+    }
+  },
+  {
+    "id": 419695528,
+    "name": "blog-posts",
+    "language": "TypeScript",
+    "html_url": "https://github.com/caiocampos/blog-posts",
+    "descriptions": {
+      "pt": "Página de postagens usando React, NestJS (Express) e MongoDB (Mongoose)",
+      "en": "Post page using React, NestJS (Express) and MongoDB (Mongoose)",
+      "es": "Página de posts usando React, NestJS (Express) y MongoDB (Mongoose)"
     }
   }
 ]
